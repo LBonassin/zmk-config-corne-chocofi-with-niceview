@@ -13,13 +13,14 @@
 #define BASE    0
 #define F       1
 
-#define 123     2
+#define NUM     2
 
 #define ARROW   3
 
 #include "keys/36.h"
 #include "includes/macros.dtsi"
 #include "includes/combos.dtsi"
+#include "includes/behaviors.dtsi"
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };

@@ -8,16 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-// layers
-#define BASE    0
-#define F       1
-#define NUM     2
-#define ARROW   3
-
-#include "includes/macros.dtsi"
-#include "includes/combos.dtsi"
-#include "includes/behaviors.dtsi"
-
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
 };

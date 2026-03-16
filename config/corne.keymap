@@ -20,7 +20,6 @@
 #include "keys/36.h"
 #include "includes/macros.dtsi"
 #include "includes/combos.dtsi"
-#include "includes/behaviors.dtsi"
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };

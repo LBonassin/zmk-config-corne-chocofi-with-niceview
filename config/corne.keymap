@@ -18,7 +18,7 @@
 
         game_shift {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <32 10>;
+            key-positions = <10 31>;
             layers = <0>;
         };
 
@@ -84,13 +84,13 @@
 
         del {
             bindings = <&kp DELETE>;
-            key-positions = <8 9 33>;
+            key-positions = <8 9 34>;
             layers = <0 1 2 3>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <10 11 32>;
+            key-positions = <10 11 31>;
             layers = <0>;
         };
 
@@ -102,7 +102,7 @@
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <0 1 32>;
+            key-positions = <0 1 31>;
             layers = <0>;
         };
 
@@ -114,25 +114,25 @@
 
         game_ctrl {
             bindings = <&kp LCTRL>;
-            key-positions = <20 32>;
+            key-positions = <20 31>;
             layers = <0>;
         };
 
         apos {
             bindings = <&mt LS(APOS) APOS>;
-            key-positions = <19 33>;
+            key-positions = <19 34>;
             layers = <0>;
         };
 
         printscreen {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <24 23 32>;
+            key-positions = <24 23 31>;
             layers = <0>;
         };
 
         record {
             bindings = <&kp LG(LA(G))>;
-            key-positions = <22 23 24 32>;
+            key-positions = <22 23 24 31>;
             layers = <0>;
         };
     };
@@ -148,10 +148,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-  &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U  &kp I                &kp O            &kp P
-  &kp A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J  &kp K                &kp L            &mt LS(SEMI) SEMI
-  &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N      &kp M  &mt LS(COMMA) COMMA  &mt LS(DOT) DOT  &mt LS(FSLH) FSLH
-                &kp LEFT_ALT  &lt 1 LEFT_BRACE  &kp SPACE    &kp SPACE  &mo 2  &kp RALT
+  &kp Q  &kp W  &kp E         &kp R      &kp T               &kp Y  &kp U      &kp I                &kp O            &kp P
+  &kp A  &kp S  &kp D         &kp F      &kp G               &kp H  &kp J      &kp K                &kp L            &mt LS(SEMI) SEMI
+  &kp Z  &kp X  &kp C         &kp V      &kp B               &kp N  &kp M      &mt LS(COMMA) COMMA  &mt LS(DOT) DOT  &mt LS(FSLH) FSLH
+                &kp LEFT_ALT  &kp SPACE  &lt 1 LEFT_BRACE    &mo 2  &kp SPACE  &kp RALT
             >;
         };
 

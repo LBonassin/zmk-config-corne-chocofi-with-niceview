@@ -163,8 +163,8 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-  &kp F1  &kp F2   &kp F3   &kp F4   &kp GRAVE       &kp K_VOLUME_UP    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none
-  &kp F5  &kp F6   &kp F7   &kp F8   &kp CAPSLOCK    &kp K_VOLUME_DOWN  &kp INSERT       &kp HOME        &kp PAGE_UP      &none
+  &kp F1  &kp F2   &kp F3   &kp F4   &kp GRAVE       &kp C_VOLUME_UP    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none
+  &kp F5  &kp F6   &kp F7   &kp F8   &kp CAPSLOCK    &kp C_VOLUME_DOWN  &kp INSERT       &kp HOME        &kp PAGE_UP      &none
   &kp F9  &kp F10  &kp F11  &kp F12  &none           &none              &kp DELETE       &kp END         &kp PAGE_DOWN    &none
                    &trans   &trans   &trans          &trans             &mo 3            &trans
             >;

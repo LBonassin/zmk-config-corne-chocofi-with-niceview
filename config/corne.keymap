@@ -106,10 +106,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y      &kp U  &kp I                &kp O            &kp P              &none
-&none  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H      &kp J  &kp K                &kp L            &mt LS(SEMI) SEMI  &none
-&none  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N      &kp M  &mt LS(COMMA) COMMA  &mt LS(DOT) DOT  &mt LS(FSLH) FSLH  &none
-                     &kp LEFT_ALT  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &kp RALT
+&none  &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U  &kp I                &kp O            &kp P              &none
+&none  &kp A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J  &kp K                &kp L            &mt LS(SEMI) SEMI  &none
+&none  &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N      &kp M  &mt LS(COMMA) COMMA  &mt LS(DOT) DOT  &mt LS(FSLH) FSLH  &none
+                     &kp LEFT_ALT  &lt 1 LEFT_BRACE  &kp SPACE    &kp SPACE  &mo 2  &kp RALT
             >;
         };
 

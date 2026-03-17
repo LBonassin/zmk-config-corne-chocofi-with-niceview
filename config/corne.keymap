@@ -154,10 +154,10 @@
             compatible = "zmk,behavior-hold-tap";
             label = "AUTOSHIFT_HOLD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <170>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <80>;
             bindings = <&shifted>, <&kp>;
         };
 
@@ -166,7 +166,7 @@
         td_semi: tap_dance_semi {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&as SEMI>, <&mo 3>;
         };
     };

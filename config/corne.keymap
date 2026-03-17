@@ -153,13 +153,7 @@
         compatible = "zmk,keymap";
 
         base {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
-            label = "BASE"; // Name shown on nice!view
+            label = "BASE";
             bindings = <
   &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U  &kp I                &kp O            &kp P
   &kp A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J  &kp K                &kp L            &mt LS(SEMI) SEMI
@@ -169,13 +163,7 @@
         };
 
         f_keys {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            label = "F KEYS"; // Name shown on nice!view
+            label = "F KEYS";
             bindings = <
   &kp F1  &kp F2   &kp F3   &kp F4   &kp GRAVE       &kp C_VOLUME_UP    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none
   &kp F5  &kp F6   &kp F7   &kp F8   &kp CAPSLOCK    &kp C_VOLUME_DOWN  &kp INSERT       &kp HOME        &kp PAGE_UP      &none
@@ -185,13 +173,7 @@
         };
 
         nums {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            label = "NUMS"; // Name shown on nice!view
+            label = "NUMS";
             bindings = <
   &none                 &none                  &none                              &none                                &none                  &none                &mt LS(NUMBER_7) NUMBER_7  &mt LS(NUMBER_8) NUMBER_8  &mt LS(NUMBER_9) NUMBER_9  &none
   &kp ASTERISK          &kp SLASH              &kp PLUS                           &kp MINUS                            &mt LS(MINUS) MINUS    &mt LS(EQUAL) EQUAL  &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5  &mt LS(NUMBER_6) NUMBER_6  &mt LS(BSLH) BACKSLASH
@@ -201,7 +183,7 @@
         };
 
         arrows {
-            label = "ARROWS"; // Name shown on nice!view
+            label = "ARROWS";
             bindings = <
   &trans      &trans      &bt BT_SEL 0  &trans      &trans    &trans  &trans                  &kp UP_ARROW  &trans             &trans
   &trans      &bt BT_PRV  &bt BT_SEL 1  &bt BT_NXT  &trans    &trans  &kp LEFT                &kp DOWN      &kp RIGHT          &trans
@@ -213,10 +195,10 @@
         Autoshift {
             label = "SHIFTED";
             bindings = <
-  &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U  &kp I                &kp O            &kp P
-  &kp A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J  &kp K                &kp L            &mt LS(SEMI) SEMI
-  &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N      &kp M  &mt LS(COMMA) COMMA  &mt LS(DOT) DOT  &mt LS(FSLH) FSLH
-                &kp LEFT_ALT  &lt 1 LEFT_BRACE  &kp SPACE    &kp SPACE  &mo 2  &kp RALT
+  &mt LS(Q) Q  &mt LS(W) W  &mt LS(E) E   &mt LS(R) R       &mt LS(T) T      &mt LS(Y) Y    &mt LS(U) U  &mt LS(I) I          &mt LS(O) O      &mt LS(P) P
+  &mt LS(A) A  &mt LS(S) S  &mt LS(D) D   &mt LS(F) F       &mt LS(G) G      &mt LS(H) H    &mt LS(J) J  &mt LS(K) K          &mt LS(L) L      &mt LS(SEMI) SEMI
+  &mt LS(Z) Z  &mt LS(X) X  &mt LS(C) C   &mt LS(V) V       &mt LS(B) B      &mt LS(N) N    &mt LS(M) M  &mt LS(COMMA) COMMA  &mt LS(DOT) DOT  &mt LS(FSLH) FSLH
+                             &kp LEFT_ALT  &lt 1 LEFT_BRACE  &kp SPACE        &kp SPACE      &mo 2        &kp RALT
             >;
         };
     };

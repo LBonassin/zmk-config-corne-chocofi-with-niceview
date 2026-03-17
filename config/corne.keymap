@@ -119,7 +119,7 @@
         };
 
         apos {
-            bindings = <&mt LS(APOS) APOS>;
+            bindings = <&as APOS>;
             key-positions = <19 33>;
             layers = <0 4>;
         };
@@ -155,6 +155,9 @@
       label = "AUTOSHIFT_HOLD_TAP";
       #binding-cells = <2>;
       tapping-term-ms = <200>;
+      quick-tap-ms = <0>;
+      flavor = "tap-preferred";
+      require-prior-idle-ms = <125>;
       bindings = <&shifted>, <&kp>;
     };
   };
@@ -197,8 +200,8 @@
             label = "BASE";
             bindings = <
   &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U  &kp I                &kp O            &kp P
-  &kp A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J  &kp K                &kp L            &mt LS(SEMI) SEMI
-  &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N      &kp M  &mt LS(COMMA) COMMA  &mt LS(DOT) DOT  &mt LS(FSLH) FSLH
+  &kp A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J  &kp K                &kp L            &as  SEMI
+  &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N      &kp M  &as COMMA  &as DOT  &as  FSLH
                 &kp LEFT_ALT  &lt 1 LEFT_BRACE  &kp SPACE    &kp SPACE  &mo 2  &kp RALT
             >;
         };
@@ -216,9 +219,9 @@
         nums {
             label = "NUMS";
             bindings = <
-  &none                 &none                  &none                              &none                                &none                  &none                &mt LS(NUMBER_7) NUMBER_7  &mt LS(NUMBER_8) NUMBER_8  &mt LS(NUMBER_9) NUMBER_9  &none
-  &kp ASTERISK          &kp SLASH              &kp PLUS                           &kp MINUS                            &mt LS(MINUS) MINUS    &mt LS(EQUAL) EQUAL  &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5  &mt LS(NUMBER_6) NUMBER_6  &mt LS(BSLH) BACKSLASH
-  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt LS(LEFT_BRACKET) LEFT_BRACKET  &mt LS(RIGHT_BRACKET) RIGHT_BRACKET  &kp LEFT_BRACE         &kp RIGHT_BRACE      &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp PERIOD
+  &none                 &none                  &none                              &none                                &none                  &none                &as  NUMBER_7  &as  NUMBER_8  &as  NUMBER_9  &none
+  &kp ASTERISK          &kp SLASH              &kp PLUS                           &kp MINUS                            &as MINUS    &as  EQUAL  &as  NUMBER_4  &as  NUMBER_5  &as  NUMBER_6  &as  BACKSLASH
+  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &as LEFT_BRACKET  &as RIGHT_BRACKET  &kp LEFT_BRACE         &kp RIGHT_BRACE      &as  NUMBER_1  &as  NUMBER_2  &as  NUMBER_3  &kp PERIOD
                                                &trans                             &mo 3                                &kp NUMBER_0           &trans               &trans                     &kp N0
             >;
         };

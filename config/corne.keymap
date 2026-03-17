@@ -166,7 +166,7 @@
   &kp F1  &kp F2   &kp F3   &kp F4   &kp GRAVE       &kp C_VOLUME_UP    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none
   &kp F5  &kp F6   &kp F7   &kp F8   &kp CAPSLOCK    &kp C_VOLUME_DOWN  &kp INSERT       &kp HOME        &kp PAGE_UP      &none
   &kp F9  &kp F10  &kp F11  &kp F12  &none           &none              &kp DELETE       &kp END         &kp PAGE_DOWN    &none
-                   &trans   &trans   &trans          &trans             &mo 3            &trans
+                   &trans   &trans   &trans          &mo 3              &trans           &trans
             >;
         };
 
@@ -181,7 +181,7 @@
   &none                 &none                  &none                              &none                                &none                  &none                &mt LS(NUMBER_7) NUMBER_7  &mt LS(NUMBER_8) NUMBER_8  &mt LS(NUMBER_9) NUMBER_9  &none
   &kp ASTERISK          &kp SLASH              &kp PLUS                           &kp MINUS                            &mt LS(MINUS) MINUS    &mt LS(EQUAL) EQUAL  &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5  &mt LS(NUMBER_6) NUMBER_6  &mt LS(BSLH) BACKSLASH
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt LS(LEFT_BRACKET) LEFT_BRACKET  &mt LS(RIGHT_BRACKET) RIGHT_BRACKET  &kp LEFT_BRACE         &kp RIGHT_BRACE      &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp PERIOD
-                                               &trans                             &mo 3                                &kp N0                 &kp RET              &trans                     &kp N0
+                                               &trans                             &kp NUMBER_0                         &mo 3                  &trans               &trans                     &kp N0
             >;
         };
 

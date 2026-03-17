@@ -136,16 +136,10 @@
             layers = <0 4>;
         };
 
-        To_shifted_layer {
-            bindings = <&to 4>;
+        toggle_autoshift {
+            bindings = <&tog 4>;
             key-positions = <35 30 32 33>;
-            layers = <0>;
-        };
-
-        To_base_layer {
-            bindings = <&to 0>;
-            key-positions = <32 30 33 35>;
-            layers = <4>;
+            layers = <0 4>;
         };
     };
 

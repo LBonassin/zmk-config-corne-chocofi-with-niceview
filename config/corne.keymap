@@ -236,7 +236,7 @@
         Autoshift {
             label = "AUTOSHIFT";
             bindings = <
-  &as Q   &as W   &as E    &as R        &as T T     &as Y     &as U   &as I           &as O       &as P 
+  &as Q   &as W   &as E    &as R        &as T       &as Y     &as U   &as I           &as O       &as P 
   &as A   &as S   &as D    &as F        &as G       &as H     &as J   &as K           &as L       &as SEMI 
   &as Z   &as X   &as C    &as V        &as B       &as N     &as M   &as COMMA   &as DOT   &as FSLH 
                              &kp LEFT_ALT  &lt 1 LEFT_BRACE  &kp SPACE        &kp SPACE      &mo 2        &kp RALT

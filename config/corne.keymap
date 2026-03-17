@@ -146,7 +146,7 @@
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
+            label = "base"; // Name shown on nice!view
             bindings = <
   &kp Q  &kp W  &kp E         &kp R      &kp T               &kp Y  &kp U      &kp I                &kp O            &kp P
   &kp A  &kp S  &kp D         &kp F      &kp G               &kp H  &kp J      &kp K                &kp L            &mt LS(SEMI) SEMI
@@ -161,7 +161,7 @@
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
             // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+            label = "fkeys"; // Name shown on nice!view
             bindings = <
   &kp F1  &kp F2   &kp F3   &kp F4   &kp GRAVE       &kp C_VOLUME_UP    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none
   &kp F5  &kp F6   &kp F7   &kp F8   &kp CAPSLOCK    &kp C_VOLUME_DOWN  &kp INSERT       &kp HOME        &kp PAGE_UP      &none
@@ -176,7 +176,7 @@
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+            label = "nums"; // Name shown on nice!view
             bindings = <
   &none                 &none                  &none                              &none                                &none                  &none                &mt LS(NUMBER_7) NUMBER_7  &mt LS(NUMBER_8) NUMBER_8  &mt LS(NUMBER_9) NUMBER_9  &none
   &kp ASTERISK          &kp SLASH              &kp PLUS                           &kp MINUS                            &mt LS(MINUS) MINUS    &mt LS(EQUAL) EQUAL  &mt LS(NUMBER_4) NUMBER_4  &mt LS(NUMBER_5) NUMBER_5  &mt LS(NUMBER_6) NUMBER_6  &mt LS(BSLH) BACKSLASH
@@ -186,6 +186,7 @@
         };
 
         arrows {
+            label = "↑↓←→"; // Name shown on nice!view
             bindings = <
   &trans      &trans      &bt BT_SEL 0  &trans      &trans    &trans  &trans    &kp UP_ARROW  &trans     &trans
   &trans      &bt BT_PRV  &bt BT_SEL 1  &bt BT_NXT  &trans    &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans

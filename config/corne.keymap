@@ -36,7 +36,7 @@
         };
 
         r_game_ctrl {
-            bindings = <&sk RCTRL>;
+            bindings = <&kp RCTRL>;
             key-positions = <33 29>;
             layers = <0 1 2 3>;
         };

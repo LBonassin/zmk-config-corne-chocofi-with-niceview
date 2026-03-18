@@ -136,10 +136,16 @@
             layers = <0 4>;
         };
 
-        toggle_autoshift {
+        toggle_autoshift_off {
+            bindings = <&tog 4>;
+            key-positions = <35 30 32 33>;
+            layers = <0>;
+        };
+
+        toggle_autoshift_on {
             bindings = <&tog 0>;
             key-positions = <35 30 32 33>;
-            layers = <0 4>;
+            layers = <4>;
         };
 
         apostwo {

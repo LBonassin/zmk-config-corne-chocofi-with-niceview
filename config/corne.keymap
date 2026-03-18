@@ -136,18 +136,6 @@
             layers = <0 4>;
         };
 
-        toggle_autoshift_off {
-            bindings = <&to 0>;
-            key-positions = <30 32>;
-            layers = <4>;
-        };
-
-        toggle_autoshift_on {
-            bindings = <&to 4>;
-            key-positions = <30 32>;
-            layers = <0>;
-        };
-
         apostwo {
             bindings = <&as APOS>;
             key-positions = <18 19>;
@@ -204,8 +192,8 @@
     keymap {
         compatible = "zmk,keymap";
 
-        GAME {
-            label = "GAME";
+        BASE {
+            label = "BASE";
             bindings = <
   &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P
   &kp A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J  &kp K      &kp L    &as SEMI
@@ -243,15 +231,6 @@
                           &trans        &trans      &trans    &trans  &trans                  &trans
             >;
         };
-
-        Autoshift {
-            label = "SHIFTED";
-            bindings = <
-  &as Q  &as W  &as E         &as R             &as T        &as Y      &as U  &as I      &as O    &as P
-  &as A  &as S  &as D         &as F             &as G        &as H      &as J  &as K      &as L    &as SEMI
-  &as Z  &as X  &as C         &as V             &as B        &as N      &as M  &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 1 LEFT_BRACE  &kp SPACE    &kp SPACE  &mo 2  &kp RALT
-            >;
-        };
+    
     };
 };

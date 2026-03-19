@@ -149,6 +149,12 @@
             bindings = <&kp DEL>;
             key-positions = <17 18 33>;
         };
+
+        toggleLayer {
+            bindings = <&tog 4>;
+            key-positions = <5 25>;
+            layers = <0 4>;
+        };
     };
 
     behaviors {
@@ -192,25 +198,25 @@
     };
 
     keymap {
-        compatible = "zmk,keymap";  
+        compatible = "zmk,keymap";
 
         GAMING {
             label = "GAMING";
             bindings = <
-  &kp Q                   &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P
-  &mt LEFT_SHIFT A        &kp S  &kp D         &kp F             &kp G        &kp H      &kp J  &kp K      &kp L    &as SEMI
-  &mt LEFT_SHIFT Z        &kp X  &kp C         &kp V             &kp B        &kp N      &kp M  &as COMMA  &as DOT  &as FSLH
-                      &kp LEFT_ALT  &lt 1 LEFT_BRACE  &kp SPACE    &kp ENTER  &mo 2  &kp RALT
+  &kp Q             &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P
+  &mt LEFT_SHIFT A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J  &kp K      &kp L    &as SEMI
+  &mt LCTRL Z       &kp X  &kp C         &kp V             &kp B        &kp N      &kp M  &as COMMA  &as DOT  &as FSLH
+                           &kp LEFT_ALT  &lt 1 LEFT_BRACE  &kp SPACE    &kp ENTER  &mo 2  &kp RALT
             >;
         };
 
         f_keys {
             label = "F KEYS";
             bindings = <
-  &kp F1  &kp F2   &kp F3   &kp F4   &kp GRAVE       &kp C_VOLUME_UP    &none                   &trans           &none             &to 0
-  &kp F5  &kp F6   &kp F7   &kp F8   &kp CAPSLOCK    &kp C_VOLUME_DOWN  &kp DEL                  &kp UP_ARROW     &kp BACKSPACE             &to 4
-  &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT      &none              &kp LEFT                &kp DOWN         &kp RIGHT          &none
-                   &trans   &trans   &trans          &trans             &mo 3                   &trans
+  &kp F1  &kp F2   &kp F3   &kp F4   &kp GRAVE       &kp C_VOLUME_UP    &none     &trans        &none          &none
+  &kp F5  &kp F6   &kp F7   &kp F8   &kp CAPSLOCK    &kp C_VOLUME_DOWN  &kp DEL   &kp UP_ARROW  &kp BACKSPACE  &none
+  &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT      &none              &kp LEFT  &kp DOWN      &kp RIGHT      &none
+                   &trans   &trans   &trans          &trans             &mo 3     &trans
             >;
         };
 
@@ -237,12 +243,11 @@
         TYPING {
             label = "TYPING";
             bindings = <
-  &as Q        &as W  &as E         &as R             &as T        &as Y      &as U  &as I      &as O    &as P
-  &as A        &as S  &as D         &as F             &as G        &as H      &as J  &as K      &as L    &as SEMI
-  &as Z        &as X  &as C         &as V             &as B        &as N      &as M  &as COMMA  &as DOT  &as FSLH
-                      &kp LEFT_ALT  &lt 1 LEFT_BRACE  &kp SPACE    &kp ENTER  &mo 2  &kp RALT
+  &as Q  &as W  &as E         &as R             &as T        &as Y      &as U  &as I      &as O    &as P
+  &as A  &as S  &as D         &as F             &as G        &as H      &as J  &as K      &as L    &as SEMI
+  &as Z  &as X  &as C         &as V             &as B        &as N      &as M  &as COMMA  &as DOT  &as FSLH
+                &kp LEFT_ALT  &lt 1 LEFT_BRACE  &kp SPACE    &kp ENTER  &mo 2  &kp RALT
             >;
         };
-        
     };
 };

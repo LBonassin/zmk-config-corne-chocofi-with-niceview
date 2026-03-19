@@ -1,22 +1,16 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: dsifry
-      url-base: https://github.com/dsifry
-    - name: m165437
-      url-base: https://github.com/M165437
+      url-base: https://github.com/zmkfirmware   
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
-    - name: nice-view-mod
-      remote: dsifry
+    - name: zmk-nice-oled
+      remote: mctechnology17
       revision: main
-    - name: nice-view-gem
-      remote: m165437
-      revision: v0.3.0
-      path: nice-view-gem
   self:
     path: config

@@ -228,9 +228,9 @@
         f_keys {
             label = "F KEYS";
             bindings = <
-  &kp F1  &kp F2   &kp F3   &kp F4   &kp GRAVE       &kp C_VOLUME_UP    &trans                  &kp UP_ARROW  &trans             &none
-  &kp F5  &kp F6   &kp F7   &kp F8   &kp CAPSLOCK    &kp C_VOLUME_DOWN  &kp LEFT                &kp DOWN      &kp RIGHT          &none
-  &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT      &none              &kp LS(LG(LEFT_ARROW))  &trans        &kp LS(LG(RIGHT))  &none
+  &kp F1  &kp F2   &kp F3   &kp F4   &kp GRAVE       &kp C_VOLUME_UP    &trans                  &trans           &trans             &none
+  &kp F5  &kp F6   &kp F7   &kp F8   &kp CAPSLOCK    &kp C_VOLUME_DOWN  &trans                  &kp UP_ARROW     &trans             &none
+  &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT      &none              &kp LEFT                &kp DOWN         &kp RIGHT          &none
                    &trans   &trans   &trans          &trans             &mo 3                   &trans
             >;
         };

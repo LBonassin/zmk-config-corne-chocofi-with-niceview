@@ -245,8 +245,8 @@
             >;
         };
 
-        arrows {
-            label = "ARROWS";
+        BT {
+            label = "BT";
             bindings = <
   &trans      &trans      &bt BT_SEL 0  &trans      &trans    &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans
   &trans      &bt BT_PRV  &bt BT_SEL 1  &bt BT_NXT  &trans    &trans  &kp INSERT       &kp HOME        &kp PAGE_UP      &trans

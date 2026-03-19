@@ -9,7 +9,7 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
-    - name: zmk-nice-epaper
+    - name: nice-epaper
       remote: mctechnology17
       revision: v0.3.0
   self:

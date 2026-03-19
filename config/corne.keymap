@@ -228,7 +228,7 @@
   &as Q  &as W  &as E         &as R             &as T        &as Y      &as U  &as I      &as O    &as P
   &as A  &as S  &as D         &as F             &as G        &as H      &as J  &as K      &as L    &as SEMI
   &as Z  &as X  &as C         &as V             &as B        &as N      &as M  &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 2 LEFT_BRACE  &kp SPACE    &kp ENTER  &mo 3  &kp RALT
+                &kp LEFT_ALT  &lt 2 LEFT_BRACE  &kp SPACE    &lt 2 ENTER  &mo 3  &kp RALT
             >;
         };
 

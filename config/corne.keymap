@@ -19,7 +19,7 @@
         ctrl_two {
             bindings = <&kp LCTRL>;
             key-positions = <20 32>;
-            layers = <1 2 3 4>;
+            layers = <1 2 3 4 0>;
             timeout-ms = <70>;
         };
 
@@ -164,8 +164,21 @@
 
         toggleLayer {
             bindings = <&tog 1>;
-            key-positions = <5 25>;
+            key-positions = <4 32>;
             layers = <0 1>;
+        };
+
+        l_game_shift {
+            bindings = <&kp LSHFT>;
+            key-positions = <10 32>;
+            timeout-ms = <70>;
+            layers = <0 1>;
+        };
+
+        esc_two {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 32>;
+            layers = <0 1 2 3>;
         };
     };
 
@@ -215,19 +228,19 @@
         GAMING {
             label = "GAMING";
             bindings = <
-  &kp Q             &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P
-  &mt LEFT_SHIFT A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J  &kp K      &kp L    &as SEMI
-  &mt LCTRL Z       &kp X  &kp C         &kp V             &kp B        &kp N      &kp M  &as COMMA  &as DOT  &as FSLH
-                           &kp LEFT_ALT  &lt 2 LEFT_BRACE  &kp SPACE    &lt 2 ENTER  &mo 3  &kp RALT
+  &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y        &kp U  &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D         &kp F             &kp G        &kp H        &kp J  &kp K      &kp L    &as SEMI
+  &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N        &kp M  &as COMMA  &as DOT  &as FSLH
+                &kp LEFT_ALT  &lt 2 LEFT_BRACE  &kp SPACE    &lt 2 ENTER  &mo 3  &kp RALT
             >;
         };
 
         TYPING {
             label = "TYPING";
             bindings = <
-  &as Q  &as W  &as E         &as R             &as T        &as Y      &as U  &as I      &as O    &as P
-  &as A  &as S  &as D         &as F             &as G        &as H      &as J  &as K      &as L    &as SEMI
-  &as Z  &as X  &as C         &as V             &as B        &as N      &as M  &as COMMA  &as DOT  &as FSLH
+  &as Q  &as W  &as E         &as R             &as T        &as Y        &as U  &as I      &as O    &as P
+  &as A  &as S  &as D         &as F             &as G        &as H        &as J  &as K      &as L    &as SEMI
+  &as Z  &as X  &as C         &as V             &as B        &as N        &as M  &as COMMA  &as DOT  &as FSLH
                 &kp LEFT_ALT  &lt 2 LEFT_BRACE  &kp SPACE    &lt 2 ENTER  &mo 3  &kp RALT
             >;
         };
@@ -261,7 +274,5 @@
                           &trans        &trans      &trans    &trans  &trans           &trans
             >;
         };
-
-        
     };
 };

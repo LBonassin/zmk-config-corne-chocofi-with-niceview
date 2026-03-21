@@ -174,18 +174,6 @@
             key-positions = <0 32>;
             layers = <0 1 2 3>;
         };
-
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <16 18>;
-            layers = <0 1>;
-        };
-
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <6 8>;
-            layers = <0 1>;
-        };
     };
 
     behaviors {
@@ -270,9 +258,9 @@
         f_keys {
             label = "F KEYS";
             bindings = <
-  &kp F1  &kp F2   &kp F3   &kp F4   &kp GRAVE       &kp C_VOLUME_UP    &none     &trans        &none      &none
-  &kp F5  &kp F6   &kp F7   &kp F8   &kp CAPSLOCK    &kp C_VOLUME_DOWN  &none     &kp UP_ARROW  &none      &none
-  &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT      &none              &kp LEFT  &kp DOWN      &kp RIGHT  &none
+  &kp F1  &kp F2   &kp F3   &kp F4   &kp GRAVE       &kp C_VOLUME_UP    &none     &trans        &none          &none
+  &kp F5  &kp F6   &kp F7   &kp F8   &kp CAPSLOCK    &kp C_VOLUME_DOWN  &kp DEL   &kp UP_ARROW  &kp BACKSPACE  &none
+  &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT      &none              &kp LEFT  &kp DOWN      &kp RIGHT      &none
                    &trans   &trans   &trans          &trans             &mo 4     &trans
             >;
         };

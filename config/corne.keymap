@@ -109,8 +109,8 @@
         //Other Combos
 
         caps_word {
-            bindings = <&kp CAPS>;
-            key-positions = <12 17>;
+            bindings = <&caps_word>;
+            key-positions = <13 16>;
             layers = <0 1>;
         };
 

@@ -238,20 +238,20 @@
         GAMING {
             label = "GAMING";
             bindings = <
-  &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y      &kp U            &kp I       &kp O    &kp P
-  &kp A  &kp S  &kp D         &kp F             &kp G        &kp H      &kp J            &kp K       &kp L    &as SEMI
-  &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N      &kp M            &as COMMA   &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 2 LEFT_BRACE  &kp SPACE    &kp ENTER  &lt 3 BACKSPACE  &kp DELETE
+  &kp Q  &kp W  &kp E         &kp R               &kp T        &kp Y      &kp U            &kp I       &kp O    &kp P
+  &kp A  &kp S  &kp D         &kp F               &kp G        &kp H      &kp J            &kp K       &kp L    &as SEMI
+  &kp Z  &kp X  &kp C         &kp V               &kp B        &kp N      &kp M            &as COMMA   &as DOT  &as FSLH
+                &kp LEFT_ALT  &lt 2 LEFT_BRACKET  &kp SPACE    &kp ENTER  &lt 3 BACKSPACE  &kp DELETE
             >;
         };
 
         TYPING {
             label = "TYPING";
             bindings = <
-  &as Q  &as W  &as E         &as R             &as T        &as Y      &as U            &as I      &as O    &as P
-  &as A  &as S  &as D         &as F             &as G        &as H      &as J            &as K      &as L    &as SEMI
-  &as Z  &as X  &as C         &as V             &as B        &as N      &as M            &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 2 LEFT_BRACE  &kp SPACE    &kp ENTER  &lt 3 BACKSPACE  &kp DEL
+  &as Q  &as W  &as E         &as R               &as T        &as Y      &as U            &as I      &as O    &as P
+  &as A  &as S  &as D         &as F               &as G        &as H      &as J            &as K      &as L    &as SEMI
+  &as Z  &as X  &as C         &as V               &as B        &as N      &as M            &as COMMA  &as DOT  &as FSLH
+                &kp LEFT_ALT  &lt 2 LEFT_BRACKET  &kp SPACE    &kp ENTER  &lt 3 BACKSPACE  &kp DEL
             >;
         };
 
@@ -282,6 +282,15 @@
   &trans      &bt BT_PRV  &bt BT_SEL 1  &bt BT_NXT  &trans    &trans  &kp INSERT       &kp HOME        &kp PAGE_UP      &trans
   &bt BT_CLR  &trans      &trans        &trans      &trans    &trans  &kp DELETE       &kp END         &kp PAGE_DOWN    &trans
                           &trans        &trans      &trans    &trans  &trans           &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };

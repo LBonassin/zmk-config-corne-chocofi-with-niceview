@@ -180,6 +180,12 @@
             key-positions = <19 33>;
             layers = <0 1>;
         };
+
+        instant_win {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <24 23>;
+            layers = <0 1>;
+        };
     };
 
     behaviors {

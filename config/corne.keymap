@@ -108,12 +108,6 @@
 
         //Other Combos
 
-        caps_word {
-            bindings = <&caps_word>;
-            key-positions = <13 16>;
-            layers = <0 1>;
-        };
-
         printscreen {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <24 23 32>;
@@ -270,10 +264,10 @@
         f_keys {
             label = "F KEYS";
             bindings = <
-  &kp F1  &kp F2   &kp F3   &kp F4   &as GRAVE     &kp C_VOLUME_UP    &none     &trans        &none          &none
-  &kp F5  &kp F6   &kp F7   &kp F8   &none         &kp C_VOLUME_DOWN  &kp DEL   &kp UP_ARROW  &kp BACKSPACE  &as APOS
-  &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT    &none              &kp LEFT  &kp DOWN      &kp RIGHT      &none
-                   &trans   &trans   &trans        &trans             &mo 4     &trans
+  &kp F1  &kp F2   &kp F3   &kp F4   &as GRAVE     &kp C_VOLUME_UP    &caps_word  &trans        &kp CAPSLOCK   &none
+  &kp F5  &kp F6   &kp F7   &kp F8   &none         &kp C_VOLUME_DOWN  &kp DEL     &kp UP_ARROW  &kp BACKSPACE  &as APOS
+  &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT    &none              &kp LEFT    &kp DOWN      &kp RIGHT      &none
+                   &trans   &trans   &trans        &trans             &mo 4       &trans
             >;
         };
 

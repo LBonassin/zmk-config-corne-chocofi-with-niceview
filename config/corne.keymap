@@ -254,10 +254,10 @@
         TYPING {
             label = "TYPING";
             bindings = <
-  &as Q  &as W  &as E         &as R    &as T        &as Y      &as U            &as I      &as O    &as P
-  &as A  &as S  &as D         &as F    &as G        &as H      &as J            &as K      &as L    &as SEMI
-  &as Z  &as X  &as C         &as V    &as B        &as N      &as M            &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &lt 3 BACKSPACE  &kp DEL
+  &as Q  &as W  &as E         &as R    &as T        &as Y      &as U  &as I      &as O    &as P
+  &as A  &as S  &as D         &as F    &as G        &as H      &as J  &as K      &as L    &as SEMI
+  &as Z  &as X  &as C         &as V    &as B        &as N      &as M  &as COMMA  &as DOT  &as FSLH
+                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &mo 3  &kp DEL
             >;
         };
 
@@ -274,7 +274,7 @@
         MATH {
             label = "MATH";
             bindings = <
-  &none                 &none                  &none             &none              &none             &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &none
+  &none                 &none                  &none             &none              &none             &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &kp BACKSPACE
   &kp ASTERISK          &kp SLASH              &kp PLUS          &kp MINUS          &as MINUS         &as EQUAL        &as NUMBER_4  &as NUMBER_5  &as NUMBER_6  &as BACKSLASH
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &as LEFT_BRACKET  &as RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &kp PERIOD
                                                &trans            &mo 4              &kp NUMBER_0      &trans           &trans        &kp N0

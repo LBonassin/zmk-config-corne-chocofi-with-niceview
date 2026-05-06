@@ -221,7 +221,6 @@
             tapping-term-ms = <200>;
             bindings = <&mo_tap 3 R>, <&mo_tap 0 R>;
         };
-            };
     };
 
     macros {

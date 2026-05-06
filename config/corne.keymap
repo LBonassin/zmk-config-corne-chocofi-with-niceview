@@ -225,7 +225,7 @@
         night_to_qwerty: night_to_qwerty {
             compatible = "zmk,behavior-tap-dance";
             label = "NIGHT_TO_QWERTY";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             bindings = <&lt 3 R>, <&mo 0>;
         };
     };

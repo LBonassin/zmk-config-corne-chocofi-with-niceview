@@ -210,9 +210,39 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NEW_BEHAVIOR";
             #binding-cells = <0>;
-            bindings = <&lt 3 R>, <&lt 0 R>;
+            bindings = <&lt 3 R>, <&lt 0 O>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
+        };
+
+        new_behavior2: new_behavior2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR2";
+            #binding-cells = <0>;
+            bindings = <&lt 3 R>, <&lt 0 O>;
+
+            tapping-term-ms = <300>;
+        };
+
+        hold_tap: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <(-1)>;
+            require-prior-idle-ms = <(-1)>;
+        };
+
+        td_hold_tap: td_hold_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_HOLD_TAP";
+            #binding-cells = <0>;
+            bindings = <&hold_tap 3 R>, <&hold_tap 0 P>;
+
+            tapping-term-ms = <170>;
         };
     };
 
@@ -293,10 +323,10 @@
         NIGHT {
             label = "NIGHT";
             bindings = <
-  &kp B  &kp F  &kp L         &kp K          &kp Q        &kp P      &kp G            &kp O     &kp U     &as DOT
-  &kp N  &kp S  &kp H         &kp T          &kp M        &kp Y      &kp C            &kp A     &kp E     &kp I
-  &kp X  &kp V  &kp J         &kp D          &kp Z        &as APOS   &kp W            &as FSLH  &as SEMI  &as COMMA
-                &kp LEFT_ALT  &new_behavior  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
+  &kp B  &kp F  &kp L          &kp K         &kp Q             &kp P      &kp G            &kp O     &kp U     &as DOT
+  &kp N  &kp S  &kp H          &kp T         &kp M             &kp Y      &kp C            &kp A     &kp E     &kp I
+  &kp X  &kp V  &kp J          &kp D         &kp Z             &as APOS   &kp W            &as FSLH  &as SEMI  &as COMMA
+                &new_behavior  &td_hold_tap  &new_behavior2    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };
 

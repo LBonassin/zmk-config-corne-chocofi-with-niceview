@@ -210,7 +210,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <170>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <100>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
         };
@@ -219,7 +219,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&mo_tap 3 R>, <&mo0_hold>;
+            bindings = <&mo_tap 3 R>, <&mo_tap 0 R>;
         };
 
         night_to_qwerty: night_to_qwerty {
@@ -323,7 +323,7 @@
   &kp B  &kp F  &kp L         &kp K             &kp Q        &kp P      &kp G            &kp O     &kp U     &as DOT
   &kp N  &kp S  &kp H         &kp T             &kp M        &kp Y      &kp C            &kp A     &kp E     &kp I
   &kp X  &kp V  &kp J         &kp D             &kp Z        &as APOS   &kp W            &as FSLH  &as SEMI  &as COMMA
-                &kp LEFT_ALT  &night_to_qwerty  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
+                &kp LEFT_ALT  &td_qwerty  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };
 

@@ -293,7 +293,7 @@
         Graphite {
             label = "Graphite";
             bindings = <
-  &kp B  &kp L  &kp D         &kp W  &kp Z        &as SEMI   &kp F            &kp O            &kp U     &kp J     
+  &kp B  &kp L  &kp D         &kp W  &kp Z        &as APOS   &kp F            &kp O            &kp U     &kp J     
   &kp N  &kp R  &kp T         &kp S  &kp G        &kp Y      &kp H            &kp A     &kp E     &kp I
   &kp Q  &kp X  &kp M         &kp C  &kp V        &kp K      &kp P            &as COMMA  &as DOT  &as FSLH
                 &kp LEFT_ALT  &td_hold_tap  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL

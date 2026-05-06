@@ -244,6 +244,20 @@
 
             tapping-term-ms = <300>;
         };
+
+        kp_d_paste: kp_d_paste {
+            compatible = "zmk,behavior-tap-dance";
+            label = "KP_D_PASTE";
+            #binding-cells = <0>;
+            bindings = <&kp D>, <&mt LC(P) D>;
+        };
+
+        kp_j_copy: kp_j_copy {
+            compatible = "zmk,behavior-tap-dance";
+            label = "KP_J_COPY";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&mt LC(C) J>;
+        };
     };
 
     macros {
@@ -323,10 +337,10 @@
         NIGHT {
             label = "NIGHT";
             bindings = <
-  &kp B  &kp F  &kp L          &kp K         &kp Q             &kp P      &kp G            &kp O     &kp U     &as DOT
-  &kp N  &kp S  &kp H          &kp T         &kp M             &kp Y      &kp C            &kp A     &kp E     &kp I
-  &kp X  &kp V  &kp J          &kp D         &kp Z             &as APOS   &kp W            &as FSLH  &as SEMI  &as COMMA
-                &new_behavior  &td_hold_tap  &new_behavior2    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
+  &kp B  &kp F  &kp L         &kp K         &kp Q             &kp P      &kp G            &kp O     &kp U     &as DOT
+  &kp N  &kp S  &kp H         &kp T         &kp M             &kp Y      &kp C            &kp A     &kp E     &kp I
+  &kp X  &kp V  &kp_j_copy    &kp_d_paste   &kp Z             &as APOS   &kp W            &as FSLH  &as SEMI  &as COMMA
+                &kp LEFT_ALT  &td_hold_tap  &new_behavior2    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };
 

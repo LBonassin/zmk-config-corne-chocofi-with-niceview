@@ -158,13 +158,13 @@
 
         toTwo {
             bindings = <&to_night>;
-            key-positions = <0 9>;
+            key-positions = <0 1 8 9>;
             layers = <0>;
         };
 
         fromTwo {
             bindings = <&to_gaming>;
-            key-positions = <0 9>;
+            key-positions = <0 1 8 9>;
             layers = <2>;
         };
 
@@ -332,7 +332,7 @@
             bindings = <
   &trans      &trans      &bt BT_SEL 0  &trans      &trans    &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans
   &trans      &bt BT_PRV  &bt BT_SEL 1  &bt BT_NXT  &trans    &trans  &kp INSERT       &kp HOME        &kp PAGE_UP      &trans
-  &bt BT_CLR  &trans      &trans        &trans      &trans    &trans  &kp DELETE       &kp END         &kp PAGE_DOWN    &trans
+  &bt BT_CLR  &to_gaming      &to_typing        &to_night      &trans    &trans  &kp DELETE       &kp END         &kp PAGE_DOWN    &trans
                           &trans        &trans      &trans    &trans  &trans           &trans
             >;
         };

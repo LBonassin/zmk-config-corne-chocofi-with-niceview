@@ -344,7 +344,7 @@
             >;
         };
 
-        f_keys {
+        F KEYS {
             label = "F KEYS";
             bindings = <
   &kp F1  &kp F2   &kp F3   &kp F4   &as GRAVE     &kp C_VOLUME_UP    &caps_word  &trans        &kp CAPSLOCK   &none
@@ -374,12 +374,13 @@
             >;
         };
 
-        layer_5 {
+        QWERTY2 {
+            label = "QWERTY2";
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans  &trans
+  &kp Q  &kp W  &kp E         &kp R    &kp T        &kp Y      &kp U            &kp I       &kp O    &kp P
+  &kp A  &kp S  &kp D         &kp F    &kp G        &kp H      &kp J            &kp K       &kp L    &as SEMI
+  &kp Z  &kp X  &kp C         &kp V    &kp B        &kp N      &kp M            &as COMMA   &as DOT  &as FSLH
+                &kp LEFT_ALT  &trans  &kp SPACE    &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
         };
     };

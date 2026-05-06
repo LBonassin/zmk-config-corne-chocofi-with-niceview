@@ -226,7 +226,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "NIGHT_TO_QWERTY";
             #binding-cells = <0>;
-            bindings = <&lt 3 R>, <&lt 0 R>;
+            bindings = <&lt 3 R>, <&mo 0>;
         };
     };
 

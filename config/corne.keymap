@@ -35,37 +35,37 @@
         shift {
             bindings = <&sk LSHFT>;
             key-positions = <20 21>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         ctrl {
             bindings = <&sk LCTRL>;
             key-positions = <21 22>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         win {
             bindings = <&sk LEFT_WIN>;
             key-positions = <22 23>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         ls_ctrl {
             bindings = <&sk LC(LEFT_SHIFT)>;
             key-positions = <20 21 22>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         l_ctrl_win {
             bindings = <&sk LC(LEFT_WIN)>;
             key-positions = <21 22 23>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         win_shift {
             bindings = <&sk LS(LEFT_WIN)>;
             key-positions = <20 23>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         //Other Side
@@ -73,19 +73,19 @@
         shift_enter {
             bindings = <&mt RIGHT_SHIFT ENTER>;
             key-positions = <28 29>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         r_ctrl {
             bindings = <&sk RCTRL>;
             key-positions = <28 27>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         r_win {
             bindings = <&sk LEFT_WIN>;
             key-positions = <26 27>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         esc {
@@ -129,19 +129,19 @@
         r_ctrl_shift {
             bindings = <&sk RC(RIGHT_SHIFT)>;
             key-positions = <29 28 27>;
-            layers = <0 1 2>;
+            layers = <0 1 2 6>;
         };
 
         r_win_ctrl {
             bindings = <&sk LC(LEFT_WIN)>;
             key-positions = <28 27 26>;
-            layers = <0 1 2>;
+            layers = <0 1 2 6>;
         };
 
         r_shift_win {
             bindings = <&sk LS(LEFT_WIN)>;
             key-positions = <26 29>;
-            layers = <0 1 2>;
+            layers = <0 1 2 6>;
         };
 
         toOne {
@@ -157,7 +157,7 @@
         };
 
         toTwo {
-            bindings = <&to_night>;
+            bindings = <&to_graphite>;
             key-positions = <0 1 8 9>;
             layers = <0>;
         };
@@ -206,58 +206,14 @@
             bindings = <&shifted>, <&kp>;
         };
 
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NEW_BEHAVIOR";
-            #binding-cells = <0>;
-            bindings = <&lt 3 R>, <&mo 0>;
-
-            tapping-term-ms = <300>;
-        };
-
-        new_behavior2: new_behavior2 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NEW_BEHAVIOR2";
-            #binding-cells = <0>;
-            bindings = <&lt 3 R>, <&lt 0 O>;
-
-            tapping-term-ms = <300>;
-        };
-
-        hold_tap: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "balanced";
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <(-1)>;
-        };
-
         td_hold_tap: td_hold_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_HOLD_TAP";
             #binding-cells = <0>;
-            bindings = <&hold_tap 3 R>, <&hold_tap 0 P>;
-
-            tapping-term-ms = <300>;
+            bindings = <&lt 3 M>, <&mo 6>;
+            tapping-term-ms = <200>;
         };
 
-        kp_d_paste: kp_d_paste {
-            compatible = "zmk,behavior-tap-dance";
-            label = "KP_D_PASTE";
-            #binding-cells = <0>;
-            bindings = <&kp D>, <&mt LC(P) D>;
-        };
-
-        kp_j_copy: kp_j_copy {
-            compatible = "zmk,behavior-tap-dance";
-            label = "KP_J_COPY";
-            #binding-cells = <0>;
-            bindings = <&kp J>, <&mt LC(C) J>;
-        };
     };
 
     macros {
@@ -302,7 +258,7 @@
             bindings = <&macro_tap>, <&kp LC(LA(F14)) &to 0>;
         };
 
-        to_night: to_night {
+        to_graphite: to_graphite {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
@@ -334,13 +290,13 @@
             >;
         };
 
-        NIGHT {
-            label = "NIGHT";
+        Graphite {
+            label = "Graphite";
             bindings = <
-  &kp B  &kp F  &kp L         &kp K  &kp Q        &kp P      &kp G            &kp O     &kp U     &as DOT
-  &kp N  &kp S  &kp H         &kp T  &kp M        &kp Y      &kp C            &kp A     &kp E     &kp I
-  &kp X  &kp V  &kp J         &kp D  &kp Z        &as APOS   &kp W            &as FSLH  &as SEMI  &as COMMA
-                &kp LEFT_ALT  &kp R  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
+  &kp B  &kp L  &kp D         &kp W  &kp Z        &as APOS   &kp F            &kp O            &kp U     &kp J     
+  &kp N  &kp R  &kp T         &kp S  &kp G        &kp Y      &kp H            &kp A     &kp E     &kp I
+  &kp Q  &kp X  &kp M         &kp C  &kp V        &kp K      &kp P            &as COMMA  &as DOT  &as FSLH
+                &kp LEFT_ALT  &td_hold_tap  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };
 
@@ -369,7 +325,7 @@
             bindings = <
   &trans      &trans      &bt BT_SEL 0  &trans      &trans    &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans
   &trans      &bt BT_PRV  &bt BT_SEL 1  &bt BT_NXT  &trans    &trans  &kp INSERT       &kp HOME        &kp PAGE_UP      &trans
-  &bt BT_CLR  &to_gaming  &to_typing    &to_night   &trans    &trans  &kp DELETE       &kp END         &kp PAGE_DOWN    &trans
+  &bt BT_CLR  &to_gaming  &to_typing    &to_graphite   &trans    &trans  &kp DELETE       &kp END         &kp PAGE_DOWN    &trans
                           &trans        &trans      &trans    &trans  &trans           &trans
             >;
         };

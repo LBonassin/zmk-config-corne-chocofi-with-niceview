@@ -210,7 +210,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <170>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
         };
@@ -219,15 +219,9 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <280>;
-            bindings = <&mo_tap 3 R>, <&mo_tap 0 R>;
+            bindings = <&mo_tap 3 R>, <&mo 0>;
         };
 
-        night_to_qwerty: night_to_qwerty {
-            compatible = "zmk,behavior-tap-dance";
-            label = "NIGHT_TO_QWERTY";
-            #binding-cells = <0>;
-            bindings = <&lt 3 R>, <&lt 0 R>;
-        };
     };
 
     macros {

@@ -12,6 +12,10 @@
     chosen { zmk,matrix_transform = &five_column_transform; };
 };
 
+&lt {
+    tapping-term-ms = <170>; // Default is 200ms; decrease for faster layer activation
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -206,11 +210,11 @@
             bindings = <&shifted>, <&kp>;
         };
 
-        td_hold_tap: td_hold_tap {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_HOLD_TAP";
+        space_lt_ctrls: space_lt_ctrls {
+            compatible = "zmk,behavior-tap-dance"; 
+            label = "SPACE_LT_CTRLS";
             #binding-cells = <0>;
-            bindings = <&lt 3 M>, <&lt 6 M>;
+            bindings = <&kp SPACE>, <&mo 6>;
             tapping-term-ms = <170>;
         };
 
@@ -296,7 +300,7 @@
   &kp B  &kp L  &kp D         &kp W  &kp Z        &as APOS   &kp F            &kp O            &kp U     &kp J     
   &kp N  &kp R  &kp T         &kp S  &kp G        &kp Y      &kp H            &kp A     &kp E     &kp I
   &kp Q  &kp X  &kp M         &kp C  &kp V        &kp K      &kp P            &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &td_hold_tap  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
+                &kp LEFT_ALT  &lt 3 M  &space_lt_ctrls    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };
 
@@ -330,8 +334,8 @@
             >;
         };
 
-        QWERT {
-            label = "QWERT";
+        ctrls {
+            label = "ctrls";
             bindings = <
   &kp Q  &kp W  &kp E         &kp R    &kp T        &kp Y      &kp U            &kp I       &kp O    &kp P
   &kp A  &kp S  &kp D         &kp F    &kp G        &kp H      &kp J            &kp K       &kp L    &as SEMI

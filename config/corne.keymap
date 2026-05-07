@@ -300,7 +300,7 @@
   &kp B  &kp L  &kp D         &kp W  &kp Z        &as APOS   &kp F            &kp O            &kp U     &kp J     
   &kp N  &kp R  &kp T         &kp S  &kp G        &kp Y      &kp H            &kp A     &kp E     &kp I
   &kp Q  &kp X  &kp M         &kp C  &kp V        &kp K      &kp P            &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &m_lt_ctrls  &SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
+                &kp LEFT_ALT  &m_lt_ctrls  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };
 

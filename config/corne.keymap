@@ -211,7 +211,7 @@
             label = "TD_HOLD_TAP";
             #binding-cells = <0>;
             bindings = <&lt 3 M>, <&lt 6 M>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <170>;
         };
 
     };

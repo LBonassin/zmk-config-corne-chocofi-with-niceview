@@ -127,7 +127,7 @@
         apostrophe {
             bindings = <&as APOS>;
             key-positions = <18 19>;
-            layers = <0 1 2>;
+            layers = <3>;
         };
 
         r_ctrl_shift {
@@ -329,7 +329,7 @@
             bindings = <
   &trans      &trans      &bt BT_SEL 0  &trans      &trans    &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans
   &trans      &bt BT_PRV  &bt BT_SEL 1  &bt BT_NXT  &trans    &trans  &kp INSERT       &kp HOME        &kp PAGE_UP      &trans
-  &bt BT_CLR  &to_gaming  &to_typing    &to_graphite   &trans    &trans  &kp DELETE       &kp END         &kp PAGE_DOWN    &trans
+  &trans  &to_gaming  &to_typing    &to_graphite   &trans    &trans  &kp DELETE       &kp END         &kp PAGE_DOWN    &bt BT_CLR
                           &trans        &trans      &trans    &trans  &trans           &trans
             >;
         };

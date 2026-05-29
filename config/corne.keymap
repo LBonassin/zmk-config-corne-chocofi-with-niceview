@@ -23,14 +23,14 @@
         ctrl_two {
             bindings = <&kp LCTRL>;
             key-positions = <20 32>;
-            layers = <1 2 3 4 5 0>;
+            layers = <1 2 3 4 0>;
             timeout-ms = <70>;
         };
 
         r_ctrl_two {
             bindings = <&kp RCTRL>;
             key-positions = <29 33>;
-            layers = <1 2 3 4 5>;
+            layers = <1 2 3 4>;
             timeout-ms = <70>;
         };
 
@@ -39,37 +39,37 @@
         shift {
             bindings = <&sk LSHFT>;
             key-positions = <20 21>;
-            layers = <0 1 2 3 4 5 6>;
+            layers = <0 1 2 3 4>;
         };
 
         ctrl {
             bindings = <&sk LCTRL>;
             key-positions = <21 22>;
-            layers = <0 1 2 3 4 5 6>;
+            layers = <0 1 2 3 4>;
         };
 
         win {
             bindings = <&sk LEFT_WIN>;
             key-positions = <22 23>;
-            layers = <0 1 2 3 4 5 6>;
+            layers = <0 1 2 3 4>;
         };
 
         ls_ctrl {
             bindings = <&sk LC(LEFT_SHIFT)>;
             key-positions = <20 21 22>;
-            layers = <0 1 2 3 4 5 6>;
+            layers = <0 1 2 3 4>;
         };
 
         l_ctrl_win {
             bindings = <&sk LC(LEFT_WIN)>;
             key-positions = <21 22 23>;
-            layers = <0 1 2 3 4 5 6>;
+            layers = <0 1 2 3 4>;
         };
 
         win_shift {
             bindings = <&sk LS(LEFT_WIN)>;
             key-positions = <20 23>;
-            layers = <0 1 2 3 4 5 6>;
+            layers = <0 1 2 3 4>;
         };
 
         //Other Side
@@ -77,37 +77,31 @@
         shift_enter {
             bindings = <&mt RIGHT_SHIFT ENTER>;
             key-positions = <28 29>;
-            layers = <0 1 2 3 4 5 6>;
+            layers = <0 1 2 3 4>;
         };
 
         r_ctrl {
             bindings = <&sk RCTRL>;
             key-positions = <28 27>;
-            layers = <0 1 2 3 4 5 6>;
+            layers = <0 1 2 3 4>;
         };
 
         r_win {
             bindings = <&sk LEFT_WIN>;
             key-positions = <26 27>;
-            layers = <0 1 2 3 4 5 6>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <10 11 32>;
-            layers = <0 1 2>;
+            layers = <0 1 2 3 4>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
             key-positions = <0 1 32>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         //Other Combos
@@ -115,37 +109,37 @@
         printscreen {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <24 23 32>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         record {
             bindings = <&kp LG(LA(G))>;
             key-positions = <22 23 24 32>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         apostrophe {
             bindings = <&as APOS>;
             key-positions = <18 19>;
-            layers = <3>;
+            layers = <2>;
         };
 
         r_ctrl_shift {
             bindings = <&sk RC(RIGHT_SHIFT)>;
             key-positions = <29 28 27>;
-            layers = <0 1 2 6>;
+            layers = <0 1>;
         };
 
         r_win_ctrl {
             bindings = <&sk LC(LEFT_WIN)>;
             key-positions = <28 27 26>;
-            layers = <0 1 2 6>;
+            layers = <0 1>;
         };
 
         r_shift_win {
             bindings = <&sk LS(LEFT_WIN)>;
             key-positions = <26 29>;
-            layers = <0 1 2 6>;
+            layers = <0 1>;
         };
 
         toOne {
@@ -160,41 +154,29 @@
             layers = <1>;
         };
 
-        toTwo {
-            bindings = <&to_graphite>;
-            key-positions = <0 1 8 9>;
-            layers = <0>;
-        };
-
-        fromTwo {
-            bindings = <&to_gaming>;
-            key-positions = <0 1 8 9>;
-            layers = <2>;
-        };
-
         l_game_shift {
             bindings = <&kp LSHFT>;
             key-positions = <10 32>;
             timeout-ms = <65>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         esc_two {
             bindings = <&kp ESCAPE>;
             key-positions = <0 32>;
-            layers = <0 1 2 3 4>;
+            layers = <0 1 2 3>;
         };
 
         r_game_shift {
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <19 33>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
 
         instant_win {
             bindings = <&kp LEFT_WIN>;
             key-positions = <24 23>;
-            layers = <0 1 2>;
+            layers = <0 1>;
         };
     };
 
@@ -214,7 +196,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "M_LT_CTRLS";
             #binding-cells = <0>;
-            bindings = <&lt 3 M>, <&lt 6 M>;
+            bindings = <&lt 2 M>, <&lt 0 M>;
 
             tapping-term-ms = <170>;
         };
@@ -274,7 +256,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <20>;
-            bindings = <&macro_tap>, <&kp LC(LA(F15)) &to 2>;
+            bindings = <&macro_tap>, <&kp LC(LA(F15)) &to 0>;
         };
     };
 
@@ -283,32 +265,21 @@
 
         graphite {
             label = "graphite";
-            bindings = <           
-  &kp B  &kp L  &kp D         &kp W        &kp Z        &as APOS   &kp F  &kp O      &kp U    &kp J
-  &kp N  &kp R  &kp T         &kp S        &kp G        &kp Y      &kp H  &kp A      &kp E    &kp I
-  &kp Q  &kp X  &kp M         &kp C        &kp V        &kp K      &kp P  &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 3 M  &kp SPACE    &kp ENTER  &mo 4  &kp DELETE
+            bindings = <
+  &kp B  &kp L  &kp D         &kp W    &kp Z        &as APOS   &kp F  &kp O       &kp U    &kp J
+  &kp N  &kp R  &kp T         &kp S    &kp G        &kp Y      &kp H  &kp A       &kp E    &kp I
+  &kp Q  &kp X  &kp M         &kp C    &kp V        &kp K      &kp P  &as COMMA   &as DOT  &as FSLH
+                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &mo 3  &kp DELETE
             >;
         };
 
         typing {
             label = "typing";
             bindings = <
-  &as B  &as L  &as D         &as W        &as Z        &as APOS   &as F  &as O      &as U    &as J
-  &as N  &as R  &as T         &as S        &as G        &as Y      &as H  &as A      &as E    &as I
-  &as Q  &as X  &as M         &as C        &as V        &as K      &as P  &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 3 M  &kp SPACE    &kp ENTER  &mo 4  &kp DELETE
-            >;
-        };
-
-        qwerty {
-            label = "qwerty";
-            bindings = <
-  &kp Q  &kp W  &kp E         &kp R    &kp T        &kp Y      &kp U  &kp I       &kp O    &kp P
-  &kp A  &kp S  &kp D         &kp F    &kp G        &kp H      &kp J  &kp K       &kp L    &as SEMI
-  &kp Z  &kp X  &kp C         &kp V    &kp B        &kp N      &kp M  &as COMMA   &as DOT  &as FSLH
-  
-                &kp LEFT_ALT  &lt 3 M  &kp SPACE    &kp ENTER  &mo 4  &kp DEL
+  &as B  &as L  &as D         &as W    &as Z        &as APOS   &as F  &as O       &as U    &as J
+  &as N  &as R  &as T         &as S    &as G        &as Y      &as H  &as A       &as E    &as I
+  &as Q  &as X  &as M         &as C    &as V        &as K      &as P  &as COMMA   &as DOT  &as FSLH
+                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &mo 3  &kp DELETE
             >;
         };
 
@@ -318,7 +289,7 @@
   &kp F1  &kp F2   &kp F3   &kp F4   &as GRAVE         &kp C_VOLUME_UP    &caps_word  &trans        &kp CAPSLOCK   &none
   &kp F5  &kp F6   &kp F7   &kp F8   &volume_updown    &kp C_VOLUME_DOWN  &kp DEL     &kp UP_ARROW  &kp BACKSPACE  &as SEMI
   &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT        &none              &kp LEFT    &kp DOWN      &kp RIGHT      &none
-                   &trans   &trans   &trans            &trans             &mo 5       &trans
+                   &trans   &trans   &trans            &trans             &mo 4       &trans
             >;
         };
 
@@ -328,7 +299,7 @@
   &none                 &none                  &none             &none              &none             &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &kp BACKSPACE
   &kp ASTERISK          &kp SLASH              &kp PLUS          &kp MINUS          &as MINUS         &as EQUAL        &as NUMBER_4  &as NUMBER_5  &as NUMBER_6  &as BACKSLASH
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &as LEFT_BRACKET  &as RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &kp PERIOD
-                                               &trans            &mo 5              &kp NUMBER_0      &trans           &trans        &kp N0
+                                               &trans            &mo 4              &kp NUMBER_0      &trans           &trans        &kp N0
             >;
         };
 
@@ -339,16 +310,6 @@
   &trans  &bt BT_PRV  &bt BT_SEL 1  &bt BT_NXT    &trans    &trans  &kp INSERT       &kp HOME        &kp PAGE_UP      &trans
   &trans  &to_gaming  &to_typing    &to_graphite  &trans    &trans  &kp DELETE       &kp END         &kp PAGE_DOWN    &bt BT_CLR
                       &trans        &trans        &trans    &trans  &trans           &trans
-            >;
-        };
-
-        CTRLS {
-            label = "CTRLS";
-            bindings = <
-  &kp Q  &kp W  &kp E         &kp R   &kp T        &kp Y      &kp U   &kp I       &kp O    &kp P
-  &kp A  &kp S  &kp D         &kp F   &kp G        &kp H      &kp J   &kp K       &kp L    &as SEMI
-  &kp Z  &kp X  &kp C         &kp V   &kp B        &kp N      &kp M   &as COMMA   &as DOT  &as FSLH
-                &kp LEFT_ALT  &trans  &kp SPACE    &kp ENTER  &trans  &kp DELETE
             >;
         };
     };

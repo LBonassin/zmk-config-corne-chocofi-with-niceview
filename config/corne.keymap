@@ -211,7 +211,8 @@
         rep_mo3: rep_mo3 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <170>;
             bindings = <&mo>, <&smart_repeat>;
         };
 

@@ -360,12 +360,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty {
-            label = "qwerty";
+        graphite {
+            label = "graphite";
             bindings = <
-  &kp Q  &kp W  &kp E         &kp R    &kp T        &kp Y      &kp U  &kp I       &kp O    &kp P
-  &kp A  &kp S  &kp D         &kp F    &kp G        &kp H      &kp J  &kp K       &kp L    &as SEMI
-  &kp Z  &kp X  &kp C         &kp V    &kp B        &kp N      &kp M  &as COMMA   &as DOT  &as FSLH
+  &kp B  &kp L  &kp D         &kp W    &kp Z        &as APOS   &kp F  &kp O       &kp U    &kp J
+  &kp N  &kp R  &kp T         &kp S    &kp G        &kp Y      &kp H  &kp A       &kp E    &kp I
+  &kp Q  &kp X  &kp M         &kp C    &kp V        &kp K      &kp P  &as COMMA   &as DOT  &as FSLH
                 &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &rep_mo3 3 0  &kp DELETE
             >;
         };
@@ -373,9 +373,9 @@
         typing {
             label = "typing";
             bindings = <
-  &as Q  &as W  &as E         &as R    &as T        &as Y      &as U  &as I       &as O    &as P
-  &as A  &as S  &as D         &as F    &as G        &as H      &as J  &as K       &as L    &as SEMI
-  &as Z  &as X  &as C         &as V    &as B        &as N      &as M  &as COMMA   &as DOT  &as FSLH
+  &as B  &as L  &as D         &as W    &as Z        &as APOS   &as F  &as O       &as U    &as J
+  &as N  &as R  &as T         &as S    &as G        &as Y      &as H  &as A       &as E    &as I
+  &as Q  &as X  &as M         &as C    &as V        &as K      &as P  &as COMMA   &as DOT  &as FSLH
                 &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &rep_mo3 3 0  &kp DELETE
             >;
         };

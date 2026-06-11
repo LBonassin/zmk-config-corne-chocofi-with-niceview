@@ -256,6 +256,10 @@
                 trigger-keys = <C>;
                 bindings = <&macro_ion>;
             };
+            p_h {
+                trigger-keys = <P>;
+                bindings = <&macro_ph>;
+            };
         };
     };
 
@@ -349,6 +353,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp S &kp C>;
+        };  
+
+        macro_ph: macro_ph {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H>;
         };  
     };
 

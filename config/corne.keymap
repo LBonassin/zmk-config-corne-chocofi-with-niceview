@@ -235,7 +235,7 @@
             };
             t_tion {
                 trigger-keys = <T>;
-                bindings = <&macro_tion>;
+                bindings = <&macro_ion>;
             };
             v_vsc {
                 trigger-keys = <V>;
@@ -355,7 +355,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp H>;
-        };  
+        }; 
     };
 
     keymap {

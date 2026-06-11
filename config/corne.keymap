@@ -366,7 +366,7 @@
   &kp B  &kp L  &kp D         &kp W    &kp Z        &as APOS   &kp F  &kp O       &kp U    &kp J
   &kp N  &kp R  &kp T         &kp S    &kp G        &kp Y      &kp H  &kp A       &kp E    &kp I
   &kp Q  &kp X  &kp M         &kp C    &kp V        &kp K      &kp P  &as COMMA   &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 2 BACKSPACE  &kp SPACE    &kp ENTER  &rep_mo3 3 0  &kp DELETE
+                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &rep_mo3 3 0  &kp DELETE
             >;
         };
 
@@ -376,7 +376,7 @@
   &as B  &as L  &as D         &as W    &as Z        &as APOS   &as F  &as O       &as U    &as J
   &as N  &as R  &as T         &as S    &as G        &as Y      &as H  &as A       &as E    &as I
   &as Q  &as X  &as M         &as C    &as V        &as K      &as P  &as COMMA   &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 2 BACKSPACE  &kp SPACE    &kp ENTER  &rep_mo3 3 0  &kp DELETE
+                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &rep_mo3 3 0  &kp DELETE
             >;
         };
 

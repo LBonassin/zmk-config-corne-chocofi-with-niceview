@@ -207,6 +207,56 @@
             #binding-cells = <0>;
             bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
         };
+
+        rep_mo3: rep_mo3 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&smart_repeat>;
+        };
+
+        smart_repeat: smart_repeat {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+            a_nd {
+                trigger-keys = <A>;
+                bindings = <&macro_nd>;
+            };
+            i_ng {
+                trigger-keys = <I>;
+                bindings = <&macro_ng>;
+            };
+            y_ou {
+                trigger-keys = <Y>;
+                bindings = <&macro_you>;
+            };
+            spc_the {
+                trigger-keys = <SPACE>;
+                bindings = <&macro_the>;
+            };
+            n_ion {
+                trigger-keys = <N>;
+                bindings = <&macro_ion>;
+            };
+            t_tion {
+                trigger-keys = <T>;
+                bindings = <&macro_tion>;
+            };
+            v_vsc {
+                trigger-keys = <V>;
+                bindings = <&macro_vsc>;
+            };
+            s_ion {
+                trigger-keys = <S>;
+                bindings = <&macro_ion>;
+            };
+            c_ion {
+                trigger-keys = <C>;
+                bindings = <&macro_ion>;
+            };
+        };
     };
 
     macros {
@@ -258,6 +308,48 @@
             tap-ms = <20>;
             bindings = <&macro_tap>, <&kp LC(LA(F15)) &to 0>;
         };
+
+        macro_nd: macro_nd {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&kp N &kp D>;
+        };
+
+        macro_ng: macro_ng {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp G>;
+        };
+
+        macro_you: macro_you {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp U>;
+        };
+
+        macro_the: macro_the {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E &kp SPACE>;
+        };
+
+        macro_ion: macro_ion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp O &kp N>;
+        };
+
+        macro_tion: macro_tion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp O &kp N>;
+        };      
+
+        macro_vsc: macro_vsc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp C>;
+        };  
     };
 
     keymap {
@@ -269,7 +361,7 @@
   &kp B  &kp L  &kp D         &kp W    &kp Z        &as APOS   &kp F  &kp O       &kp U    &kp J
   &kp N  &kp R  &kp T         &kp S    &kp G        &kp Y      &kp H  &kp A       &kp E    &kp I
   &kp Q  &kp X  &kp M         &kp C    &kp V        &kp K      &kp P  &as COMMA   &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &mo 3  &kp DELETE
+                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &rep_mo3 3 0  &kp DELETE
             >;
         };
 
@@ -279,7 +371,7 @@
   &as B  &as L  &as D         &as W    &as Z        &as APOS   &as F  &as O       &as U    &as J
   &as N  &as R  &as T         &as S    &as G        &as Y      &as H  &as A       &as E    &as I
   &as Q  &as X  &as M         &as C    &as V        &as K      &as P  &as COMMA   &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &mo 3  &kp DELETE
+                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &rep_mo3 3 0  &kp DELETE
             >;
         };
 

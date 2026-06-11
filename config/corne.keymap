@@ -206,15 +206,7 @@
             label = "VOLUME_UPDOWN";
             #binding-cells = <0>;
             bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
-        };
-
-        rep_mo3: rep_mo3 {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <170>;
-            bindings = <&mo>, <&smart_repeat>;
-        };
+        };        
 
         smart_repeat: smart_repeat {
             compatible = "zmk,behavior-adaptive-key";
@@ -261,6 +253,15 @@
                 trigger-keys = <P>;
                 bindings = <&macro_ph>;
             };
+        };
+
+        //needs to be after smart_repeat declaration
+        rep_mo3: rep_mo3 {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <170>;
+            bindings = <&mo>, <&smart_repeat>;
         };
     };
 
@@ -342,13 +343,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp I &kp O &kp N>;
-        };
-
-        macro_tion: macro_tion {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp N>;
-        };      
+        };     
 
         macro_vsc: macro_vsc {
             compatible = "zmk,behavior-macro";
@@ -372,7 +367,7 @@
   &kp B  &kp L  &kp D         &kp W    &kp Z        &as APOS   &kp F  &kp O       &kp U    &kp J
   &kp N  &kp R  &kp T         &kp S    &kp G        &kp Y      &kp H  &kp A       &kp E    &kp I
   &kp Q  &kp X  &kp M         &kp C    &kp V        &kp K      &kp P  &as COMMA   &as DOT  &as FSLH
-                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &rep_mo3 3 0  &smart_repeat
+                &kp LEFT_ALT  &lt 2 M  &kp SPACE    &kp ENTER  &rep_mo3 3 0  &kp DELETE
             >;
         };
 

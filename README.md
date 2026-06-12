@@ -35,7 +35,7 @@ Uses the **Graphite** layout as the base layer. See the [Graphite layout referen
 
 | Previous Key | Output |
 |---|---|
-| `a` | `ation` |
+| `a` | `tion` |
 | `b` | `efore` |
 | `c` | `tion` |
 | `d` | `ition` |

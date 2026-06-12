@@ -205,7 +205,7 @@
             #binding-cells = <0>;
             bindings = <&key_repeat>;
 
-            a_ation {
+            a_tion {
                 trigger-keys = <A>;
                 bindings = <&macro_ation>;
             };
@@ -230,22 +230,22 @@
                 bindings = <&macro_ion>;
             };
 
-            t_tment {
+            t_ment {
                 trigger-keys = <T>;
                 bindings = <&macro_tment>;
             };
 
-            v_ver {
+            v_er {
                 trigger-keys = <V>;
                 bindings = <&macro_ver>;
             };
 
-            s_sc {
+            s_c {
                 trigger-keys = <S>;
                 bindings = <&macro_sc>;
             };
 
-            c_ction {
+            c_tion {
                 trigger-keys = <C>;
                 bindings = <&macro_ction>;
             };
@@ -255,77 +255,77 @@
                 bindings = <&macro_ph>;
             };
 
-            b_before {
+            b_efore {
                 trigger-keys = <B>;
                 bindings = <&macro_before>;
             };
 
-            d_dition {
+            d_ition {
                 trigger-keys = <D>;
                 bindings = <&macro_dition>;
             };
 
-            e_eu {
+            e_u {
                 trigger-keys = <E>;
                 bindings = <&macro_eu>;
             };
 
-            f_fy {
+            f_y {
                 trigger-keys = <F>;
                 bindings = <&macro_fy>;
             };
 
-            g_gs {
+            g_s {
                 trigger-keys = <G>;
                 bindings = <&macro_gs>;
             };
 
-            h_hy {
+            h_y {
                 trigger-keys = <H>;
                 bindings = <&macro_hy>;
             };
 
-            j_just {
+            j_ust {
                 trigger-keys = <J>;
                 bindings = <&macro_just>;
             };
 
-            l_lation {
+            l_ation {
                 trigger-keys = <L>;
                 bindings = <&macro_lation>;
             };
 
-            m_ment {
+            m_ent {
                 trigger-keys = <M>;
                 bindings = <&macro_ment>;
             };
 
-            o_oa {
+            o_a {
                 trigger-keys = <O>;
                 bindings = <&macro_oa>;
             };
 
-            q_quen {
+            q_uen {
                 trigger-keys = <Q>;
                 bindings = <&macro_quen>;
             };
 
-            r_rl {
+            r_l {
                 trigger-keys = <R>;
                 bindings = <&macro_rl>;
             };
 
-            u_ue {
+            u_e {
                 trigger-keys = <U>;
                 bindings = <&macro_ue>;
             };
 
-            w_ws {
+            w_s {
                 trigger-keys = <W>;
                 bindings = <&macro_ws>;
             };
 
-            z_zation {
+            z_ation {
                 trigger-keys = <Z>;
                 bindings = <&macro_zation>;
             };
@@ -400,7 +400,7 @@
         macro_ion: macro_ion {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp N>;
+            bindings = <&kp O &kp N>;
         };
 
         macro_ver: macro_ver {
@@ -418,7 +418,7 @@
         macro_ation: macro_ation {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &kp T &kp I &kp O &kp N>;
+            bindings = <&kp T &kp I &kp O &kp N>;
         };
 
         macro_before: macro_before {

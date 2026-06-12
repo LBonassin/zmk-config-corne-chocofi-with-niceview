@@ -136,18 +136,6 @@
             layers = <0 1 2 3 4 5>;
         };
 
-        toOne {
-            bindings = <&to_second>;
-            key-positions = <1 2 7 8>;
-            layers = <0 1 2 3 4 5>;
-        };
-
-        toZero {
-            bindings = <&to_first>;
-            key-positions = <1 2 7 8>;
-            layers = <0 1 2 3 4 5>;
-        };
-
         l_game_shift {
             bindings = <&kp LSHFT>;
             key-positions = <10 32>;

@@ -227,7 +227,7 @@
 
             n_ion {
                 trigger-keys = <N>;
-                bindings = <&macro_ion>;
+                bindings = <&macro_nion>;
             };
 
             t_ment {
@@ -398,6 +398,12 @@
         };
 
         macro_ion: macro_ion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp N>;
+        };
+
+        macro_nion: macro_nion {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp I &kp O &kp N>;

@@ -1,4 +1,4 @@
-# Chocofi w/ Graphite, QWERTY, autoshift, and Magic Key
+# Chocofi w/ Graphite, QWERTY, Autoshift, 2-3 Key HomeRowMods on bottom row, and Magic Key
 
 ZMK firmware configuration for a wireless Chocofi split keyboard.
 

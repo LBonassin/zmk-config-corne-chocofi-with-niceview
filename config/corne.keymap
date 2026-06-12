@@ -400,7 +400,7 @@
         macro_ion: macro_ion {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp O &kp N>;
+            bindings = <&kp I &kp O &kp N>;
         };
 
         macro_ver: macro_ver {

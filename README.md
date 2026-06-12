@@ -1,4 +1,4 @@
-# Chocofi w/ Graphite, QWERTY, autoshift, and Magic Key (or maybe it's Repeat or Arcane)
+# Chocofi w/ Graphite, QWERTY, autoshift, and Magic Key
 
 ZMK firmware configuration for a wireless Chocofi split keyboard.
 

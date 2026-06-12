@@ -1,4 +1,4 @@
-# zmk-config-corne-chocofi-with-niceview
+# Chocofi w/ Graphite, QWERTY, autoshift, and Magic Key (or maybe it's Repeat or Arcane)
 
 ZMK firmware configuration for a wireless Chocofi split keyboard.
 

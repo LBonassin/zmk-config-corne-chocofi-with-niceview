@@ -1,4 +1,4 @@
-# zmk-config-corne-chocofi-with-niceview
+# Chocofi w/ Graphite, QWERTY, autoshift, and Magic Key
 
 ZMK firmware configuration for a wireless Chocofi split keyboard.
 
@@ -19,10 +19,10 @@ Uses the **Graphite** layout as the base layer. See the [Graphite layout referen
 | # | Name | Description |
 |---|---|---|
 | 0 | `graphite` | Base layer — Graphite layout, no autoshift |
-| 1 | `typing` | Graphite with autoshift on all alpha keys |
+| 1 | `typing` | Graphite with autoshift on all keys |
 | 2 | `qwerty` | QWERTY with autoshift, for guests |
 | 3 | `f_keys` | F1–F12, volume, arrows, caps word |
-| 4 | `math` | Numpad, operators, brackets |
+| 4 | `math` | Numpad, operators, brackets (all with autoshift) |
 | 5 | `bt` | Bluetooth selection, layer switching, media keys |
 
 ### Key Features

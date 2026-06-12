@@ -567,6 +567,7 @@
         };
 
         qwerty {
+             label = "qwerty";
             bindings = <
   &as Q  &as W  &as E         &as R    &as T        &as Y      &as U         &as I      &as O    &as P
   &as A  &as S  &as D         &as F    &as G        &as H      &as J         &as K      &as L    &as SEMI

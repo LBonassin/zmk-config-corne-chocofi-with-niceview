@@ -336,6 +336,7 @@
         rep_mo3: rep_mo3 {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
+            flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&mo>, <&magic>;
         };
@@ -367,14 +368,6 @@
                 <&macro_param_1to1 &macro_param_1to2 &as_ht MACRO_PLACEHOLDER MACRO_PLACEHOLDER>;
         };
 
-        to_second: to_second {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <20>;
-            bindings = <&macro_tap>, <&kp LC(LA(F13)) &to 1>;
-        };
-
         to_first: to_first {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -383,12 +376,20 @@
             bindings = <&macro_tap>, <&kp LC(LA(F14)) &to 0>;
         };
 
+        to_second: to_second {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <20>;
+            bindings = <&macro_tap>, <&kp LC(LA(F13)) &to 1>;
+        };
+
         to_third: to_third {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <20>;
-            bindings = <&macro_tap>, <&kp LC(LA(F15)) &to 0>;
+            bindings = <&macro_tap>, <&kp LC(LA(F15)) &to 2>;
         };
 
         macro_the: macro_the {

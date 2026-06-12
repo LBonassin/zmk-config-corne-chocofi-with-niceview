@@ -63,43 +63,6 @@ Uses the **Graphite** layout as the base layer. See the [Graphite layout referen
 | *(anything else)* | key repeat |
 
 
-### Combos
-
-For simplicity, all combos are active on all layers. 
-
-#### Modifiers
-
-| Name | Keys | Output |
-|---|---|---|
-| Left Shift (sticky) | 20+21 | `Shift` |
-| Left Ctrl (sticky) | 21+22 | `Ctrl` |
-| Left Win (sticky) | 22+23 | `Win` |
-| Shift+Ctrl (sticky) | 20+21+22 | `Shift+Ctrl` |
-| Ctrl+Win (sticky) | 21+22+23 | `Ctrl+Win` |
-| Shift+Win (sticky) | 20+23 | `Shift+Win` |
-| Right Shift+Enter | 28+29 | `Shift+Enter` |
-| Right Ctrl (sticky) | 27+28 | `RCtrl` |
-| Right Win (sticky) | 26+27 | `Win` |
-| Right Ctrl+Shift (sticky) | 27+28+29 | `RCtrl+RShift` |
-| Right Ctrl+Win (sticky) | 26+27+28 | `Ctrl+Win` |
-| Right Shift+Win (sticky) | 26+29 | `Shift+Win` |
-| Left Ctrl (hold) | 20+32 | `LCtrl` |
-| Right Ctrl (hold) | 29+33 | `RCtrl` |
-| Left Shift (hold) | 10+32 | `LShift` |
-| Right Shift (hold) | 19+33 | `RShift` |
-| Win (instant) | 23+24 | `Win` |
-
-#### Keys
-
-| Name | Keys | Output |
-|---|---|---|
-| Tab | 0+1 | `Tab` |
-| Shift+Tab | 0+1+32 | `Shift+Tab` |
-| Escape | 0+32 | `Escape` |
-| Apostrophe | 18+19 | `'` (autoshifted) |
-| Print Screen | 23+24+32 | `PrintScreen` |
-| Record (Xbox/NVidia) | 22+23+24+32 | `Win+Alt+G` |
-
 
 ## Building
 
@@ -115,4 +78,6 @@ To build locally, follow the [ZMK getting started guide](https://zmk.dev/docs/de
 - `lt` tapping term reduced to 170ms for snappier layer-tap response
 - Magic Key is quicker, at 150ms
 
+## Visuals
 
+![alt text](image.png)

@@ -595,7 +595,7 @@
   &none                 &none                  &none             &none              &none             &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &none
   &kp ASTERISK          &kp SLASH              &kp PLUS          &kp MINUS          &as MINUS         &as EQUAL        &as NUMBER_4  &as NUMBER_5  &as NUMBER_6  &as BACKSLASH
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &as LEFT_BRACKET  &as RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &kp PERIOD
-                                               &trans            &mo 5              &kp NUMBER_0      &trans           &trans        &kp NUMBER_0
+                                               &trans            &lt 5 BACKSPACE              &kp NUMBER_0      &trans           &trans        &kp NUMBER_0
             >;
         };
 

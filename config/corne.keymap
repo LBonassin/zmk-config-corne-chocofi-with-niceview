@@ -185,15 +185,6 @@
             bindings = <&shifted>, <&kp>;
         };
 
-        m_lt_ctrls: m_lt_ctrls {
-            compatible = "zmk,behavior-tap-dance";
-            label = "M_LT_CTRLS";
-            #binding-cells = <0>;
-            bindings = <&lt 3 M>, <&lt 0 M>;
-
-            tapping-term-ms = <170>;
-        };
-
         volume_updown: volume_updown {
             compatible = "zmk,behavior-tap-dance";
             label = "VOLUME_UPDOWN";
@@ -254,6 +245,11 @@
             p_h {
                 trigger-keys = <P>;
                 bindings = <&macro_ph>;
+            };
+
+            k_y {
+                trigger-keys = <K>;
+                bindings = <&macro_ky>;
             };
 
             b_efore {
@@ -423,6 +419,12 @@
             bindings = <&kp H>;
         };
 
+        macro_ky: macro_ky {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y>;
+        };
+
         macro_ation: macro_ation {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -553,7 +555,7 @@
   &kp B  &kp L  &kp D         &kp W    &kp Z        &as APOS   &kp F         &kp O       &kp U    &kp J
   &kp N  &kp R  &kp T         &kp S    &kp G        &kp Y      &kp H         &kp A       &kp E    &kp I
   &kp Q  &kp X  &kp M         &kp C    &kp V        &kp K      &kp P         &as COMMA   &as DOT  &as FSLH
-                &kp LEFT_ALT  &mo 3    &kp SPACE    &kp ENTER  &rep_mo3 4 0  &kp DELETE
+                &kp LEFT_ALT  &lt 3 BACKSPACE    &kp SPACE    &kp ENTER  &rep_mo3 4 0  &kp DELETE
             >;
         };
 
@@ -563,7 +565,7 @@
   &as B  &as L  &as D         &as W    &as Z        &as APOS   &as F         &as O       &as U    &as J
   &as N  &as R  &as T         &as S    &as G        &as Y      &as H         &as A       &as E    &as I
   &as Q  &as X  &as M         &as C    &as V        &as K      &as P         &as COMMA   &as DOT  &as FSLH
-                &kp LEFT_ALT  &mo 3    &kp SPACE    &kp ENTER  &rep_mo3 4 0  &kp DELETE
+                &kp LEFT_ALT  &lt 3 BACKSPACE    &kp SPACE    &kp ENTER  &rep_mo3 4 0  &kp DELETE
             >;
         };
 
@@ -573,14 +575,14 @@
   &as Q  &as W  &as E         &as R    &as T        &as Y      &as U         &as I      &as O    &as P
   &as A  &as S  &as D         &as F    &as G        &as H      &as J         &as K      &as L    &as SEMI
   &as Z  &as X  &as C         &as V    &as B        &as N      &as M         &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &mo 3    &kp SPACE    &kp ENTER  &rep_mo3 4 0  &kp DEL
+                &kp LEFT_ALT  &lt 3 BACKSPACE    &kp SPACE    &kp ENTER  &rep_mo3 4 0  &kp DEL
             >;
         };
 
         f_keys {
             label = "f_keys";
             bindings = <
-  &kp F1  &kp F2   &kp F3   &kp F4   &as GRAVE         &kp C_VOLUME_UP    &caps_word  &trans        &kp CAPSLOCK   &none
+  &kp F1  &kp F2   &kp F3   &kp F4   &as GRAVE         &kp C_VOLUME_UP    &caps_word  &none         &kp CAPSLOCK   &kp BACKSPACE
   &kp F5  &kp F6   &kp F7   &kp F8   &volume_updown    &kp C_VOLUME_DOWN  &kp DEL     &kp UP_ARROW  &kp BACKSPACE  &as SEMI
   &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT        &none              &kp LEFT    &kp DOWN      &kp RIGHT      &none
                    &trans   &trans   &trans            &trans             &mo 5       &trans
@@ -590,10 +592,10 @@
         math {
             label = "math";
             bindings = <
-  &none                 &none                  &none             &none              &none             &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &kp BACKSPACE
+  &none                 &none                  &none             &none              &none             &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &none
   &kp ASTERISK          &kp SLASH              &kp PLUS          &kp MINUS          &as MINUS         &as EQUAL        &as NUMBER_4  &as NUMBER_5  &as NUMBER_6  &as BACKSLASH
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &as LEFT_BRACKET  &as RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &kp PERIOD
-                                               &trans            &mo 5              &kp NUMBER_0      &trans           &trans        &kp N0
+                                               &trans            &mo 5              &kp NUMBER_0      &trans           &trans        &kp NUMBER_0
             >;
         };
 

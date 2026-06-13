@@ -373,7 +373,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <20>;
-            bindings = <&macro_tap>, <&kp LC(LA(F14)) &to 0>;
+            bindings = <&macro_tap>, <&kp LC(LA(F13)) &to 0>;
         };
 
         to_second: to_second {
@@ -381,7 +381,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <20>;
-            bindings = <&macro_tap>, <&kp LC(LA(F13)) &to 1>;
+            bindings = <&macro_tap>, <&kp LC(LA(F14)) &to 1>;
         };
 
         to_third: to_third {

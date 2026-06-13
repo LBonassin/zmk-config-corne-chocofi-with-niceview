@@ -33,6 +33,7 @@ Uses the **Graphite** layout as the base layer. See the [Graphite layout referen
 
 ### Magic Key Completions
 
+
 | Previous Key | Output |
 |---|---|
 | `a` | `tion` |
@@ -45,6 +46,7 @@ Uses the **Graphite** layout as the base layer. See the [Graphite layout referen
 | `h` | `y` |
 | `i` | `on` |
 | `j` | `ust` |
+| `k` | `y` |
 | `l` | `ation` |
 | `m` | `ent` |
 | `n` | `ion` |
@@ -60,7 +62,7 @@ Uses the **Graphite** layout as the base layer. See the [Graphite layout referen
 | `y` | `'` |
 | `z` | `ation` |
 | `space` | `the ` |
-| *(anything else)* | key repeat |
+| *(anything else)* | key repeat, but I don't use it for alphas. Great for punctuation and repeating F3 while searching for something (even works for Shift+F_Keys) |
 
 
 
@@ -80,4 +82,4 @@ To build locally, follow the [ZMK getting started guide](https://zmk.dev/docs/de
 
 ## Visuals
 
-![alt text](image.png)
+![alt text](image-1.png)

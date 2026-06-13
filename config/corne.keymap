@@ -156,19 +156,19 @@
     apostrophe {
         bindings = <&as APOS>;
         key-positions = <18 19>;
-        layers = <0 1 2 3 4 5>;
+        layers = <3>;
     };
 
     printscreen {
         bindings = <&kp PRINTSCREEN>;
         key-positions = <24 23 32>;
-        layers = <0 1 2 3 4 5>;
+        layers = <0 1 2>;
     };
 
     record {
         bindings = <&kp LG(LA(G))>;
         key-positions = <22 23 24 32>;
-        layers = <0 1 2 3 4 5>;
+        layers = <0 1 2z>;
     };
 };
 
@@ -337,7 +337,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <140>;
             bindings = <&mo>, <&magic>;
         };
     };

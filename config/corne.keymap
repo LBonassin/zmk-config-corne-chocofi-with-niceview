@@ -168,7 +168,7 @@
     record {
         bindings = <&kp LG(LA(G))>;
         key-positions = <22 23 24 32>;
-        layers = <0 1 2z>;
+        layers = <0 1 2>;
     };
 };
 

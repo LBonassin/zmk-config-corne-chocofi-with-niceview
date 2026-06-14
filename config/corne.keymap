@@ -25,7 +25,7 @@
         bindings = <&kp TAB>;
         key-positions = <0 1>;
         layers = <0 1 2 3 4 5>;
-        timeout-ms = <50>;
+        timeout-ms = <30>;
     };
 
     shift_tab {
@@ -38,12 +38,6 @@
     shift {
         bindings = <&sk LSHFT>;
         key-positions = <20 21>;
-        layers = <0 1 2 3 4 5>;
-    };
-
-    shift_enter {
-        bindings = <&mt RIGHT_SHIFT ENTER>;
-        key-positions = <28 29>;
         layers = <0 1 2 3 4 5>;
     };
 
@@ -202,7 +196,7 @@
                 bindings = <&macro_ation>;
             };
 
-            i_ion {
+            i_on {
                 trigger-keys = <I>;
                 bindings = <&macro_ion>;
             };
@@ -252,9 +246,9 @@
                 bindings = <&macro_ky>;
             };
 
-            b_efore {
+            b_ecause {
                 trigger-keys = <B>;
-                bindings = <&macro_before>;
+                bindings = <&macro_because>;
             };
 
             d_ition {
@@ -431,10 +425,10 @@
             bindings = <&kp T &kp I &kp O &kp N>;
         };
 
-        macro_before: macro_before {
+        macro_because: macro_because {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp E &kp F &kp O &kp R &kp E>;
+            bindings = <&kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;
         };
 
         macro_ction: macro_ction {
@@ -476,7 +470,7 @@
         macro_just: macro_just {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp U &kp S &kp T>;
+            bindings = <&kp U &kp S &kp T &kp SPACE>;
         };
 
         macro_lation: macro_lation {

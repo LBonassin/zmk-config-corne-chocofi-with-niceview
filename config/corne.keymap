@@ -40,6 +40,12 @@
         key-positions = <20 21>;
         layers = <0 1 2 3 4 5>;
     };
+    
+    shift_enter {
+        bindings = <&mt RIGHT_SHIFT ENTER>;
+        key-positions = <28 29>;
+        layers = <0 1 2 3 4 5>;
+    };
 
     // Ctrl
     ctrl {

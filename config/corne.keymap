@@ -565,7 +565,7 @@
   &as B  &as L  &as D         &as W    &as Z        &as APOS   &as F         &as O       &as U    &as J
   &as N  &as R  &as T         &as S    &as G        &as Y      &as H         &as A       &as E    &as I
   &as Q  &as X  &as M         &as C    &as V        &as K      &as P         &as COMMA   &as DOT  &as FSLH
-                &kp LEFT_ALT  &hold_layer_tap_magic 3 0    &kp SPACE    &kp ENTER  &hold_layer_tap_magic 4 0  &kp DELETE
+                &kp LEFT_ALT  &hold_layer_tap_magic 3 0    &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DELETE
             >;
         };
 
@@ -575,7 +575,7 @@
   &as Q  &as W  &as E         &as R    &as T        &as Y      &as U         &as I      &as O    &as P
   &as A  &as S  &as D         &as F    &as G        &as H      &as J         &as K      &as L    &as SEMI
   &as Z  &as X  &as C         &as V    &as B        &as N      &as M         &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &hold_layer_tap_magic 3 0    &kp SPACE    &kp ENTER  &hold_layer_tap_magic 4 0  &kp DEL
+                &kp LEFT_ALT  &hold_layer_tap_magic 3 0    &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };
 

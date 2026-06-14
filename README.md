@@ -37,7 +37,7 @@ Uses the **Graphite** layout as the base layer. See the [Graphite layout referen
 | Previous Key | Output |
 |---|---|
 | `a` | `tion` |
-| `b` | `efore` |
+| `b` | `ecause ` |
 | `c` | `tion` |
 | `d` | `ition` |
 | `e` | `u` |
@@ -45,7 +45,7 @@ Uses the **Graphite** layout as the base layer. See the [Graphite layout referen
 | `g` | `s` |
 | `h` | `y` |
 | `i` | `on` |
-| `j` | `ust` |
+| `j` | `ust ` |
 | `k` | `y` |
 | `l` | `ation` |
 | `m` | `ent` |

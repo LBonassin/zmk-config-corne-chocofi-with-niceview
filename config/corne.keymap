@@ -13,7 +13,7 @@
 };
 
 &lt {
-    tapping-term-ms = <170>; // Default is 200ms; decrease for faster layer activation
+    tapping-term-ms = <140>; // Default is 200ms; decrease for faster layer activation
 };
 
 / {

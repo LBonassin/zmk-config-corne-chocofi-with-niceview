@@ -154,10 +154,11 @@
         layers = <0 1 2 3 4 5>;
     };
 
-    apostrophe {
-        bindings = <&as APOS>;
+    semicolon {
+        bindings = <&as SEMI>;
         key-positions = <18 19>;
-        layers = <3>;
+        layers = <0 1 2>;        
+        timeout-ms = <30>;
     };
 
     printscreen {

@@ -493,7 +493,7 @@
         macro_just: macro_just {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp U &kp S &kp T &kp SPACE>;
+            bindings = <&kp U &kp S &kp T>;
         };
 
         macro_lation: macro_lation {
@@ -609,7 +609,7 @@
         math {
             label = "math";
             bindings = <
-  &none                 &kp QUESTION           &kp SEMI          &kp COLON          &none             &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &kp BACKSPACE
+  &none                 &kp QUESTION           &kp SEMI          &kp COLON          &kp UNDERSCORE    &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &kp BACKSPACE
   &kp ASTERISK          &kp SLASH              &kp PLUS          &kp MINUS          &as MINUS         &as EQUAL        &as NUMBER_4  &as NUMBER_5  &as NUMBER_6  &as BACKSLASH
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &as LEFT_BRACKET  &as RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &kp PERIOD
                                                &trans            &lt 5 BACKSPACE    &kp NUMBER_0      &trans           &trans        &kp NUMBER_0

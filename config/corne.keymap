@@ -16,6 +16,11 @@
     tapping-term-ms = <140>; // Default is 200ms; decrease for faster layer activation
 };
 
+&mt {
+    tapping-term-ms = <140>;
+    flavor = "tap-preferred";
+};
+
 / {
     combos {
         compatible = "zmk,combos";

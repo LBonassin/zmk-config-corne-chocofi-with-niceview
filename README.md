@@ -82,4 +82,4 @@ To build locally, follow the [ZMK getting started guide](https://zmk.dev/docs/de
 
 ## Visuals
 
-![alt text](image-3.png)
+![alt text](image-1.png)

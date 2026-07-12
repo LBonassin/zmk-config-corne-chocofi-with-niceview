@@ -261,8 +261,9 @@
 
         esc_two {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 32>;
+            key-positions = <32 12>;
             layers = <0 1 2 3 4 5>;
+            timeout-ms = <25>;
         };
 
         printscreen {

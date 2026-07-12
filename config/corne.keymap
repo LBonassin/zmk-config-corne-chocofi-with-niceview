@@ -97,7 +97,7 @@
             bindings = <&sk RCTRL>;
             key-positions = <18 17>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
+            timeout-ms = <20>;
         };
 
         // Win

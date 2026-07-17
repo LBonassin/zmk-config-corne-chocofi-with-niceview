@@ -664,17 +664,17 @@
         graphite {
             label = "graphite";
             bindings = <
-  &kp B  &kp L  &kp D         &kp W                      &kp Z               &kp J              &kp F            &kp O       &kp U    &as APOS 
-  &kp N  &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y  &kp H            &kp A       &kp E    &kp I
-  &kp Q  &kp X  &kp M         &kp C                      &kp V               &kp K              &kp P            &as COMMA   &as DOT  &as FSLH
-                &kp LEFT_ALT  &hold_layer_tap_magic 3 0  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
+  &kp B             &kp L  &kp D         &kp W                      &kp Z               &kp J              &kp F            &kp O       &kp U    &as APOS
+  &mt LEFT_SHIFT N  &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y  &kp H            &kp A       &kp E    &mt RIGHT_SHIFT I
+  &mt LCTRL Q       &kp X  &kp M         &kp C                      &kp V               &kp K              &kp P            &as COMMA   &as DOT  &as FSLH
+                           &kp LEFT_ALT  &hold_layer_tap_magic 3 0  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
             >;
         };
 
         typing {
             label = "typing";
             bindings = <
-  &as B  &as L  &as D         &as W                      &as Z        &as J      &as F            &as O       &as U    &as APOS 
+  &as B  &as L  &as D         &as W                      &as Z        &as J      &as F            &as O       &as U    &as APOS
   &as N  &as R  &as T         &as S                      &as G        &as Y      &as H            &as A       &as E    &as I
   &as Q  &as X  &as M         &as C                      &as V        &as K      &as P            &as COMMA   &as DOT  &as FSLH
                 &kp LEFT_ALT  &hold_layer_tap_magic 3 0  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DELETE
@@ -704,7 +704,7 @@
         math {
             label = "math";
             bindings = <
-  &none                 &kp QUESTION           &kp SEMI          &kp COLON          &kp UNDERSCORE    &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &kp BACKSPACE
+  &kp EXCLAMATION       &kp QUESTION           &kp SEMI          &kp COLON          &kp UNDERSCORE    &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &kp BACKSPACE
   &kp ASTERISK          &kp SLASH              &kp PLUS          &kp MINUS          &as MINUS         &as EQUAL        &as NUMBER_4  &as NUMBER_5  &as NUMBER_6  &as BACKSLASH
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &as LEFT_BRACKET  &as RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &kp PERIOD
                                                &trans            &lt 5 BACKSPACE    &kp NUMBER_0      &trans           &trans        &kp NUMBER_0

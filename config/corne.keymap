@@ -631,7 +631,7 @@
             >;
         };
 
-        notest {
+        HDP {
             label = "HDP";
             bindings = <
   &kp F             &kp P  &kp D         &kp L    &kp X               &as APOS           &kp U            &kp O       &kp Y    &kp B

@@ -473,7 +473,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
-            bindings = <&kp RIGHT_SHIFT>, <&magic_y>;
+            bindings = <&kp>, <&magic_y>;
         };
     };
 

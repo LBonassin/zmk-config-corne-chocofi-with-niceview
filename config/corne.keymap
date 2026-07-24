@@ -635,7 +635,7 @@
             label = "test";
             bindings = <
   &kp B             &kp L  &kp D         &kp W                      &kp Z               &as APOS                                       &kp F            &kp O       &kp U    &kp J
-  &mt LEFT_SHIFT N  &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &hold_shift_tap_magic_y RIGHT_SHIFT undefined  &kp H            &kp A       &kp E    &mt RIGHT_SHIFT I
+  &mt LEFT_SHIFT N  &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &hold_shift_tap_magic_y RIGHT_SHIFT  &kp H            &kp A       &kp E    &mt RIGHT_SHIFT I
   &mt LCTRL Q       &kp X  &kp P         &kp C                      &kp V               &kp K                                          &kp M            &as COMMA   &as DOT  &kp Y
                            &kp LEFT_ALT  &hold_layer_tap_magic 3 0  &kp SPACE           &kp ENTER                                      &lt 4 BACKSPACE  &kp DELETE
             >;

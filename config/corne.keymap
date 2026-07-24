@@ -632,12 +632,12 @@
         };
 
         notest {
-            label = "notest";
+            label = "HDP";
             bindings = <
-  &kp B             &kp L  &kp D         &kp W                      &kp Z               &as APOS           &kp F            &kp O       &kp U    &kp J
-  &mt LEFT_SHIFT N  &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y  &kp H            &kp A       &kp E    &mt RIGHT_SHIFT I
-  &mt LCTRL Q       &kp X  &kp M         &kp C                      &kp V               &kp K              &kp P            &as COMMA   &as DOT  &as FSLH
-                           &kp LEFT_ALT  &hold_layer_tap_magic 3 0  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
+  &kp F             &kp P  &kp D         &kp L    &kp X               &as APOS           &kp U            &kp O       &kp Y    &kp B
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H    &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Q  &kp A            &kp E       &kp I    &mt RIGHT_SHIFT C
+  &mt LCTRL V       &kp W  &kp G         &kp M    &kp J               &kp Z              &kp PERIOD       &as COMMA   &as DOT  &as APOS
+                           &kp LEFT_ALT  &lt 3 R  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
             >;
         };
 

@@ -286,7 +286,7 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <14 32>;
+            key-positions = <24 32>;
             timeout-ms = <65>;
             layers = <0>;
         };
@@ -385,7 +385,7 @@
         magic_y: magic_y {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&key_repeat>;
+            bindings = <&kp Y>;
 
             y_apos {
                 trigger-keys = <Y>;
@@ -410,11 +410,6 @@
             p_l {
                 trigger-keys = <P>;
                 bindings = <&macro_pl>;
-            };
-
-            b_l {
-                trigger-keys = <B>;
-                bindings = <&macro_bl>;
             };
 
             k_y {

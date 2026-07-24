@@ -283,6 +283,13 @@
             key-positions = <24 23 32>;
             layers = <4>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <14 32>;
+            timeout-ms = <65>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -308,17 +315,7 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&key_repeat>;
-
-            a_tion {
-                trigger-keys = <A>;
-                bindings = <&macro_ation>;
-            };
-
-            i_on {
-                trigger-keys = <I>;
-                bindings = <&macro_ion>;
-            };
-
+            
             y_apos {
                 trigger-keys = <Y>;
                 bindings = <&macro_yapos>;
@@ -329,29 +326,9 @@
                 bindings = <&macro_the>;
             };
 
-            n_ion {
-                trigger-keys = <N>;
-                bindings = <&macro_nion>;
-            };
-
-            t_ment {
-                trigger-keys = <T>;
-                bindings = <&macro_tment>;
-            };
-
-            v_er {
-                trigger-keys = <V>;
-                bindings = <&macro_ver>;
-            };
-
             s_c {
                 trigger-keys = <S>;
                 bindings = <&macro_sc>;
-            };
-
-            c_tion {
-                trigger-keys = <C>;
-                bindings = <&macro_ction>;
             };
 
             p_h {
@@ -362,16 +339,6 @@
             k_y {
                 trigger-keys = <K>;
                 bindings = <&macro_ky>;
-            };
-
-            b_ecause {
-                trigger-keys = <B>;
-                bindings = <&macro_because>;
-            };
-
-            d_ition {
-                trigger-keys = <D>;
-                bindings = <&macro_dition>;
             };
 
             e_u {
@@ -394,29 +361,9 @@
                 bindings = <&macro_hy>;
             };
 
-            j_ust {
-                trigger-keys = <J>;
-                bindings = <&macro_just>;
-            };
-
-            l_ation {
-                trigger-keys = <L>;
-                bindings = <&macro_lation>;
-            };
-
-            m_ent {
-                trigger-keys = <M>;
-                bindings = <&macro_ment>;
-            };
-
             o_a {
                 trigger-keys = <O>;
                 bindings = <&macro_oa>;
-            };
-
-            q_uen {
-                trigger-keys = <Q>;
-                bindings = <&macro_quen>;
             };
 
             r_l {
@@ -434,10 +381,6 @@
                 bindings = <&macro_ws>;
             };
 
-            z_ation {
-                trigger-keys = <Z>;
-                bindings = <&macro_zation>;
-            };
         };
 
         //needs to be after magic declaration
@@ -507,24 +450,6 @@
             bindings = <&kp T &kp H &kp E &kp SPACE>;
         };
 
-        macro_ion: macro_ion {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp N>;
-        };
-
-        macro_nion: macro_nion {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp N>;
-        };
-
-        macro_ver: macro_ver {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp R>;
-        };
-
         macro_ph: macro_ph {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -535,30 +460,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp Y>;
-        };
-
-        macro_ation: macro_ation {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp I &kp O &kp N>;
-        };
-
-        macro_because: macro_because {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;
-        };
-
-        macro_ction: macro_ction {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp I &kp O &kp N>;
-        };
-
-        macro_dition: macro_dition {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp T &kp I &kp O &kp N>;
         };
 
         macro_eu: macro_eu {
@@ -585,34 +486,10 @@
             bindings = <&kp Y>;
         };
 
-        macro_just: macro_just {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp S &kp T>;
-        };
-
-        macro_lation: macro_lation {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp T &kp I &kp O &kp N>;
-        };
-
-        macro_ment: macro_ment {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp N &kp T>;
-        };
-
         macro_oa: macro_oa {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp A>;
-        };
-
-        macro_quen: macro_quen {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp E &kp N>;
         };
 
         macro_rl: macro_rl {
@@ -625,12 +502,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp C>;
-        };
-
-        macro_tment: macro_tment {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp M &kp E &kp N &kp T>;
         };
 
         macro_ue: macro_ue {
@@ -650,12 +521,6 @@
             #binding-cells = <0>;
             bindings = <&kp APOS>;
         };
-
-        macro_zation: macro_zation {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp T &kp I &kp O &kp N>;
-        };
     };
 
     keymap {
@@ -664,7 +529,7 @@
         graphite {
             label = "graphite";
             bindings = <
-  &kp B             &kp L  &kp D         &kp W                      &kp Z              &as APOS              &kp F            &kp O       &kp U    &kp J
+  &kp B             &kp L  &kp D         &kp W                      &kp Z               &as APOS           &kp F            &kp O       &kp U    &kp J
   &mt LEFT_SHIFT N  &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y  &kp H            &kp A       &kp E    &mt RIGHT_SHIFT I
   &mt LCTRL Q       &kp X  &kp M         &kp C                      &kp V               &kp K              &kp P            &as COMMA   &as DOT  &as FSLH
                            &kp LEFT_ALT  &hold_layer_tap_magic 3 0  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
@@ -674,7 +539,7 @@
         typing {
             label = "typing";
             bindings = <
-  &as B  &as L  &as D         &as W                      &as Z        &as APOS      &as F            &as O       &as U    &as J
+  &as B  &as L  &as D         &as W                      &as Z        &as APOS   &as F            &as O       &as U    &as J
   &as N  &as R  &as T         &as S                      &as G        &as Y      &as H            &as A       &as E    &as I
   &as Q  &as X  &as M         &as C                      &as V        &as K      &as P            &as COMMA   &as DOT  &as FSLH
                 &kp LEFT_ALT  &hold_layer_tap_magic 3 0  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DELETE

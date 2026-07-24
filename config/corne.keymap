@@ -17,7 +17,7 @@
 };
 
 &mt {
-    tapping-term-ms = <170>;
+    tapping-term-ms = <160>;
     flavor = "tap-preferred";
 };
 
@@ -97,7 +97,7 @@
             bindings = <&sk RCTRL>;
             key-positions = <18 17>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <20>;
+            timeout-ms = <18>;
         };
 
         // Win
@@ -562,7 +562,7 @@
   &kp F1  &kp F2   &kp F3   &kp F4   &as GRAVE         &kp C_VOLUME_UP    &caps_word  &none         &kp CAPSLOCK   &kp BACKSPACE
   &kp F5  &kp F6   &kp F7   &kp F8   &volume_updown    &kp C_VOLUME_DOWN  &kp DEL     &kp UP_ARROW  &kp BACKSPACE  &as SEMI
   &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT        &none              &kp LEFT    &kp DOWN      &kp RIGHT      &none
-                   &trans   &trans   &trans            &trans             &mo 5       &trans
+                   &trans   &trans   &kp DEL           &trans             &mo 5       &trans
             >;
         };
 

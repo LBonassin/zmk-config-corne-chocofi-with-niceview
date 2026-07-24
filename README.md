@@ -78,7 +78,7 @@ To build locally, follow the [ZMK getting started guide](https://zmk.dev/docs/de
 
 - Matrix transform uses `five_column_transform` (no outer pinky column)
 - `lt` tapping term reduced to 140ms for snappier layer-tap response
-- `mt` tapping term reduced to 170ms
+- `mt` tapping term reduced to 160ms
 - Magic Key is quicker, at 150ms
 
 ## Visuals

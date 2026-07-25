@@ -47,16 +47,16 @@
             bindings = <&sk LCTRL>;
             key-positions = <11 12>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <25>;
+            timeout-ms = <18>;
+            require-prior-idle-ms = <200>;
         };
 
         r_ctrl2 {
             bindings = <&sk RCTRL>;
             key-positions = <18 17>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <25>;
+            timeout-ms = <18>;
+            require-prior-idle-ms = <200>;
         };
 
         // Win
@@ -65,16 +65,16 @@
             bindings = <&sk LEFT_WIN>;
             key-positions = <12 13>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <25>;
+            timeout-ms = <18>;
+            require-prior-idle-ms = <200>;
         };
 
         r_win2 {
             bindings = <&sk LEFT_WIN>;
             key-positions = <16 17>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <25>;
+            timeout-ms = <18>;
+            require-prior-idle-ms = <200>;
         };
 
         // Shift+Ctrl
@@ -92,7 +92,7 @@
             key-positions = <19 18 17>;
             layers = <0 1 2 3 4 5>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <25>;
+            require-prior-idle-ms = <200>;
         };
 
         // Ctrl+Win
@@ -102,7 +102,7 @@
             key-positions = <11 12 13>;
             layers = <0 1 2 3 4 5>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <25>;
+            require-prior-idle-ms = <200>;
         };
 
         r_win_ctrl2 {
@@ -110,7 +110,7 @@
             key-positions = <18 17 16>;
             layers = <0 1 2 3 4 5>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <25>;
+            require-prior-idle-ms = <200>;
         };
 
         // Shift+Win
@@ -120,7 +120,7 @@
             key-positions = <10 13>;
             layers = <0 1 2 3 4 5>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <25>;
+            require-prior-idle-ms = <200>;
         };
 
         r_shift_win2 {
@@ -128,7 +128,7 @@
             key-positions = <16 19>;
             layers = <0 1 2 3 4 5>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <25>;
+            require-prior-idle-ms = <200>;
         };
 
         // Ctrl (hold)
@@ -170,7 +170,7 @@
             key-positions = <24 23>;
             layers = <0 1 2 3 4 5>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <25>;
+            require-prior-idle-ms = <200>;
         };
 
         esc_two {

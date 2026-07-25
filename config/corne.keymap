@@ -69,14 +69,6 @@
             require-prior-idle-ms = <200>;
         };
 
-        r_win2 {
-            bindings = <&sk LEFT_WIN>;
-            key-positions = <16 17>;
-            layers = <0 1 2 3 4 5>;
-            timeout-ms = <18>;
-            require-prior-idle-ms = <200>;
-        };
-
         // Shift+Ctrl
 
         ls_ctrl2 {
@@ -118,14 +110,6 @@
         win_shift2 {
             bindings = <&sk LS(LEFT_WIN)>;
             key-positions = <10 13>;
-            layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <200>;
-        };
-
-        r_shift_win2 {
-            bindings = <&sk LS(LEFT_WIN)>;
-            key-positions = <16 19>;
             layers = <0 1 2 3 4 5>;
             timeout-ms = <25>;
             require-prior-idle-ms = <200>;

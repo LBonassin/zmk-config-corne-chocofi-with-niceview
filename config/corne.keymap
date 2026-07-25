@@ -47,14 +47,16 @@
             bindings = <&sk LCTRL>;
             key-positions = <11 12>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <18>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         r_ctrl2 {
             bindings = <&sk RCTRL>;
             key-positions = <18 17>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <18>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         // Win
@@ -63,14 +65,16 @@
             bindings = <&sk LEFT_WIN>;
             key-positions = <12 13>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <18>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         r_win2 {
             bindings = <&sk LEFT_WIN>;
             key-positions = <16 17>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <18>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         // Shift+Ctrl
@@ -79,14 +83,16 @@
             bindings = <&sk LC(LEFT_SHIFT)>;
             key-positions = <10 11 12>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <20>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         r_ctrl_shift2 {
             bindings = <&sk RC(RIGHT_SHIFT)>;
             key-positions = <19 18 17>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <20>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         // Ctrl+Win
@@ -95,14 +101,16 @@
             bindings = <&sk LC(LEFT_WIN)>;
             key-positions = <11 12 13>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <20>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         r_win_ctrl2 {
             bindings = <&sk LC(LEFT_WIN)>;
             key-positions = <18 17 16>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <20>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         // Shift+Win
@@ -111,14 +119,16 @@
             bindings = <&sk LS(LEFT_WIN)>;
             key-positions = <10 13>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <18>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         r_shift_win2 {
             bindings = <&sk LS(LEFT_WIN)>;
             key-positions = <16 19>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <18>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         // Ctrl (hold)
@@ -159,14 +169,16 @@
             bindings = <&kp LEFT_WIN>;
             key-positions = <24 23>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <18>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         esc_two {
             bindings = <&kp ESCAPE>;
             key-positions = <32 12>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <20>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         printscreen {
@@ -190,8 +202,9 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <24 32>;
-            timeout-ms = <65>;
+            timeout-ms = <25>;
             layers = <0 1 2>;
+            require-prior-idle-ms = <25>;
         };
 
         shift_alt {
@@ -204,6 +217,13 @@
             bindings = <&kp LC(LEFT_ALT)>;
             key-positions = <20 30>;
             layers = <0 2 1>;
+        };
+
+        to_xcvz {
+            bindings = <&mo 6>;
+            key-positions = <31 10>;
+            require-prior-idle-ms = <50>;
+            layers = <1 0>;
         };
     };
 
@@ -440,6 +460,15 @@
   &trans  &bt BT_PRV  &bt BT_SEL 1  &bt BT_NXT  &trans    &trans  &kp INSERT       &kp HOME        &kp PAGE_UP      &trans
   &trans  &to_first   &to_second    &to_third   &trans    &trans  &kp DELETE       &kp END         &kp PAGE_DOWN    &bt BT_CLR
                       &trans        &trans      &trans    &trans  &trans           &trans
+            >;
+        };
+
+        XCVZ {
+            bindings = <
+  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &kp LC(X)  &kp LC(C)  &kp LC(Z)  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans     &trans     &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans
+                     &trans     &trans     &trans    &trans  &trans  &trans
             >;
         };
     };

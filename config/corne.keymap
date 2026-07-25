@@ -251,11 +251,12 @@
         lt_200: lt_200 {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_200";
-            bindings = <&lt>, <&kp>;
+            bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
         };
     };
 
@@ -416,10 +417,10 @@
         HDP {
             label = "HDP";
             bindings = <
-  &kp V             &kp W  &kp G         &kp M    &kp J               &kp Z              &kp PERIOD       &as COMMA   &as FSLH  &as SEMI
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H    &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Q  &kp A            &kp E       &kp I     &mt RIGHT_SHIFT C
-  &mt LCTRL F       &kp P  &kp D         &kp L    &kp X               &as APOS           &kp U            &kp O       &kp Y     &kp B
-                           &kp LEFT_ALT  &lt 3 R  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
+  &kp V             &kp W  &kp G         &kp M        &kp J               &kp Z              &kp PERIOD       &as COMMA   &as FSLH  &as SEMI
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Q  &kp A            &kp E       &kp I     &mt RIGHT_SHIFT C
+  &mt LCTRL F       &kp P  &kp D         &kp L        &kp X               &as APOS           &kp U            &kp O       &kp Y     &kp B
+                           &kp LEFT_ALT  &lt_200 3 R  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
             >;
         };
 

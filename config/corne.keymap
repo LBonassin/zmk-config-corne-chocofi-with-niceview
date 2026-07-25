@@ -47,7 +47,7 @@
             bindings = <&sk LCTRL>;
             key-positions = <11 12>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
+            timeout-ms = <18>;
         };
 
         r_ctrl2 {
@@ -63,14 +63,14 @@
             bindings = <&sk LEFT_WIN>;
             key-positions = <12 13>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
+            timeout-ms = <18>;
         };
 
         r_win2 {
             bindings = <&sk LEFT_WIN>;
             key-positions = <16 17>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
+            timeout-ms = <18>;
         };
 
         // Shift+Ctrl
@@ -79,12 +79,14 @@
             bindings = <&sk LC(LEFT_SHIFT)>;
             key-positions = <10 11 12>;
             layers = <0 1 2 3 4 5>;
+            timeout-ms = <20>;
         };
 
         r_ctrl_shift2 {
             bindings = <&sk RC(RIGHT_SHIFT)>;
             key-positions = <19 18 17>;
             layers = <0 1 2 3 4 5>;
+            timeout-ms = <20>;
         };
 
         // Ctrl+Win
@@ -93,12 +95,14 @@
             bindings = <&sk LC(LEFT_WIN)>;
             key-positions = <11 12 13>;
             layers = <0 1 2 3 4 5>;
+            timeout-ms = <20>;
         };
 
         r_win_ctrl2 {
             bindings = <&sk LC(LEFT_WIN)>;
             key-positions = <18 17 16>;
             layers = <0 1 2 3 4 5>;
+            timeout-ms = <20>;
         };
 
         // Shift+Win
@@ -107,14 +111,14 @@
             bindings = <&sk LS(LEFT_WIN)>;
             key-positions = <10 13>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
+            timeout-ms = <18>;
         };
 
         r_shift_win2 {
             bindings = <&sk LS(LEFT_WIN)>;
             key-positions = <16 19>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
+            timeout-ms = <18>;
         };
 
         // Ctrl (hold)
@@ -123,7 +127,7 @@
             bindings = <&kp LCTRL>;
             key-positions = <20 32>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <70>;
+            timeout-ms = <50>;
         };
 
         r_ctrl_two {
@@ -138,7 +142,7 @@
         l_game_shift {
             bindings = <&kp LSHFT>;
             key-positions = <10 32>;
-            timeout-ms = <65>;
+            timeout-ms = <50>;
             layers = <0 1 2 3 4 5>;
         };
 
@@ -146,6 +150,7 @@
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <19 33>;
             layers = <0 1 2 3 4 5>;
+            timeout-ms = <50>;
         };
 
         // Unpaired
@@ -154,14 +159,14 @@
             bindings = <&kp LEFT_WIN>;
             key-positions = <24 23>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
+            timeout-ms = <18>;
         };
 
         esc_two {
             bindings = <&kp ESCAPE>;
             key-positions = <32 12>;
             layers = <0 1 2 3 4 5>;
-            timeout-ms = <25>;
+            timeout-ms = <20>;
         };
 
         printscreen {

@@ -3,7 +3,7 @@
 return
 
 ^!F14::
-    ShowLayerNotif("typing")
+    ShowLayerNotif("HDP")
 return
 
 ^!F15::

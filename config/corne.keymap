@@ -41,21 +41,6 @@
         };
 
         // Shift
-
-        shift2 {
-            bindings = <&sk LSHFT>;
-            key-positions = <10 11>;
-            layers = <0 1 2 3 4 5>;
-            timeout-ms = <20>;
-        };
-
-        shift_enter2 {
-            bindings = <&mt RIGHT_SHIFT ENTER>;
-            key-positions = <18 19>;
-            layers = <0 1 2 3 4 5>;
-            timeout-ms = <20>;
-        };
-
         // Ctrl
 
         ctrl2 {
@@ -201,7 +186,7 @@
             bindings = <&kp ENTER>;
             key-positions = <24 32>;
             timeout-ms = <65>;
-            layers = <0>;
+            layers = <0 1 2>;
         };
     };
 

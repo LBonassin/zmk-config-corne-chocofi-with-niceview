@@ -298,18 +298,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        graphite {
-            label = "graphite";
+        HDP1 {
+            label = "HDP1";
             bindings = <
-  &kp B             &kp L  &kp D         &kp W  &kp Z               &as APOS           &kp F            &kp O       &kp U    &kp J
-  &mt LEFT_SHIFT N  &kp R  &kp T         &kp S  &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y  &kp H            &kp A       &kp E    &mt RIGHT_SHIFT I
-  &mt LCTRL Q       &kp X  &kp M         &kp C  &kp V               &kp K              &kp P            &as COMMA   &as DOT  &as APOS
-                           &kp LEFT_ALT  &mo 3  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
+  &kp V             &kp W  &kp G         &kp M        &kp J               &kp APOS           &as PERIOD       &as COMMA   &as FSLH  &kp R
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z  &kp A            &kp E       &kp I     &mt RIGHT_SHIFT C
+  &mt LCTRL F       &kp P  &kp D         &kp L        &kp X               &kp Q              &kp U            &kp O       &kp Y     &kp B
+                           &kp LEFT_ALT  &lt_200 3 R  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
             >;
         };
 
-        HDP {
-            label = "HDP";
+        HDP2 {
+            label = "HDP2";
             bindings = <
   &kp V             &kp W  &kp G         &kp M        &kp J               &kp APOS           &as PERIOD       &as COMMA   &as FSLH  &kp R
   &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z  &kp A            &kp E       &kp I     &mt RIGHT_SHIFT C

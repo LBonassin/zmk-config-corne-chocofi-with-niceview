@@ -321,9 +321,9 @@
         qwerty {
             label = "qwerty";
             bindings = <
-  &as Q  &as W  &as E         &as R  &as T        &as Y      &as U            &as I      &as O    &as P
-  &as A  &as S  &as D         &as F  &as G        &as H      &as J            &as K      &as L    &as SEMI
-  &as Z  &as X  &as C         &as V  &as B        &as N      &as M            &as COMMA  &as DOT  &as FSLH
+  &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y      &kp U            &kp I      &kp O    &kp P
+  &mt LEFT_SHIFT A  &kp S  &kp D         &kp F  &mt LEFT_SHIFT G       &mt RIGHT_SHIFT H      &kp J            &kp K      &kp L    &as SEMI
+  &mt LCTRL Z  &kp X  &kp C         &kp V  &kp B        &kp N      &kp M            &as COMMA  &as DOT  &as FSLH
                 &kp LEFT_ALT  &mo 3  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
             >;
         };

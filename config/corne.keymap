@@ -209,13 +209,6 @@
             require-prior-idle-ms = <50>;
             layers = <1 0>;
         };
-
-        q {
-            bindings = <&kp Q>;
-            key-positions = <18 26>;
-            timeout-ms = <18>;
-            layers = <1>;
-        };
     };
 
     behaviors {

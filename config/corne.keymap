@@ -318,20 +318,20 @@
         HDP {
             label = "HDP";
             bindings = <
-  &kp V             &kp W  &kp G         &kp M        &kp J               &kp EXCLAMATION    &as PERIOD       &as COMMA   &as FSLH  &as SEMI
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z  &kp A            &kp E       &kp I     &mt RIGHT_SHIFT C
-  &mt LCTRL F       &kp P  &kp D         &kp L        &kp X               &as APOS           &kp U            &kp O       &kp Y     &kp B
-                           &kp LEFT_ALT  &lt_200 3 R  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
+  &kp V             &kp W  &kp G         &kp M            &kp J               &kp EXCLAMATION    &as PERIOD  &as COMMA   &as FSLH  &as SEMI
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H            &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z  &kp A       &kp E       &kp I     &mt RIGHT_SHIFT C
+  &mt LCTRL F       &kp P  &kp D         &kp L            &kp X               &as APOS           &kp U       &kp O       &kp Y     &kp B
+                           &kp LEFT_ALT  &lt 3 BACKSPACE  &kp SPACE           &kp ENTER          &lt 4 R     &kp DELETE
             >;
         };
 
         qwerty {
             label = "qwerty";
             bindings = <
-  &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y      &kp U            &kp I      &kp O    &kp P
-  &mt LEFT_SHIFT A  &kp S  &kp D         &kp F  &mt LEFT_SHIFT G       &mt RIGHT_SHIFT H      &kp J            &kp K      &kp L    &as SEMI
-  &mt LCTRL Z  &kp X  &kp C         &kp V  &kp B        &kp N      &kp M            &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &mo 3  &kp SPACE    &kp ENTER  &lt 4 BACKSPACE  &kp DEL
+  &kp Q             &kp W  &kp E         &kp R  &kp T               &kp Y              &kp U            &kp I      &kp O    &kp P
+  &mt LEFT_SHIFT A  &kp S  &kp D         &kp F  &mt LEFT_SHIFT G    &mt RIGHT_SHIFT H  &kp J            &kp K      &kp L    &as SEMI
+  &mt LCTRL Z       &kp X  &kp C         &kp V  &kp B               &kp N              &kp M            &as COMMA  &as DOT  &as FSLH
+                           &kp LEFT_ALT  &mo 3  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DEL
             >;
         };
 

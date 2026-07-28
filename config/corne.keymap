@@ -404,6 +404,8 @@
   &trans  &trans     &trans     &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans
                      &trans     &trans     &trans    &trans  &trans  &trans
             >;
+
+            label = "xcvz";
         };
     };
 };

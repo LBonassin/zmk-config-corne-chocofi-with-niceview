@@ -399,7 +399,7 @@
 
         xcvz {
             bindings = <
-  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans     &kp LC(A)  &trans     &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &kp LC(X)  &kp LC(C)  &kp LC(Z)  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans     &trans     &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans
                      &trans     &trans     &trans    &trans  &trans  &trans

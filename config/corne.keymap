@@ -221,6 +221,12 @@
             key-positions = <21 22>;
             layers = <0>;
         };
+
+        q2 {
+            bindings = <&kp Q>;
+            key-positions = <6 34>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -304,6 +310,13 @@
             wait-ms = <0>;
             tap-ms = <20>;
             bindings = <&macro_tap>, <&kp LC(LA(F15)) &to 1>;
+        };
+
+        qu: qu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Q &kp U>;
+            label = "QU";
         };
     };
 

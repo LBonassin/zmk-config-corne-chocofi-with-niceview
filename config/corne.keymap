@@ -230,6 +230,13 @@
             layers = <0>;
             timeout-ms = <30>;
         };
+
+        qu2 {
+            bindings = <&qu>;
+            key-positions = <11 13>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -336,10 +343,10 @@
         hdp {
             label = "hdp";
             bindings = <
-  &kp F             &kp P  &kp D         &kp L        &kp X        &none            &kp U            &kp O       &kp Y       &kp B
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &kp K        &none            &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
-  &mt LCTRL V       &kp W  &kp G         &kp M        &kp J        &kp SPACE        &as PERIOD       &as COMMA   &as PERIOD  &as APOS
-                           &kp LEFT_ALT  &lt_200 2 R  &kp SPACE    &mt SPACE ENTER  &lt 3 BACKSPACE  &kp DELETE
+  &kp F             &kp P  &kp D         &kp L        &kp X               &none              &kp U            &kp O       &kp Y       &kp B
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
+  &mt LCTRL V       &kp W  &kp G         &kp M        &kp J               &none              &as PERIOD       &as COMMA   &as PERIOD  &as APOS
+                           &kp LEFT_ALT  &lt_200 2 R  &kp SPACE           &kp ENTER          &lt 3 BACKSPACE  &kp DELETE
             >;
         };
 

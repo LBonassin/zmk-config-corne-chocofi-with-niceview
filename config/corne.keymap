@@ -238,6 +238,12 @@
             timeout-ms = <25>;
             require-prior-idle-ms = <25>;
         };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <26 27>;
+            layers = <0>;
+        };
     };
 
     behaviors {

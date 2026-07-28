@@ -325,15 +325,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <20>;
-            bindings = <&macro_tap>, <&kp LC(LA(F14)) &to 0>;
-        };
-
-        to_third: to_third {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <20>;
-            bindings = <&macro_tap>, <&kp LC(LA(F15)) &to 1>;
+            bindings = <&macro_tap>, <&kp LC(LA(F14)) &to 1>;
         };
 
         qu: qu {
@@ -392,7 +384,7 @@
             bindings = <
   &trans  &trans      &bt BT_SEL 0  &trans      &trans    &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans
   &trans  &bt BT_PRV  &bt BT_SEL 1  &bt BT_NXT  &trans    &trans  &kp INSERT       &kp HOME        &kp PAGE_UP      &trans
-  &trans  &to_first   &to_second    &to_third   &trans    &trans  &kp DELETE       &kp END         &kp PAGE_DOWN    &bt BT_CLR
+  &trans  &to_first   &to_second    &none       &trans    &trans  &kp DELETE       &kp END         &kp PAGE_DOWN    &bt BT_CLR
                       &trans        &trans      &trans    &trans  &trans           &trans
             >;
         };

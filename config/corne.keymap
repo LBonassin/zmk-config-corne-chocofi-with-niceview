@@ -231,9 +231,9 @@
             layers = <0>;
         };
 
-        to_xcvz_1_shot {
-            bindings = <&sticky_layer 5 5>;
-            key-positions = <11 32>;
+        to_xcvz {
+            bindings = <&sl 5>;
+            key-positions = <10 31>;
             layers = <0>;
             timeout-ms = <25>;
             require-prior-idle-ms = <25>;
@@ -277,17 +277,6 @@
             label = "COMMA_APOS";
             #binding-cells = <0>;
             bindings = <&as COMMA>, <&as APOS>;
-        };
-
-        sticky_layer: sticky_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "STICKY_LAYER";
-            bindings = <&mo>, <&sl>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <140>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <300>;
         };
     };
 

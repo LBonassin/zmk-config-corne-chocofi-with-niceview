@@ -221,14 +221,14 @@
             bindings = <&kp Z>;
             key-positions = <21 22>;
             layers = <0>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
 
-        q2 {
-            bindings = <&kp Q>;
-            key-positions = <6 34>;
+        qu {
+            bindings = <&qu>;
+            key-positions = <21 23>;
             layers = <0>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
         };
     };
 

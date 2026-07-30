@@ -17,7 +17,7 @@
 };
 
 &mt {
-    tapping-term-ms = <160>;
+    tapping-term-ms = <150>;
     flavor = "tap-preferred";
 };
 
@@ -344,7 +344,7 @@
             bindings = <
   &kp F             &kp P  &kp D         &kp L        &kp X               &none              &kp U            &kp O       &kp Y       &kp B
   &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
-  &mt LCTRL V       &kp W  &kp G         &kp M        &kp J               &none              &as PERIOD       &as COMMA   &as PERIOD  &as APOS
+  &mt LCTRL V       &kp W  &kp G         &kp M        &kp J               &none              &qu              &as COMMA   &as PERIOD  &as APOS
                            &kp LEFT_ALT  &lt_200 2 R  &kp SPACE           &kp ENTER          &lt 3 BACKSPACE  &kp DELETE
             >;
         };

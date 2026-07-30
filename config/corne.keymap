@@ -342,9 +342,9 @@
         hdp {
             label = "hdp";
             bindings = <
-  &kp F             &kp P  &kp D         &kp L        &kp X               &none             &kp U            &kp O       &kp Y       &kp B
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt LEFT_SHIFT Z  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
-  &mt LCTRL V       &kp W  &kp G         &kp M        &kp J               &none             &qu              &as COMMA   &as PERIOD  &as APOS
+  &kp V             &kp W  &kp G         &kp M        &kp J               &none             &as PERIOD       &as COMMA   &as SLASH  &as APOS
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt LEFT_SHIFT Z  &kp A            &kp E       &kp I      &mt RIGHT_SHIFT C
+  &mt LCTRL F       &kp P  &kp D         &kp L        &kp X               &qu               &kp U            &kp O       &kp Y      &kp B
                            &kp LEFT_ALT  &lt_200 2 R  &kp SPACE           &kp ENTER         &lt 3 BACKSPACE  &kp DELETE
             >;
         };

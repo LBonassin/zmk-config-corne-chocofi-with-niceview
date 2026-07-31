@@ -160,7 +160,7 @@
         esc_two {
             bindings = <&kp ESCAPE>;
             key-positions = <32 12>;
-            layers = <0 2 3 4 5>;
+            layers = <0 2 3 4 5 1>;
             timeout-ms = <25>;
             require-prior-idle-ms = <25>;
         };

@@ -363,7 +363,7 @@
             label = "game";
             bindings = <
   &kp F             &kp P  &kp D         &kp L        &kp X        &none                  &kp U            &kp O       &kp Y       &kp B
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &kp K        &mt LEFT_SHIFT Z       &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &kp K        &kp Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
   &mt LCTRL V       &kp W  &kp G         &kp M        &kp J        &kp SPACE              &qu              &as COMMA   &as PERIOD  &as APOS
                            &kp LEFT_ALT  &lt_200 3 R  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 4 BACKSPACE  &kp DELETE
             >;

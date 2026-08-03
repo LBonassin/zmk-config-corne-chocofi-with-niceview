@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 2500  // default is 600
+ #define ZMK_POINTING_DEFAULT_MOVE_VAL 2500  // default is 600
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -358,33 +358,34 @@
     keymap {
         compatible = "zmk,keymap";
 
-        down1 {
-            label = "down1";
+        hdp {
+            label = "hdp";
             bindings = <
-  &kp V             &kp W  &kp G         &kp M        &kp J               &as SLASH              &qu              &as COMMA   &as PERIOD  &as APOS
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt LEFT_SHIFT Z       &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
-  &mt LCTRL F       &kp P  &kp D         &kp L        &kp X               &kp SPACE              &kp U            &kp O       &kp Y       &kp B
-                           &kp LEFT_ALT  &lt_200 4 R  &kp SPACE           &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
+  &kp F             &kp P  &kp D         &kp L        &kp X                    &as APOS                  &kp U            &kp O       &kp Y       &kp B
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &kp K                    &kp Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
+  &mt LCTRL V       &kp W  &kp G         &kp M        &kp J                    &kp SPACE              &qu              &as COMMA   &as PERIOD  &as APOS
+                           &kp LEFT_ALT  &lt_200 4 R  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
             >;
         };
 
-        down {
-            label = "down";
+        hdp2 {
+            label = "hdp2";
             bindings = <
-  &kp V             &kp W  &kp G         &kp M        &kp J               &as SLASH              &qu              &as COMMA   &as PERIOD  &as APOS
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt LEFT_SHIFT Z       &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
-  &mt LCTRL F       &kp P  &kp D         &kp L        &kp X               &kp SPACE              &kp U            &kp O       &kp Y       &kp B
-                           &kp LEFT_ALT  &lt_200 4 R  &kp SPACE           &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
+  &kp F             &kp P  &kp D         &kp L        &kp X        &as APOS                  &kp U            &kp O       &kp Y       &kp B
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &kp K        &kp Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
+  &mt LCTRL V       &kp W  &kp G         &kp M        &kp J        &kp SPACE              &qu              &as COMMA   &as PERIOD  &as APOS
+                           &kp LEFT_ALT  &lt_200 4 R  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
             >;
         };
 
         qwerty {
             label = "qwerty";
             bindings = <
-  &kp Q  &kp W  &kp E         &kp R  &kp T               &kp Y              &kp U            &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D         &kp F  &mt LEFT_SHIFT G    &mt RIGHT_SHIFT H  &kp J            &kp K      &kp L    &as SEMI
-  &kp Z  &kp X  &kp C         &kp V  &kp B               &kp N              &kp M            &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &mo 4  &kp SPACE           &kp ENTER          &lt 5 BACKSPACE  &kp DEL
+  &kp Q             &kp W  &kp E         &kp R  &kp T               &kp Y              &kp U            &kp I      &kp O    &kp P
+  &mt LEFT_SHIFT A  &kp S  &kp D         &kp F  &mt LEFT_SHIFT G    &mt RIGHT_SHIFT H  &kp J            &kp K      &kp L    &as SEMI
+  &mt LCTRL Z       &kp X  &kp C         &kp V  &kp B               &kp N              &kp M            &as COMMA  &as DOT  &as FSLH
+                           &kp LEFT_ALT  &mo 4  &kp SPACE           &kp ENTER          &lt 5 BACKSPACE  &kp DEL
+EL
             >;
         };
 

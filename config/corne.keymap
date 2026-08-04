@@ -670,15 +670,15 @@
             >;
         };
 
-        graphite {
-            label = "graphite";
+        hdp2 {
+            label = "hdp2";
             bindings = <
-  &kp B  &kp L  &kp D         &kp W                      &kp Z               &as FSLH           &kp F            &kp O       &kp U    &kp J
-  &mt LEFT_SHIFT N  &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y  &kp H            &kp A       &kp E    &mt RIGHT_SHIFT I
-  &mt LCTRL Q  &kp X  &kp M         &kp C                      &kp V               &kp K              &kp P            &as COMMA   &as DOT  &as APOS
-                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
+  &kp F             &kp P  &kp D         &kp L        &kp X        &as SLASH                  &kp U            &kp O       &kp Y       &kp B
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K        &mt RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
+  &mt LCTRL V       &kp W  &kp G         &kp M        &kp J        &kp SPACE              &qu              &as COMMA   &as PERIOD  &as APOS
+                           &kp LEFT_ALT  &lt_200 4 R  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
             >;
-        };        
+        };   
 
         qwerty {
             label = "qwerty";

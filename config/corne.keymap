@@ -664,7 +664,7 @@
             label = "graphite";
             bindings = <
   &kp B  &kp L  &kp D         &kp W                      &kp Z               &as FSLH           &kp F            &kp O       &kp U    &kp J
-  &mt LEFT_SHIFT N  &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y  &kp H            &kp A       &kp E    &kp I
+  &mt LEFT_SHIFT N  &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y  &kp H            &kp A       &kp E    &mt RIGHT_SHIFT I
   &mt LCTRL Q  &kp X  &kp M         &kp C                      &kp V               &kp K              &kp P            &as COMMA   &as DOT  &as APOS
                 &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
             >;

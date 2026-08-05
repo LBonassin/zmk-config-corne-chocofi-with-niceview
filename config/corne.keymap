@@ -274,8 +274,6 @@
             bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
         };
 
-        //needs to be after magic declaration
-
         lt_200: lt_200 {
             compatible = "zmk,behavior-hold-tap";
             label = "LT_200";
@@ -285,48 +283,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-        };
-
-        magic_letter: magic_letter {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp Y>;
-
-            macro_vs {
-                trigger-keys = <V>;
-                bindings = <&macro_vs>;
-            };
-
-            macro_lk {
-                trigger-keys = <L>;
-                bindings = <&macro_lk>;
-            };
-
-            macro_jk {
-                trigger-keys = <J>;
-                bindings = <&macro_jk>;
-            };
-
-            macro_au {
-                trigger-keys = <A>;
-                bindings = <&macro_au>;
-            };
-
-            macro_eo {
-                trigger-keys = <E>;
-                bindings = <&macro_eo>;
-            };
-        };
-
-
-        //needs to be after magic declaration
-        hold_shift_tap_magic_letter: hold_shift_tap_magic_letter {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            bindings = <&kp>, <&magic_letter>;
-        };
+        };        
     };
 
     macros {
@@ -427,7 +384,7 @@
             label = "hdp";
             bindings = <
   &kp F             &kp P  &kp D         &kp L        &kp X        &as SLASH                  &kp U            &kp O       &kp Y       &kp B
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &hold_shift_tap_magic_letter LEFT_SHIFT K        &hold_shift_tap_magic_letter RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K        &mt RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
   &mt LCTRL V       &kp W  &kp G         &kp M        &kp J        &kp SPACE              &qu              &as COMMA   &as PERIOD  &as APOS
                            &kp LEFT_ALT  &lt_200 4 R  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
             >;
@@ -437,7 +394,7 @@
             label = "hdp2";
             bindings = <
   &kp F             &kp P  &kp D         &kp L        &kp X        &as SLASH                  &kp U            &kp O       &kp Y       &kp B
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &hold_shift_tap_magic_letter LEFT_SHIFT K        &hold_shift_tap_magic_letter RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K        &mt RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
   &mt LCTRL V       &kp W  &kp G         &kp M        &kp J        &kp SPACE              &qu              &as COMMA   &as PERIOD  &as APOS
                            &kp LEFT_ALT  &lt_200 4 R  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
             >;

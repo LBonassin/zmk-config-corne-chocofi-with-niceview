@@ -287,27 +287,10 @@
             quick-tap-ms = <150>;
         };
 
-        comma_apos: comma_apos {
-            compatible = "zmk,behavior-tap-dance";
-            label = "COMMA_APOS";
-            #binding-cells = <0>;
-            bindings = <&as COMMA>, <&as APOS>;
-        };
-
-        magic: magic {
+        magic_y: magic_y {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&key_repeat>;
-
-            a_tion {
-                trigger-keys = <A>;
-                bindings = <&macro_ation>;
-            };
-
-            i_on {
-                trigger-keys = <I>;
-                bindings = <&macro_ion>;
-            };
+            bindings = <&kp Y>;
 
             y_apos {
                 trigger-keys = <Y>;
@@ -319,125 +302,40 @@
                 bindings = <&macro_the>;
             };
 
-            n_ion {
-                trigger-keys = <N>;
-                bindings = <&macro_nion>;
-            };
-
-            t_ment {
-                trigger-keys = <T>;
-                bindings = <&macro_tment>;
-            };
-
-            v_er {
+            macro_vs {
                 trigger-keys = <V>;
-                bindings = <&macro_ver>;
+                bindings = <&macro_vs>;
             };
 
-            s_c {
-                trigger-keys = <S>;
-                bindings = <&macro_sc>;
-            };
-
-            c_tion {
-                trigger-keys = <C>;
-                bindings = <&macro_ction>;
-            };
-
-            p_h {
-                trigger-keys = <P>;
-                bindings = <&macro_ph>;
-            };
-
-            k_y {
-                trigger-keys = <K>;
-                bindings = <&macro_ky>;
-            };
-
-            b_ecause {
-                trigger-keys = <B>;
-                bindings = <&macro_because>;
-            };
-
-            d_ition {
-                trigger-keys = <D>;
-                bindings = <&macro_dition>;
-            };
-
-            e_u {
-                trigger-keys = <E>;
-                bindings = <&macro_eu>;
-            };
-
-            f_y {
-                trigger-keys = <F>;
-                bindings = <&macro_fy>;
-            };
-
-            g_s {
-                trigger-keys = <G>;
-                bindings = <&macro_gs>;
-            };
-
-            h_y {
-                trigger-keys = <H>;
-                bindings = <&macro_hy>;
-            };
-
-            j_ust {
-                trigger-keys = <J>;
-                bindings = <&macro_just>;
-            };
-
-            l_ation {
+            macro_lk {
                 trigger-keys = <L>;
-                bindings = <&macro_lation>;
+                bindings = <&macro_lk>;
             };
 
-            m_ent {
-                trigger-keys = <M>;
-                bindings = <&macro_ment>;
+            macro_jk {
+                trigger-keys = <J>;
+                bindings = <&macro_jk>;
             };
 
-            o_a {
-                trigger-keys = <O>;
-                bindings = <&macro_oa>;
+            macro_au {
+                trigger-keys = <A>;
+                bindings = <&macro_au>;
             };
 
-            q_uen {
-                trigger-keys = <Q>;
-                bindings = <&macro_quen>;
-            };
-
-            r_l {
-                trigger-keys = <R>;
-                bindings = <&macro_rl>;
-            };
-
-            u_e {
-                trigger-keys = <U>;
-                bindings = <&macro_ue>;
-            };
-
-            w_s {
-                trigger-keys = <W>;
-                bindings = <&macro_ws>;
-            };
-
-            z_ation {
-                trigger-keys = <Z>;
-                bindings = <&macro_zation>;
+            macro_eo {
+                trigger-keys = <E>;
+                bindings = <&macro_eo>;
             };
         };
 
-        //needs to be after magic declaration
 
-        hold_layer_tap_magic: hold_layer_tap_magic {
+        //needs to be after magic declaration
+        hold_shift_tap_magic_y: hold_shift_tap_magic_y {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
-            bindings = <&mo>, <&magic>;
+            bindings = <&kp>, <&magic_y>;
         };
     };
 
@@ -500,160 +398,40 @@
             label = "TO_THIRD";
         };
 
-        macro_the: macro_the {
+        macro_vs: macro_vs {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp H &kp E &kp SPACE>;
+            bindings = <&kp S>;
         };
 
-        macro_ion: macro_ion {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp N>;
-        };
-
-        macro_nion: macro_nion {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp N>;
-        };
-
-        macro_ver: macro_ver {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp R>;
-        };
-
-        macro_ph: macro_ph {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp H>;
-        };
-
-        macro_ky: macro_ky {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y>;
-        };
-
-        macro_ation: macro_ation {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp I &kp O &kp N>;
-        };
-
-        macro_because: macro_because {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp C &kp A &kp U &kp S &kp E &kp SPACE>;
-        };
-
-        macro_ction: macro_ction {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp I &kp O &kp N>;
-        };
-
-        macro_dition: macro_dition {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp T &kp I &kp O &kp N>;
-        };
-
-        macro_eu: macro_eu {
+        macro_au: macro_au {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp U>;
         };
 
-        macro_fy: macro_fy {
+        macro_eo: macro_eo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y>;
+            bindings = <&kp O>;
         };
 
-        macro_gs: macro_gs {
+        macro_jk: macro_jk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S>;
+            bindings = <&kp K>;
         };
 
-        macro_hy: macro_hy {
+        macro_lk: macro_lk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y>;
+            bindings = <&kp K>;
         };
 
-        macro_just: macro_just {
+        macro_the: macro_the {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp U &kp S &kp T>;
-        };
-
-        macro_lation: macro_lation {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp T &kp I &kp O &kp N>;
-        };
-
-        macro_ment: macro_ment {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp N &kp T>;
-        };
-
-        macro_oa: macro_oa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A>;
-        };
-
-        macro_quen: macro_quen {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp E &kp N>;
-        };
-
-        macro_rl: macro_rl {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L>;
-        };
-
-        macro_sc: macro_sc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C>;
-        };
-
-        macro_tment: macro_tment {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp M &kp E &kp N &kp T>;
-        };
-
-        macro_ue: macro_ue {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E>;
-        };
-
-        macro_ws: macro_ws {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S>;
-        };
-
-        macro_yapos: macro_yapos {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp APOS>;
-        };
-
-        macro_zation: macro_zation {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp T &kp I &kp O &kp N>;
+            bindings = <&kp T &kp H &kp E &kp SPACE>;
         };
     };
 
@@ -664,7 +442,7 @@
             label = "hdp";
             bindings = <
   &kp F             &kp P  &kp D         &kp L        &kp X        &as SLASH                  &kp U            &kp O       &kp Y       &kp B
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K        &mt RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &hold_shift_tap_magic_y LEFT_SHIFT K        &hold_shift_tap_magic_y RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
   &mt LCTRL V       &kp W  &kp G         &kp M        &kp J        &kp SPACE              &qu              &as COMMA   &as PERIOD  &as APOS
                            &kp LEFT_ALT  &lt_200 4 R  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
             >;
@@ -674,7 +452,7 @@
             label = "hdp2";
             bindings = <
   &kp F             &kp P  &kp D         &kp L        &kp X        &as SLASH                  &kp U            &kp O       &kp Y       &kp B
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K        &mt RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &hold_shift_tap_magic_y LEFT_SHIFT K        &hold_shift_tap_magic_y RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
   &mt LCTRL V       &kp W  &kp G         &kp M        &kp J        &kp SPACE              &qu              &as COMMA   &as PERIOD  &as APOS
                            &kp LEFT_ALT  &lt_200 4 R  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
             >;

@@ -290,7 +290,7 @@
         magic_letter: magic_letter {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp>;
+            bindings = <&kp Y>;
 
             macro_vs {
                 trigger-keys = <V>;

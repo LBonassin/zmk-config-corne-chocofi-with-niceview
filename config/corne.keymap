@@ -330,7 +330,7 @@
 
 
         //needs to be after magic declaration
-        hold_shift_tap_magic_y: hold_shift_tap_magic_y {
+        hold_shift_tap_magic_letter: hold_shift_tap_magic_letter {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -442,7 +442,7 @@
             label = "hdp";
             bindings = <
   &kp F             &kp P  &kp D         &kp L        &kp X        &as SLASH                  &kp U            &kp O       &kp Y       &kp B
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &hold_shift_tap_magic_y LEFT_SHIFT K        &hold_shift_tap_magic_y RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &hold_shift_tap_magic_letter LEFT_SHIFT K        &hold_shift_tap_magic_letter RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
   &mt LCTRL V       &kp W  &kp G         &kp M        &kp J        &kp SPACE              &qu              &as COMMA   &as PERIOD  &as APOS
                            &kp LEFT_ALT  &lt_200 4 R  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
             >;
@@ -452,7 +452,7 @@
             label = "hdp2";
             bindings = <
   &kp F             &kp P  &kp D         &kp L        &kp X        &as SLASH                  &kp U            &kp O       &kp Y       &kp B
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &hold_shift_tap_magic_y LEFT_SHIFT K        &hold_shift_tap_magic_y RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
+  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &hold_shift_tap_magic_letter LEFT_SHIFT K        &hold_shift_tap_magic_letter RIGHT_SHIFT Z                  &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
   &mt LCTRL V       &kp W  &kp G         &kp M        &kp J        &kp SPACE              &qu              &as COMMA   &as PERIOD  &as APOS
                            &kp LEFT_ALT  &lt_200 4 R  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
             >;

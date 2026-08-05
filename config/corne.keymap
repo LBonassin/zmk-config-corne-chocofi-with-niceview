@@ -287,15 +287,11 @@
             quick-tap-ms = <150>;
         };
 
-        magic_y: magic_y {
+        magic_letter: magic_letter {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp Y>;
 
-            y_apos {
-                trigger-keys = <Y>;
-                bindings = <&macro_yapos>;
-            };
 
             spc_the {
                 trigger-keys = <SPACE>;
@@ -335,7 +331,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
-            bindings = <&kp>, <&magic_y>;
+            bindings = <&kp>, <&magic_letter>;
         };
     };
 

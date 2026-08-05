@@ -284,6 +284,85 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
         };
+
+        magic: magic {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+            y_apos {
+                trigger-keys = <Y>;
+                bindings = <&macro_yapos>;
+            };
+
+            spc_the {
+                trigger-keys = <SPACE>;
+                bindings = <&macro_the>;
+            };
+
+            s_c {
+                trigger-keys = <S>;
+                bindings = <&macro_sc>;
+            };
+
+            p_h {
+                trigger-keys = <P>;
+                bindings = <&macro_ph>;
+            };
+
+            k_y {
+                trigger-keys = <K>;
+                bindings = <&macro_ky>;
+            };
+
+            e_u {
+                trigger-keys = <E>;
+                bindings = <&macro_eu>;
+            };
+
+            f_y {
+                trigger-keys = <F>;
+                bindings = <&macro_fy>;
+            };
+
+            g_s {
+                trigger-keys = <G>;
+                bindings = <&macro_gs>;
+            };
+
+            h_y {
+                trigger-keys = <H>;
+                bindings = <&macro_hy>;
+            };
+
+            o_a {
+                trigger-keys = <O>;
+                bindings = <&macro_oa>;
+            };
+
+            r_l {
+                trigger-keys = <R>;
+                bindings = <&macro_rl>;
+            };
+
+            u_e {
+                trigger-keys = <U>;
+                bindings = <&macro_ue>;
+            };
+
+            w_s {
+                trigger-keys = <W>;
+                bindings = <&macro_ws>;
+            };
+        };
+
+        hold_layer_tap_magic: hold_layer_tap_magic {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&mo>, <&magic>;
+        };
     };
 
     macros {
@@ -345,47 +424,107 @@
             label = "TO_THIRD";
         };
 
-        macro_vs: macro_vs {
+        macro_the: macro_the {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S>;
+            bindings = <&kp T &kp H &kp E &kp SPACE>;
         };
 
-        macro_au: macro_au {
+        macro_ph: macro_ph {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H>;
+        };
+
+        macro_ky: macro_ky {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y>;
+        };
+
+        macro_eu: macro_eu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp U>;
         };
 
-        macro_eo: macro_eo {
+        macro_fy: macro_fy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp O>;
+            bindings = <&kp Y>;
         };
 
-        macro_jk: macro_jk {
+        macro_gs: macro_gs {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp K>;
+            bindings = <&kp S>;
         };
 
-        macro_lk: macro_lk {
+        macro_hy: macro_hy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp K>;
+            bindings = <&kp Y>;
+        };
+
+        macro_oa: macro_oa {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A>;
+        };
+
+        macro_rl: macro_rl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L>;
+        };
+
+        macro_sc: macro_sc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C>;
+        };
+
+        macro_cs: macro_cs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S>;
+        };
+
+        macro_pl: macro_pl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L>;
+        };
+
+        macro_ue: macro_ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E>;
+        };
+
+        macro_ws: macro_ws {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S>;
+        };
+
+        macro_yapos: macro_yapos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOS>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        down {
-            label = "down";
+        graphite {
+            label = "graphite";
             bindings = <
-  &kp V             &kp W  &kp G         &kp M        &kp X               &as SLASH              &qu              &as COMMA   &as PERIOD  &as APOS
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z      &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
-  &mt LCTRL F       &kp P  &kp D         &kp L        &kp J               &kp R                  &kp U            &kp O       &kp Y       &kp B
-                           &kp LEFT_ALT  &lt_200 4 R  &kp SPACE           &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
+  &kp B             &kp L  &kp D         &kp W                      &kp Z               &as APOS           &kp F            &kp O       &kp U    &kp J
+  &mt LEFT_SHIFT N  &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y  &kp H            &kp A       &kp E    &mt RIGHT_SHIFT I
+  &mt LCTRL Q       &kp X  &kp M         &kp C                      &kp V               &kp K              &kp P            &as COMMA   &as DOT  &as FSLH
+                           &kp LEFT_ALT  &hold_layer_tap_magic 3 0  &kp SPACE           &kp ENTER          &lt 4 BACKSPACE  &kp DELETE
             >;
         };
 

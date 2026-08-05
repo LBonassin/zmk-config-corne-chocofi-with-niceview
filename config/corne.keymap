@@ -290,13 +290,7 @@
         magic_letter: magic_letter {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp Y>;
-
-
-            spc_the {
-                trigger-keys = <SPACE>;
-                bindings = <&macro_the>;
-            };
+            bindings = <&kp>;
 
             macro_vs {
                 trigger-keys = <V>;
@@ -424,11 +418,6 @@
             bindings = <&kp K>;
         };
 
-        macro_the: macro_the {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp H &kp E &kp SPACE>;
-        };
     };
 
     keymap {

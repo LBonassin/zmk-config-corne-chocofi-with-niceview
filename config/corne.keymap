@@ -531,10 +531,10 @@
         hdp {
             label = "hdp";
             bindings = <
-  &kp F             &kp P  &kp D         &kp L        &kp X               &as SLASH              &kp U            &kp O       &kp Y       &kp B
-  &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z      &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
-  &mt LCTRL V       &kp W  &kp G         &kp M        &kp J               &as SLASH              &qu              &as COMMA   &as PERIOD  &as APOS
-                           &kp LEFT_ALT  &lt_200 4 R  &kp SPACE           &mt RIGHT_SHIFT SPACE  &lt 5 BACKSPACE  &kp DELETE
+  &kp F  &kp P  &kp D         &kp L        &kp X               &as SLASH              &kp U            &kp O       &kp Y       &kp B
+  &kp S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z      &kp A            &kp E       &kp I       &kp C
+  &kp V  &kp W  &kp G         &kp M        &kp J               &as SLASH              &qu              &as COMMA   &as PERIOD  &as APOS
+                &kp LEFT_ALT  &lt_200 4 R  &kp SPACE           &mt RIGHT_SHIFT SPACE  &lt 5 BACKSPACE  &kp DELETE
             >;
         };
 

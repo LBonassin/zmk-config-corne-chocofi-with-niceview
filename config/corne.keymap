@@ -206,34 +206,6 @@
             layers = <1 2>;
         };
 
-        q {
-            bindings = <&kp Q>;
-            key-positions = <22 23>;
-            layers = <1 0>;
-            timeout-ms = <25>;
-        };
-
-        z {
-            bindings = <&kp Z>;
-            key-positions = <21 22>;
-            layers = <1 0>;
-            timeout-ms = <30>;
-        };
-
-        qu {
-            bindings = <&qu>;
-            key-positions = <21 23>;
-            layers = <1 0>;
-            timeout-ms = <30>;
-        };
-
-        qu2 {
-            bindings = <&qu>;
-            key-positions = <11 13>;
-            timeout-ms = <20>;
-            layers = <1>;
-        };
-
         to_xcvz {
             bindings = <&sl 7>;
             key-positions = <10 31>;
@@ -262,6 +234,13 @@
             layers = <1 0 2>;
             timeout-ms = <50>;
             require-prior-idle-ms = <50>;
+        };
+
+        letter_q {
+            bindings = <&kp Q>;
+            key-positions = <7 8>;
+            timeout-ms = <50>;
+            layers = <0>;
         };
     };
 
@@ -531,9 +510,9 @@
         hdp {
             label = "hdp";
             bindings = <
-  &kp F  &kp P  &kp D         &kp L        &kp X               &as SLASH              &kp U            &kp O       &kp Y       &kp B
-  &kp S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z      &kp A            &kp E       &kp I       &kp C
-  &kp V  &kp W  &kp G         &kp M        &kp J               &as SLASH              &qu              &as COMMA   &as PERIOD  &as APOS
+  &kp V  &kp W  &kp G         &kp M        &kp J               &as SLASH              &as PERIOD       &as COMMA   &qu    &as APOS
+  &kp S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z      &kp A            &kp E       &kp I  &kp C
+  &kp F  &kp P  &kp D         &kp L        &kp X               &kp SLASH              &kp U            &kp O       &kp Y  &kp B
                 &kp LEFT_ALT  &lt_200 4 R  &kp SPACE           &mt RIGHT_SHIFT SPACE  &lt 5 BACKSPACE  &kp DELETE
             >;
         };

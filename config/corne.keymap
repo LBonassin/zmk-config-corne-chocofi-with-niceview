@@ -186,7 +186,7 @@
             layers = <5>;
         };
 
-        enter {
+        enter1 {
             bindings = <&kp ENTER>;
             key-positions = <24 32>;
             timeout-ms = <25>;
@@ -242,16 +242,26 @@
             require-prior-idle-ms = <25>;
         };
 
-        space {
-            bindings = <&kp SPACE>;
-            key-positions = <26 27>;
-            layers = <0 1>;
-        };
-
         to_mouse {
             bindings = <&tog 3>;
             key-positions = <34 35>;
             layers = <0 2 1 3>;
+        };
+
+        enter2 {
+            bindings = <&kp ENTER>;
+            key-positions = <33 25>;
+            layers = <0 1 2>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
+        };
+
+        enter3 {
+            bindings = <&kp ENTER>;
+            key-positions = <33 17>;
+            layers = <0 1 2>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
     };
 
@@ -533,8 +543,8 @@
             bindings = <
   &kp F             &kp P  &kp D         &kp L        &kp X               &as SLASH              &kp U            &kp O       &kp Y       &kp B
   &mt LEFT_SHIFT S  &kp N  &kp T         &kp H        &mt LEFT_SHIFT K    &mt RIGHT_SHIFT Z      &kp A            &kp E       &kp I       &mt RIGHT_SHIFT C
-  &mt LCTRL V       &kp W  &kp G         &kp M        &kp J               &kp SPACE              &qu              &as COMMA   &as PERIOD  &as APOS
-                           &kp LEFT_ALT  &lt_200 4 R  &kp SPACE           &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
+  &mt LCTRL V       &kp W  &kp G         &kp M        &kp J               &kp ENTER              &qu              &as COMMA   &as PERIOD  &as APOS
+                           &kp LEFT_ALT  &lt_200 4 R  &kp SPACE           &mt RIGHT_SHIFT SPACE  &lt 5 BACKSPACE  &kp DELETE
             >;
         };
 

@@ -303,6 +303,11 @@
                 bindings = <&macro_yapos>;
             };
 
+            i_apos {
+                trigger-keys = <I>;
+                bindings = <&macro_iapos>;
+            };
+
             spc_the {
                 trigger-keys = <SPACE>;
                 bindings = <&macro_the>;
@@ -517,6 +522,12 @@
         };
 
         macro_yapos: macro_yapos {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOS>;
+        };
+
+        macro_iapos: macro_iapos {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp APOS>;

@@ -238,8 +238,8 @@
             bindings = <&sl 7>;
             key-positions = <10 31>;
             layers = <0 1>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <25>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <500>;
         };
 
         to_mouse {

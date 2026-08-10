@@ -247,20 +247,6 @@
             key-positions = <34 35>;
             layers = <0 1 2>;
         };
-
-        enter2 {
-            bindings = <&kp ENTER>;
-            key-positions = <33 25>;
-            layers = <0 1>;
-            timeout-ms = <25>;
-        };
-
-        enter3 {
-            bindings = <&kp ENTER>;
-            key-positions = <33 17>;
-            layers = <0 1>;
-            timeout-ms = <25>;
-        };
     };
 
     behaviors {
@@ -543,7 +529,7 @@
   &kp B               &kp L  &kp D         &kp W                      &kp Z               &as SLASH              &kp F            &kp O       &kp U    &kp J
   &mt LEFT_SHIFT N    &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y      &kp H            &kp A       &kp E    &kp I
   &mt LEFT_CONTROL Q  &kp X  &kp M         &kp C                      &kp V               &kp K                  &kp P            &as COMMA   &as DOT  &as APOS
-                             &kp LEFT_ALT  &hold_layer_tap_magic 3 0  &kp SPACE           &mt RIGHT_SHIFT SPACE  &lt 4 BACKSPACE  &kp DELETE
+                             &kp LEFT_ALT  &hold_layer_tap_magic 3 0  &kp SPACE           &mt RIGHT_SHIFT ENTER  &lt 4 BACKSPACE  &kp DELETE
             >;
         };
 

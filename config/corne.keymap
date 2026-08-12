@@ -189,7 +189,7 @@
         enter1 {
             bindings = <&kp ENTER>;
             key-positions = <24 32>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             layers = <0 2 1>;
             require-prior-idle-ms = <25>;
         };

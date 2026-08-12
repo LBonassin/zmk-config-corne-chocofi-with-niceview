@@ -247,6 +247,20 @@
             key-positions = <34 35>;
             layers = <0 2 3 1>;
         };
+
+        right_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <17 33>;
+            timeout-ms = <25>;
+            layers = <0 1 2>;
+        };
+
+        right_enter_2 {
+            bindings = <&kp ENTER>;
+            key-positions = <33 25>;
+            timeout-ms = <25>;
+            layers = <0 1 2>;
+        };
     };
 
     behaviors {
@@ -526,10 +540,10 @@
         graphite {
             label = "graphite";
             bindings = <
-  &kp B               &kp L  &kp D         &kp W                      &kp Z               &as SLASH              &kp F            &kp O       &kp U    &kp J
-  &mt LEFT_SHIFT N    &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y      &kp H            &kp A       &kp E    &kp I
-  &mt LEFT_CONTROL Q  &kp X  &kp M         &kp C                      &kp V               &kp K                  &kp P            &as COMMA   &as DOT  &as APOS
-                             &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE           &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DELETE
+  &kp B  &kp L  &kp D         &kp W                      &kp Z        &as SLASH        &kp F            &kp O       &kp U    &kp J
+  &kp N  &kp R  &kp T         &kp S                      &kp G        &kp Y            &kp H            &kp A       &kp E    &kp I
+  &kp Q  &kp X  &kp M         &kp C                      &kp V        &kp K            &kp P            &as COMMA   &as DOT  &as APOS
+                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE    &sk RIGHT_SHIFT  &lt 5 BACKSPACE  &kp DELETE
             >;
         };
 

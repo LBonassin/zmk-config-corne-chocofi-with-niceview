@@ -251,8 +251,9 @@
         right_enter {
             bindings = <&kp ENTER>;
             key-positions = <17 33>;
-            timeout-ms = <25>;
+            timeout-ms = <30>;
             layers = <0 1 2>;
+            require-prior-idle-ms = <100>;
         };
 
         right_enter_2 {

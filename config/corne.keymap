@@ -262,6 +262,13 @@
             timeout-ms = <25>;
             layers = <0 1 2>;
         };
+
+        capsword {
+            bindings = <&caps_word>;
+            key-positions = <32 33>;
+            timeout-ms = <20>;
+            layers = <0 2>;
+        };
     };
 
     behaviors {

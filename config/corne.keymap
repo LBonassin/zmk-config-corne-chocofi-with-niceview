@@ -541,10 +541,10 @@
         graphite {
             label = "graphite";
             bindings = <
-  &kp B  &kp L  &kp D         &kp W                      &kp Z        &as APOS         &kp F            &kp O       &kp U    &kp J
-  &kp N  &kp R  &kp T         &kp S                      &kp G        &kp Y            &kp H            &kp A       &kp E    &kp I
-  &kp Q  &kp X  &kp M         &kp C                      &kp V        &kp K            &kp P            &as COMMA   &as DOT  &as SLASH
-                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE    &sk RIGHT_SHIFT  &lt 5 BACKSPACE  &kp DELETE
+  &kp B  &kp L  &kp D         &kp W                      &kp Z               &as APOS           &kp F            &kp O       &kp U    &kp J
+  &kp N  &kp R  &kp T         &kp S                      &mt LEFT_SHIFT G    &mt RIGHT_SHIFT Y  &kp H            &kp A       &kp E    &kp I
+  &kp Q  &kp X  &kp M         &kp C                      &kp V               &kp K              &kp P            &as COMMA   &as DOT  &as SLASH
+                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE           &sk RIGHT_SHIFT    &lt 5 BACKSPACE  &kp DELETE
             >;
         };
 
@@ -561,10 +561,10 @@
         qwerty {
             label = "qwerty";
             bindings = <
-  &kp Q             &kp W  &kp E         &kp R  &kp T               &kp Y                  &kp U            &kp I      &kp O    &kp P
-  &mt LEFT_SHIFT A  &kp S  &kp D         &kp F  &mt LEFT_SHIFT G    &mt RIGHT_SHIFT H      &kp J            &kp K      &kp L    &as SEMI
-  &mt LCTRL Z       &kp X  &kp C         &kp V  &kp B               &kp N                  &kp M            &as COMMA  &as DOT  &as FSLH
-                           &kp LEFT_ALT  &mo 4  &kp SPACE           &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DEL
+  &kp Q  &kp W  &kp E         &kp R  &kp T               &kp Y                  &kp U            &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D         &kp F  &mt LEFT_SHIFT G    &mt RIGHT_SHIFT H      &kp J            &kp K      &kp L    &as SEMI
+  &kp Z  &kp X  &kp C         &kp V  &kp B               &kp N                  &kp M            &as COMMA  &as DOT  &as FSLH
+                &kp LEFT_ALT  &mo 4  &kp SPACE           &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DEL
             >;
         };
 

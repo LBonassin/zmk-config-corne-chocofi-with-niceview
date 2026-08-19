@@ -262,14 +262,6 @@
             timeout-ms = <25>;
             layers = <0 1 2>;
         };
-
-        sticky_shift {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <23 26>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <25>;
-            layers = <0 1>;
-        };
     };
 
     behaviors {
@@ -591,7 +583,7 @@
             label = "f_keys";
             bindings = <
   &kp F1  &kp F2   &kp F3   &kp F4   &as GRAVE         &kp C_VOLUME_UP    &caps_word  &sk LEFT_SHIFT  &kp CAPSLOCK   &kp BACKSPACE
-  &kp F5  &kp F6   &kp F7   &kp F8   &volume_updown    &kp C_VOLUME_DOWN  &kp DEL     &kp UP_ARROW    &kp BACKSPACE  &sk LEFT_SHIFT
+  &kp F5  &kp F6   &kp F7   &kp F8   &volume_updown    &kp C_VOLUME_DOWN  &kp DEL     &kp UP_ARROW    &kp BACKSPACE  &none
   &kp F9  &kp F10  &kp F11  &kp F12  &sk LSHIFT        &none              &kp LEFT    &kp DOWN        &kp RIGHT      &none
                    &trans   &trans   &kp DEL           &trans             &mo 6       &trans
             >;

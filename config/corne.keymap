@@ -563,10 +563,10 @@
         sunstone_test {
             label = "sunstone";
             bindings = <
-  &as B  &kp L  &kp D         &kp W                &kp Z        &as SQT  &kp F            &kp U      &kp O    &kp Y
-  &kp S  &kp T  &kp R         &kp R                &kp G        &as J    &kp N            &kp I      &kp A    &kp H
-  &kp Q  &kp X  &kp M         &kp C                &kp V        &kp K    &kp P            &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &sk_mo 4 LEFT_SHIFT  &kp SPACE    &kp E    &lt 5 BACKSPACE  &kp DEL
+  &kp V  &kp D  &kp L         &kp W                &as SQT      &as COMMA  &kp F            &kp U      &kp O    &kp Y
+  &kp S  &kp T  &kp R         &none                &kp M        &kp B      &kp N            &kp I      &kp A    &kp H
+  &kp Q  &kp J  &kp X         &kp C                &kp G        &kp K      &kp P            &as COMMA  &as DOT  &kp Z
+                &kp LEFT_ALT  &sk_mo 4 LEFT_SHIFT  &kp SPACE    &kp E      &lt 5 BACKSPACE  &kp DEL
             >;
         };
 

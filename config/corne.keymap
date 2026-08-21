@@ -372,6 +372,38 @@
             };
         };
 
+        sunstone_magic: sunstone_magic {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+            a_y {
+                trigger-keys = <A>;
+                bindings = <&macro_ay>;
+            };
+
+            h_y {
+                trigger-keys = <h>;
+                bindings = <&macro_hy>;
+            };
+
+            k_n {
+                trigger-keys = <K>;
+                bindings = <&macro_kn>;
+            };
+
+            n_k {
+                trigger-keys = <N>;
+                bindings = <&macro_nk>;
+            };
+
+            r_l {
+                trigger-keys = <R>;
+                bindings = <&macro_rl>;
+            };
+            
+        };
+
         hold_layer_tap_magic: hold_layer_tap_magic {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -545,6 +577,26 @@
             #binding-cells = <0>;
             bindings = <&kp APOS>;
         };
+
+
+        // for sunstone
+        macro_ay: macro_ay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y>;
+        };
+
+        macro_kn: macro_kn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N>;
+        };
+
+        macro_nk: macro_nk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K>;
+        };
     };
 
     keymap {
@@ -560,11 +612,11 @@
             >;
         };
 
-        sunstone_test {
+        sunstone {
             label = "sunstone";
             bindings = <
   &kp V  &kp D  &kp L         &kp W                &as SQT      &as COMMA  &kp F            &kp U      &kp O    &kp Y
-  &kp S  &kp T  &kp R         &none                &kp M        &kp B      &kp N            &kp I      &kp A    &kp H
+  &kp S  &kp T  &kp R         &sunstone_magic      &kp M        &kp B      &kp N            &kp I      &kp A    &kp H
   &kp Q  &kp J  &kp X         &kp C                &kp G        &kp K      &kp P            &as COMMA  &as DOT  &kp Z
                 &kp LEFT_ALT  &sk_mo 4 LEFT_SHIFT  &kp SPACE    &kp E      &lt 5 BACKSPACE  &kp DEL
             >;

@@ -295,15 +295,16 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
         };
-        
+
         ad_swap_u_io: adaptive_u_io {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp I>;
-            
+
             /* Swap behavior parameters */
+
             repetition {
-                trigger-keys = <U>; 
+                trigger-keys = <U>;
                 bindings = <&kp O>;
                 max-prior-idle-ms = <250>;
             };
@@ -313,10 +314,11 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp O>;
-            
+
             /* Swap behavior parameters */
+
             repetition {
-                trigger-keys = <U>; 
+                trigger-keys = <U>;
                 bindings = <&kp I>;
                 max-prior-idle-ms = <250>;
             };
@@ -427,7 +429,6 @@
                 trigger-keys = <R>;
                 bindings = <&macro_rl>;
             };
-            
         };
 
         hold_layer_tap_magic: hold_layer_tap_magic {
@@ -604,8 +605,8 @@
             bindings = <&kp APOS>;
         };
 
-
         // for sunstone
+
         macro_ay: macro_ay {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -641,9 +642,9 @@
         sunstone {
             label = "sunstone";
             bindings = <
-  &kp V  &kp D  &kp L         &kp W                &as SQT      &as COMMA  &kp F            &kp U      &adaptive_u_oi    &kp Y
-  &kp S  &kp T  &kp R         &sunstone_magic      &kp M        &kp B      &kp N            &adaptive_u_io      &kp A    &kp H
-  &kp Q  &kp J  &kp X         &kp C                &kp G        &kp K      &kp P            &as COMMA  &as DOT  &kp Z
+  &kp V  &kp D  &kp L         &kp W                &as SQT      &as COMMA  &kp F            &kp U          &ad_swap_u_oi  &kp Y
+  &kp S  &kp T  &kp R         &sunstone_magic      &kp M        &kp B      &kp N            &ad_swap_u_io  &kp A          &kp H
+  &kp Q  &kp J  &kp X         &kp C                &kp G        &kp K      &kp P            &as COMMA      &as DOT        &kp Z
                 &kp LEFT_ALT  &sk_mo 4 LEFT_SHIFT  &kp SPACE    &kp E      &lt 5 BACKSPACE  &kp DEL
             >;
         };

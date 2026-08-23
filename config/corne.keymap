@@ -641,10 +641,10 @@
         graphite {
             label = "graphite";
             bindings = <
-  &kp B  &kp L  &kp D         &kp W                      &kp Z        &as APOS         &kp F            &kp O       &kp U    &kp J
-  &kp N  &kp R  &kp T         &kp S                      &kp G        &kp Y            &kp H            &kp A       &kp E    &kp I
-  &kp Q  &kp X  &kp M         &kp C                      &kp V        &kp K            &kp P            &as COMMA   &as DOT  &as SLASH
-                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE    &shift_capsword  &lt 5 BACKSPACE  &kp DELETE
+  &kp B  &kp L  &kp D         &kp W                      &kp Z        &as APOS  &kp F            &kp O       &kp U    &kp J
+  &kp N  &kp R  &kp T         &kp S                      &kp G        &kp Y     &kp H            &kp A       &kp E    &kp I
+  &kp Q  &kp X  &kp M         &kp C                      &kp V        &kp K     &kp P            &as COMMA   &as DOT  &shift_capsword
+                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE    &kp E     &lt 5 BACKSPACE  &kp DELETE
             >;
         };
 

@@ -449,11 +449,14 @@
             flavor = "tap-preferred";
         };
 
-        td_shift_capsword: td_shift_capsword {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SHIFT_CAPSWORD";
-            #binding-cells = <0>;
-            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+        capsword_sticky: capsword_sticky {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CAPSWORD_STICKY";
+            bindings = <&caps_word>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <140>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -641,7 +644,7 @@
             bindings = <
   &kp B  &kp L  &kp D         &kp W                      &kp Z        &as APOS  &kp F            &kp O       &kp U    &kp J
   &kp N  &kp R  &kp T         &kp S                      &kp G        &kp Y     &kp H            &kp A       &kp E    &kp I
-  &kp Q  &kp X  &kp M         &kp C                      &kp V        &kp K     &kp P            &as COMMA   &as DOT  &td_shift_capsword
+  &kp Q  &kp X  &kp M         &kp C                      &kp V        &kp K     &kp P            &as COMMA   &as DOT  &capsword_sticky 0 LEFT_SHIFT
                 &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE    &kp E     &lt 5 BACKSPACE  &kp DELETE
             >;
         };
@@ -651,7 +654,7 @@
             bindings = <
   &kp V  &kp D  &kp L         &kp W            &as Z        &as APOS  &kp F            &kp U          &ad_swap_u_oi  &kp Y
   &kp S  &kp T  &kp R         &sunstone_magic  &kp M        &kp B     &kp N            &ad_swap_u_io  &kp A          &kp H
-  &kp Q  &kp J  &kp X         &kp C            &kp G        &kp K     &kp P            &as COMMA      &as DOT        &td_shift_capsword
+  &kp Q  &kp J  &kp X         &kp C            &kp G        &kp K     &kp P            &as COMMA      &as DOT        &capsword_sticky 0 LEFT_SHIFT
                 &kp LEFT_ALT  &mo 4            &kp SPACE    &kp E     &lt 5 BACKSPACE  &kp DEL
             >;
         };

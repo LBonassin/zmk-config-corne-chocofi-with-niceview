@@ -342,7 +342,7 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&key_repeat>;
-            
+
             u_apos {
                 trigger-keys = <U>;
                 bindings = <&macro_uapos>;
@@ -357,7 +357,7 @@
                 trigger-keys = <I>;
                 bindings = <&macro_iapos>;
             };
-            
+
             w_h {
                 trigger-keys = <W>;
                 bindings = <&macro_wh>;
@@ -367,7 +367,6 @@
                 trigger-keys = <SPACE>;
                 bindings = <&macro_the>;
             };
-
         };
 
         hold_layer_tap_magic: hold_layer_tap_magic {
@@ -382,6 +381,15 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFT_CAPSWORD";
             bindings = <&sk LEFT_SHIFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        mod_space: mod_space {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_SPACE";
+            bindings = <&kp SPACE>, <&kp ENTER>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -470,7 +478,7 @@
             #binding-cells = <0>;
             bindings = <&kp APOS>;
         };
-        
+
         macro_the: macro_the {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -494,19 +502,19 @@
         whirl {
             label = "whirl";
             bindings = <
-  &kp Q  &kp G  &kp D         &kp F                       &kp V        &kp Z            &kp L            &kp U      &kp O    &kp Y
-  &kp N  &kp S  &kp T         &kp H                       &kp M        &as APOS         &kp R            &kp E      &kp A    &kp I
-  &kp B  &kp C  &kp P         &kp W                       &kp K        &kp X            &kp J            &ad_swap_j_comma_u  &as DOT  &as SLASH
-                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE    &sk RIGHT_SHIFT  &lt 5 BACKSPACE  &kp DEL
+  &kp Q  &kp G  &kp D         &kp F                      &kp V         &kp Z            &kp L            &kp U               &kp O    &kp Y
+  &kp N  &kp S  &kp T         &kp H                      &kp M         &as APOS         &kp R            &kp E               &kp A    &kp I
+  &kp B  &kp C  &kp P         &kp W                      &kp K         &kp X            &kp J            &ad_swap_j_comma_u  &as DOT  &as SLASH
+                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &mod_space    &sk RIGHT_SHIFT  &lt 5 BACKSPACE  &kp DEL
             >;
         };
 
         qwerty {
             label = "qwerty";
             bindings = <
-  &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y                  &kp U            &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D         &kp F  &kp G        &kp H                  &kp J            &kp K      &kp L    &as SEMI
-  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N                  &kp M            &as COMMA  &as DOT  &as SLASH
+  &kp Q  &kp W  &kp E         &kp R                      &kp T        &kp Y            &kp U            &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D         &kp F                      &kp G        &kp H            &kp J            &kp K      &kp L    &as SEMI
+  &kp Z  &kp X  &kp C         &kp V                      &kp B        &kp N            &kp M            &as COMMA  &as DOT  &as SLASH
                 &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE    &sk RIGHT_SHIFT  &lt 5 BACKSPACE  &kp DEL
             >;
         };

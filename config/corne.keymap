@@ -324,7 +324,7 @@
             };
         };
 
-        ad_swap_j_comma_u: adaptive_u_oi {
+        ad_swap_j_comma_u: ad_swap_j_comma_u {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&as COMMA>;

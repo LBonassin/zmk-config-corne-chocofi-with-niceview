@@ -328,6 +328,11 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&key_repeat>;
+            
+            u_apos {
+                trigger-keys = <U>;
+                bindings = <&macro_uapos>;
+            };
 
             y_apos {
                 trigger-keys = <Y>;
@@ -338,66 +343,17 @@
                 trigger-keys = <I>;
                 bindings = <&macro_iapos>;
             };
+            
+            w_h {
+                trigger-keys = <W>;
+                bindings = <&macro_wh>;
+            };
 
             spc_the {
                 trigger-keys = <SPACE>;
                 bindings = <&macro_the>;
             };
 
-            s_c {
-                trigger-keys = <S>;
-                bindings = <&macro_sc>;
-            };
-
-            p_h {
-                trigger-keys = <P>;
-                bindings = <&macro_ph>;
-            };
-
-            k_y {
-                trigger-keys = <K>;
-                bindings = <&macro_ky>;
-            };
-
-            e_u {
-                trigger-keys = <E>;
-                bindings = <&macro_eu>;
-            };
-
-            f_y {
-                trigger-keys = <F>;
-                bindings = <&macro_fy>;
-            };
-
-            g_s {
-                trigger-keys = <G>;
-                bindings = <&macro_gs>;
-            };
-
-            h_y {
-                trigger-keys = <H>;
-                bindings = <&macro_hy>;
-            };
-
-            o_a {
-                trigger-keys = <O>;
-                bindings = <&macro_oa>;
-            };
-
-            r_l {
-                trigger-keys = <R>;
-                bindings = <&macro_rl>;
-            };
-
-            u_e {
-                trigger-keys = <U>;
-                bindings = <&macro_ue>;
-            };
-
-            w_h {
-                trigger-keys = <W>;
-                bindings = <&macro_wh>;
-            };
         };
 
         hold_layer_tap_magic: hold_layer_tap_magic {
@@ -406,24 +362,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&mo>, <&magic>;
-        };
-
-        hold_layer_tap_repeat: hold_layer_tap_repeat {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
-            bindings = <&mo>, <&key_repeat>;
-        };
-
-        sk_mo: sk_mo {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SK_MO";
-            bindings = <&mo>, <&sk>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <140>;
-            flavor = "tap-preferred";
         };
 
         shift_capsword: shift_capsword {
@@ -495,85 +433,13 @@
             label = "TO_THIRD";
         };
 
-        macro_the: macro_the {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp H &kp E &kp SPACE>;
-        };
-
-        macro_ph: macro_ph {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp H>;
-        };
-
-        macro_ky: macro_ky {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y>;
-        };
-
-        macro_eu: macro_eu {
+        macro_uapos: macro_uapos {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp U>;
         };
 
-        macro_fy: macro_fy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y>;
-        };
-
-        macro_gs: macro_gs {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S>;
-        };
-
-        macro_hy: macro_hy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y>;
-        };
-
-        macro_oa: macro_oa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A>;
-        };
-
-        macro_rl: macro_rl {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L>;
-        };
-
-        macro_sc: macro_sc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C>;
-        };
-
-        macro_cs: macro_cs {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S>;
-        };
-
-        macro_pl: macro_pl {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp L>;
-        };
-
-        macro_ue: macro_ue {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E>;
-        };
-
-        macro_ws: macro_wh {
+        macro_wh: macro_wh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp H>;
@@ -589,6 +455,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp APOS>;
+        };
+        
+        macro_the: macro_the {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E &kp SPACE>;
         };
     };
 
@@ -610,7 +482,7 @@
             bindings = <
   &kp Q  &kp G  &kp D         &kp F                       &kp V        &kp Z            &kp L            &kp U      &kp O    &kp Y
   &kp N  &kp S  &kp T         &kp H                       &kp M        &as APOS         &kp R            &kp E      &kp A    &kp I
-  &kp B  &kp C  &kp P         &kp W                       &kp K        &kp X            &kp J            &as COMMA  &as DOT  &as FSLH
+  &kp B  &kp C  &kp P         &kp W                       &kp K        &kp X            &kp J            &as COMMA  &as DOT  &as SLASH
                 &kp LEFT_ALT  &hold_layer_tap_repeat 4 0  &kp SPACE    &sk RIGHT_SHIFT  &lt 5 BACKSPACE  &kp DEL
             >;
         };
@@ -620,8 +492,8 @@
             bindings = <
   &kp Q  &kp W  &kp E         &kp R  &kp T        &kp Y                  &kp U            &kp I      &kp O    &kp P
   &kp A  &kp S  &kp D         &kp F  &kp G        &kp H                  &kp J            &kp K      &kp L    &as SEMI
-  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N                  &kp M            &as COMMA  &as DOT  &as FSLH
-                &kp LEFT_ALT  &mo 4  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 5 BACKSPACE  &kp DEL
+  &kp Z  &kp X  &kp C         &kp V  &kp B        &kp N                  &kp M            &as COMMA  &as DOT  &as SLASH
+                &kp LEFT_ALT  &mo 4  &kp SPACE    &sk RIGHT_SHIFT  &lt 5 BACKSPACE  &kp DEL
             >;
         };
 

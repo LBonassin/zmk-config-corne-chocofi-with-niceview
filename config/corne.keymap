@@ -512,10 +512,10 @@
         qwerty {
             label = "qwerty";
             bindings = <
-  &kp Q  &kp W  &kp E         &kp R                      &kp T        &kp Y            &kp U            &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D         &kp F                      &kp G        &kp H            &kp J            &kp K      &kp L    &as SEMI
-  &kp Z  &kp X  &kp C         &kp V                      &kp B        &kp N            &kp M            &as COMMA  &as DOT  &as SLASH
-                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &kp SPACE    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
+  &kp Q  &kp W  &kp E         &kp R                      &kp T         &kp Y            &kp U            &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D         &kp F                      &kp G         &kp H            &kp J            &kp K      &kp L    &as SEMI
+  &kp Z  &kp X  &kp C         &kp V                      &kp B         &kp N            &kp M            &as COMMA  &as DOT  &as SLASH
+                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &mod_space    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
             >;
         };
 

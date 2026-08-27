@@ -324,7 +324,7 @@
             };
         };
 
-        ad_swap_j_comma_u: adaptive_u_oi {
+        ad_swap_j_comma_u: ad_swap_j_comma_u {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&as COMMA>;
@@ -334,6 +334,20 @@
             repetition {
                 trigger-keys = <J>;
                 bindings = <&kp U>;
+                max-prior-idle-ms = <100>;
+            };
+        };
+
+        ad_swap_j_f_s: ad_swap_j_f_s {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp F>;
+
+            /* Swap behavior parameters */
+
+            repetition {
+                trigger-keys = <D>;
+                bindings = <&kp S>;
                 max-prior-idle-ms = <100>;
             };
         };

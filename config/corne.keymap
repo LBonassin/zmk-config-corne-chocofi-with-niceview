@@ -394,40 +394,9 @@
                 bindings = <&macro_ue>;
             };
 
-            w_s {
+            w_h {
                 trigger-keys = <W>;
-                bindings = <&macro_ws>;
-            };
-        };
-
-        sunstone_magic: sunstone_magic {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&key_repeat>;
-
-            a_y {
-                trigger-keys = <A>;
-                bindings = <&macro_ay>;
-            };
-
-            h_y {
-                trigger-keys = <H>;
-                bindings = <&macro_hy>;
-            };
-
-            k_n {
-                trigger-keys = <K>;
-                bindings = <&macro_kn>;
-            };
-
-            n_k {
-                trigger-keys = <N>;
-                bindings = <&macro_nk>;
-            };
-
-            r_l {
-                trigger-keys = <R>;
-                bindings = <&macro_rl>;
+                bindings = <&macro_wh>;
             };
         };
 
@@ -437,6 +406,14 @@
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&mo>, <&magic>;
+        };
+
+        hold_layer_tap_repeat: hold_layer_tap_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&mo>, <&key_repeat>;
         };
 
         sk_mo: sk_mo {
@@ -587,10 +564,10 @@
             bindings = <&kp E>;
         };
 
-        macro_ws: macro_ws {
+        macro_ws: macro_wh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp S>;
+            bindings = <&kp H>;
         };
 
         macro_yapos: macro_yapos {
@@ -603,26 +580,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp APOS>;
-        };
-
-        // for sunstone
-
-        macro_ay: macro_ay {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y>;
-        };
-
-        macro_kn: macro_kn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N>;
-        };
-
-        macro_nk: macro_nk {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp K>;
         };
     };
 
@@ -639,13 +596,13 @@
             >;
         };
 
-        sunstone {
-            label = "sunstone";
+        whirl {
+            label = "whirl";
             bindings = <
-  &kp V  &kp D  &kp L         &kp W                &as SQT      &as COMMA  &kp F            &kp U          &ad_swap_u_oi  &kp Y
-  &kp S  &kp T  &kp R         &sunstone_magic      &kp M        &kp B      &kp N            &ad_swap_u_io  &kp A          &kp H
-  &kp Q  &kp J  &kp X         &kp C                &kp G        &kp K      &kp P            &as COMMA      &as DOT        &kp Z
-                &kp LEFT_ALT  &sk_mo 4 LEFT_SHIFT  &kp SPACE    &kp E      &lt 5 BACKSPACE  &kp DEL
+  &kp Q  &kp G  &kp D         &kp F                       &kp V        &kp Z            &kp L            &kp U      &kp O    &kp Y
+  &kp N  &kp S  &kp T         &kp H                       &kp M        &as SQT          &kp R            &kp E      &kp A    &kp I
+  &kp B  &kp C  &kp P         &kp W                       &kp K        &kp X            &kp J            &as COMMA  &as DOT  &as FSLH
+                &kp LEFT_ALT  &hold_layer_tap_repeat 4 0  &kp SPACE    &sk RIGHT_SHIFT  &lt 5 BACKSPACE  &kp DEL
             >;
         };
 

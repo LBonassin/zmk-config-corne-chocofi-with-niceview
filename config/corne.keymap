@@ -472,7 +472,7 @@
         macro_uapos: macro_uapos {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp U>;
+            bindings = <&kp APOS>;
         };
 
         macro_wh: macro_wh {

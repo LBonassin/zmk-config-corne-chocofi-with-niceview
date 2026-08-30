@@ -133,7 +133,8 @@
             bindings = <&kp RCTRL>;
             key-positions = <29 33>;
             layers = <0 2 4 5 6 1>;
-            timeout-ms = <70>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <25>;
         };
 
         // Shift (hold)
@@ -149,7 +150,8 @@
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <19 33>;
             layers = <0 2 4 5 6 1>;
-            timeout-ms = <50>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <25>;
         };
 
         // Unpaired
@@ -506,20 +508,20 @@
         whirl {
             label = "whirl";
             bindings = <
-  &kp Q  &kp G  &kp D         &kp F                      &kp V         &kp Z            &kp L            &kp U               &kp O    &kp Y
-  &kp N  &kp S  &kp T         &kp H                      &kp M         &as APOS         &kp R            &kp E               &kp A    &kp I
-  &kp B  &kp C  &ad_swap_w_p_h &kp W                      &kp K         &kp X            &kp J            &ad_swap_j_comma_u  &as DOT  &as SLASH
-                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &mod_space    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
+  &kp Q  &kp G  &kp D           &kp F                      &kp V         &kp Z            &kp L            &kp U               &kp O    &kp Y
+  &kp N  &kp S  &kp T           &kp H                      &kp M         &as APOS         &kp R            &kp E               &kp A    &kp I
+  &kp B  &kp C  &ad_swap_w_p_h  &kp W                      &kp K         &kp X            &kp J            &ad_swap_j_comma_u  &as DOT  &as SLASH
+                &kp LEFT_ALT    &hold_layer_tap_magic 4 0  &mod_space    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
             >;
         };
 
         w2 {
             label = "w2";
             bindings = <
-  &kp Q  &kp G  &kp D         &kp F                      &kp V         &kp Z            &kp L            &kp U               &kp O    &kp Y
-  &kp N  &kp S  &kp T         &kp H                      &kp M         &as APOS         &kp R            &kp E               &kp A    &kp I
-  &kp B  &kp C  &ad_swap_w_p_h &kp W                      &kp K         &kp X            &kp J            &ad_swap_j_comma_u  &as DOT  &as SLASH
-                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &mod_space    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
+  &kp Q  &kp G  &kp D           &kp F                      &kp V         &kp Z            &kp L            &kp U               &kp O    &kp Y
+  &kp N  &kp S  &kp T           &kp H                      &kp M         &as APOS         &kp R            &kp E               &kp A    &kp I
+  &kp B  &kp C  &ad_swap_w_p_h  &kp W                      &kp K         &kp X            &kp J            &ad_swap_j_comma_u  &as DOT  &as SLASH
+                &kp LEFT_ALT    &hold_layer_tap_magic 4 0  &mod_space    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
             >;
         };
 

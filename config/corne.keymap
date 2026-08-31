@@ -142,7 +142,7 @@
         l_game_shift {
             bindings = <&kp LSHFT>;
             key-positions = <10 32>;
-            timeout-ms = <50>;
+            timeout-ms = <45>;
             layers = <0 2 4 5 6 1>;
         };
 
@@ -150,7 +150,7 @@
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <19 33>;
             layers = <0 2 4 5 6 1>;
-            timeout-ms = <30>;
+            timeout-ms = <28>;
             require-prior-idle-ms = <25>;
         };
 
@@ -193,9 +193,8 @@
         enter1 {
             bindings = <&kp ENTER>;
             key-positions = <24 32>;
-            timeout-ms = <40>;
+            timeout-ms = <35>;
             layers = <0 2 1>;
-            require-prior-idle-ms = <25>;
         };
 
         shift_alt {
@@ -257,13 +256,19 @@
             key-positions = <17 33>;
             timeout-ms = <30>;
             layers = <0 1 2>;
-            require-prior-idle-ms = <25>;
         };
 
         right_enter_2 {
             bindings = <&kp ENTER>;
             key-positions = <33 25>;
-            timeout-ms = <25>;
+            timeout-ms = <50>;
+            layers = <0 1 2>;
+        };
+
+        other_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <33 27>;
+            timeout-ms = <50>;
             layers = <0 1 2>;
         };
     };

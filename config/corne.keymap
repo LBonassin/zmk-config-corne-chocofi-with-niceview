@@ -498,10 +498,10 @@
         whirl {
             label = "whirl";
             bindings = <
-  &kp Q  &kp G  &kp D           &kp F                      &kp V         &kp Z            &kp L            &kp U               &kp O    &kp Y
-  &kp N  &kp S  &kp T           &kp H                      &kp M         &as APOS         &kp R            &kp E               &kp A    &kp I
-  &kp B  &kp C  &ad_swap_w_p_h  &kp W                      &kp K         &kp X            &kp J            &ad_swap_j_comma_u  &as DOT  &as SLASH
-                &kp LEFT_ALT    &hold_layer_tap_magic 4 0  &mod_space    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
+  &kp Q  &kp G  &kp D           &kp F                      &kp V        &kp Z            &kp L            &kp U               &kp O    &kp Y
+  &kp N  &kp S  &kp T           &kp H                      &kp M        &as APOS         &kp R            &kp E               &kp A    &kp I
+  &kp B  &kp C  &ad_swap_w_p_h  &kp W                      &kp K        &kp X            &kp J            &ad_swap_j_comma_u  &as DOT  &as SLASH
+                &kp LEFT_ALT    &hold_layer_tap_magic 4 0  &kp SPACE    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
             >;
         };
 

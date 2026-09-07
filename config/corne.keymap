@@ -344,6 +344,34 @@
             };
         };
 
+        ad_swap_p_b_d: ad_swap_p_b_d {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp B>;
+
+            /* Swap behavior parameters */
+
+            repetition {
+                trigger-keys = <P>;
+                bindings = <&kp D>;
+                max-prior-idle-ms = <100>;
+            };
+        };
+
+        ad_swap_p_w_t: ad_swap_p_w_t {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp W>; //sebond letter
+
+            /* Swap behavior parameters */
+
+            repetition {
+                trigger-keys = <P>;  //first letter
+                bindings = <&kp T>;  //third letter
+                max-prior-idle-ms = <100>;
+            };
+        };
+
         magic: magic {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -363,16 +391,7 @@
                 trigger-keys = <I>;
                 bindings = <&macro_iapos>;
             };
-
-            w_h {
-                trigger-keys = <W>;
-                bindings = <&macro_wh>;
-            };
-
-            spc_the {
-                trigger-keys = <SPACE>;
-                bindings = <&macro_the>;
-            };
+            
         };
 
         hold_layer_tap_magic: hold_layer_tap_magic {
@@ -500,7 +519,7 @@
             bindings = <
   &kp Q  &kp G  &kp D           &kp F                      &kp V        &kp J            &kp L            &kp U      &kp O    &kp Y
   &kp N  &kp S  &kp T           &kp H                      &kp M        &as APOS         &kp R            &kp E      &kp A    &kp I
-  &kp B  &kp C  &ad_swap_w_p_h  &kp W                      &kp K        &kp X            &key_repeat      &as COMMA  &as DOT  &as SLASH
+  &ad_swap_p_b_d  &kp C  &ad_swap_w_p_h  &ad_swap_p_w_t                      &kp K        &kp X            &key_repeat      &as COMMA  &as DOT  &as SLASH
                 &kp LEFT_ALT    &hold_layer_tap_magic 4 0  &kp SPACE    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
             >;
         };

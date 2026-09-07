@@ -362,7 +362,6 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp W>; //sebond letter
-
             /* Swap behavior parameters */
 
             repetition {
@@ -391,7 +390,6 @@
                 trigger-keys = <I>;
                 bindings = <&macro_iapos>;
             };
-            
         };
 
         hold_layer_tap_magic: hold_layer_tap_magic {
@@ -517,10 +515,10 @@
         whirl {
             label = "whirl";
             bindings = <
-  &kp Q  &kp G  &kp D           &kp F                      &kp V        &kp J            &kp L            &kp U      &kp O    &kp Y
-  &kp N  &kp S  &kp T           &kp H                      &kp M        &as APOS         &kp R            &kp E      &kp A    &kp I
-  &ad_swap_p_b_d  &kp C  &ad_swap_w_p_h  &ad_swap_p_w_t                      &kp K        &kp X            &key_repeat      &as COMMA  &as DOT  &as SLASH
-                &kp LEFT_ALT    &hold_layer_tap_magic 4 0  &kp SPACE    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
+  &kp Q           &kp G  &kp D           &kp F            &kp V        &kp Z            &kp L                      &kp U               &kp O    &kp Y
+  &kp N           &kp S  &kp T           &kp H            &kp M        &as APOS         &kp R                      &kp E               &kp A    &kp I
+  &ad_swap_p_b_d  &kp C  &ad_swap_w_p_h  &ad_swap_p_w_t   &kp K        &kp X            &kp J                      &ad_swap_j_comma_u  &as DOT  &as SLASH
+                         &kp LEFT_ALT    &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };
 

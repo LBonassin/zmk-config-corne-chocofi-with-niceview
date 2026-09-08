@@ -603,9 +603,9 @@
         sunstone {
             label = "sunstone";
             bindings = <
-  &kp V  &kp D  &kp L         &kp W            &as SQT      &as COMMA        &kp F    &kp U      &kp O    &kp Y
+  &kp V  &kp D  &kp L         &kp W            &as SQT      &kp Z            &kp F    &kp U      &kp O    &kp Y
   &kp S  &kp T  &kp R         &sunstone_magic  &kp M        &kp B            &kp N    &kp I      &kp A    &kp H
-  &kp Q  &kp J  &kp X         &kp C            &kp G        &kp K            &kp P    &as COMMA  &as DOT  &kp Z
+  &kp Q  &kp J  &kp X         &kp C            &kp G        &kp K            &kp P    &as COMMA  &as DOT  &as SLASH
                 &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &lt 5 E  &kp DEL
             >;
         };

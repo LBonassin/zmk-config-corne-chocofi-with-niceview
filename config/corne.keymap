@@ -392,12 +392,53 @@
             };
         };
 
+        sunstone_magic: sunstone_magic {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+            a_y {
+                trigger-keys = <A>;
+                bindings = <&macro_ay>;
+            };
+
+            h_y {
+                trigger-keys = <H>;
+                bindings = <&macro_hy>;
+            };
+
+            k_n {
+                trigger-keys = <K>;
+                bindings = <&macro_kn>;
+            };
+
+            n_k {
+                trigger-keys = <N>;
+                bindings = <&macro_nk>;
+            };
+
+            r_l {
+                trigger-keys = <R>;
+                bindings = <&macro_rl>;
+            };
+        };
+
         hold_layer_tap_magic: hold_layer_tap_magic {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <150>;
             bindings = <&mo>, <&magic>;
+        };
+
+        sk_mo: sk_mo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SK_MO";
+            bindings = <&mo>, <&sk>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <140>;
+            flavor = "tap-preferred";
         };
 
         shift_capsword: shift_capsword {
@@ -507,6 +548,38 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp H &kp E &kp SPACE>;
         };
+
+        // for sunstone
+
+        macro_ay: macro_ay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y>;
+        };
+
+        macro_hy: macro_hy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Y>;
+        };
+
+        macro_kn: macro_kn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N>;
+        };
+
+        macro_nk: macro_nk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K>;
+        };
+
+        macro_rl: macro_rl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp L>;
+        };
     };
 
     keymap {
@@ -522,13 +595,13 @@
             >;
         };
 
-        w2 {
-            label = "w2";
+        sunstone {
+            label = "sunstone";
             bindings = <
-  &kp Q  &kp G  &kp D           &kp F                      &kp V         &kp Z            &kp L            &kp U               &kp O    &kp Y
-  &kp N  &kp S  &kp T           &kp H                      &kp M         &as APOS         &kp R            &kp E               &kp A    &kp I
-  &kp B  &kp C  &ad_swap_w_p_h  &kp W                      &kp K         &kp X            &kp J            &ad_swap_j_comma_u  &as DOT  &as SLASH
-                &kp LEFT_ALT    &hold_layer_tap_magic 4 0  &mod_space    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
+  &kp V  &kp D  &kp L         &kp W                &as SQT      &as COMMA  &kp F            &kp U          &ad_swap_u_oi  &kp Y
+  &kp S  &kp T  &kp R         &sunstone_magic      &kp M        &kp B      &kp N            &ad_swap_u_io  &kp A          &kp H
+  &kp Q  &kp J  &kp X         &kp C                &kp G        &kp K      &kp P            &as COMMA      &as DOT        &kp Z
+                &kp LEFT_ALT  &sk_mo 4 LEFT_SHIFT  &kp SPACE    &kp E      &lt 5 BACKSPACE  &kp DEL
             >;
         };
 

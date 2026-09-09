@@ -394,7 +394,7 @@
             a_y {
                 trigger-keys = <A>;
                 bindings = <&macro_ay>;
-            }
+            };
         };
 
         sunstone_magic: sunstone_magic {

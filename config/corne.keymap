@@ -364,15 +364,9 @@
             bindings = <&kp W>; //sebond letter
             /* Swap behavior parameters */
 
-            pwt {
+            repetition {
                 trigger-keys = <P>;  //first letter
                 bindings = <&kp T>;  //third letter
-                max-prior-idle-ms = <100>;
-            };
-
-            cwc {
-                trigger-keys = <C>;  //first letter
-                bindings = <&kp C>;  //third letter
                 max-prior-idle-ms = <100>;
             };
         };

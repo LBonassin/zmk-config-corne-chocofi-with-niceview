@@ -266,7 +266,6 @@
             tapping-term-ms = <170>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <80>;
             bindings = <&shifted>, <&kp>;
         };
 
@@ -298,7 +297,6 @@
             repetition {
                 trigger-keys = <U>;
                 bindings = <&kp O>;
-                max-prior-idle-ms = <250>;
             };
         };
 
@@ -312,7 +310,6 @@
             repetition {
                 trigger-keys = <U>;
                 bindings = <&kp I>;
-                max-prior-idle-ms = <250>;
             };
         };
 
@@ -326,7 +323,6 @@
             repetition {
                 trigger-keys = <J>;
                 bindings = <&kp U>;
-                max-prior-idle-ms = <100>;
             };
         };
 
@@ -340,7 +336,6 @@
             repetition {
                 trigger-keys = <W>;
                 bindings = <&kp H>;
-                max-prior-idle-ms = <100>;
             };
         };
 
@@ -354,20 +349,18 @@
             repetition {
                 trigger-keys = <P>;
                 bindings = <&kp D>;
-                max-prior-idle-ms = <100>;
             };
         };
 
         ad_swap_p_w_t: ad_swap_p_w_t {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp W>; //sebond letter
+            bindings = <&kp W>; //second letter
             /* Swap behavior parameters */
 
             repetition {
                 trigger-keys = <P>;  //first letter
                 bindings = <&kp T>;  //third letter
-                max-prior-idle-ms = <100>;
             };
         };
 
@@ -509,16 +502,15 @@
         to_first: to_first {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <20>;
+            
+            
             bindings = <&macro_tap>, <&kp LC(LA(F13)) &to 0>;
         };
 
         to_second: to_second {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <20>;
+            
             bindings = <&macro_tap>, <&kp LC(LA(F14)) &to 1>;
         };
 
@@ -532,8 +524,6 @@
         to_third: to_third {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <0>;
-            tap-ms = <20>;
             bindings = <&macro_tap>, <&kp LC(LA(F15)) &to 2>;
 
             label = "TO_THIRD";

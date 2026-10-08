@@ -376,19 +376,6 @@ repetition2 {
             };
         };
 
-ad_swap_r_x_l: ad_swap_r_x_l {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp X>; //second letter
-            /* Swap behavior parameters */
-
-            repetition {
-                trigger-keys = <R>;  //first letter
-                bindings = <&kp L>;  //third letter
-                max-prior-idle-ms = <120>;
-            };
-        };
-
         magic: magic {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -583,7 +570,7 @@ ad_swap_r_x_l: ad_swap_r_x_l {
             bindings = <
   &kp Q           &kp G  &kp D           &kp F            &kp V        &kp Z            &kp L                      &kp U               &kp O    &long_hold 3 Y
   &kp N           &kp S  &kp T           &kp H            &kp M        &as APOS         &kp R                      &kp E               &kp A    &kp I
-  &ad_swap_p_b_d  &kp C  &ad_swap_w_p_h  &ad_swap_p_w_t   &kp K        &ad_swap_r_x_l   &kp J                      &ad_swap_j_comma_u  &as DOT  &as SLASH
+  &ad_swap_p_b_d  &kp C  &ad_swap_w_p_h  &ad_swap_p_w_t   &kp K        &kp X   &kp J                      &ad_swap_j_comma_u  &as DOT  &as SLASH
                          &kp LEFT_ALT    &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };

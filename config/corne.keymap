@@ -297,6 +297,7 @@
             repetition {
                 trigger-keys = <U>;
                 bindings = <&kp O>;
+                max-prior-idle-ms = <120>;
             };
         };
 
@@ -310,6 +311,7 @@
             repetition {
                 trigger-keys = <U>;
                 bindings = <&kp I>;
+                max-prior-idle-ms = <120>;
             };
         };
 
@@ -323,6 +325,7 @@
             repetition {
                 trigger-keys = <J>;
                 bindings = <&kp U>;
+                max-prior-idle-ms = <120>;
             };
         };
 
@@ -336,6 +339,7 @@
             repetition {
                 trigger-keys = <W>;
                 bindings = <&kp H>;
+                max-prior-idle-ms = <120>;
             };
         };
 
@@ -349,6 +353,7 @@
             repetition {
                 trigger-keys = <P>;
                 bindings = <&kp D>;
+                max-prior-idle-ms = <120>;
             };
         };
 
@@ -361,11 +366,13 @@
             repetition {
                 trigger-keys = <P>;  //first letter
                 bindings = <&kp T>;  //third letter
+                max-prior-idle-ms = <120>;
             };
 
 repetition2 {
                 trigger-keys = <G>;  //first letter
                 bindings = <&kp S>;  //third letter
+                max-prior-idle-ms = <120>;
             };
         };
 
@@ -378,6 +385,7 @@ ad_swap_r_x_l: ad_swap_r_x_l {
             repetition {
                 trigger-keys = <R>;  //first letter
                 bindings = <&kp L>;  //third letter
+                max-prior-idle-ms = <120>;
             };
         };
 

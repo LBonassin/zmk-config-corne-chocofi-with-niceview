@@ -471,6 +471,13 @@
             tapping-term-ms = <1000>;
             flavor = "tap-preferred";
         };
+
+        ad_swap_r_x_l: ad_swap_r_x_l {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp X>;
+            label = "AD_SWAP_R_X_L";
+        };
     };
 
     macros {
@@ -502,15 +509,12 @@
         to_first: to_first {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            
-            
             bindings = <&macro_tap>, <&kp LC(LA(F13)) &to 0>;
         };
 
         to_second: to_second {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            
             bindings = <&macro_tap>, <&kp LC(LA(F14)) &to 1>;
         };
 
@@ -600,7 +604,7 @@
             bindings = <
   &kp Q           &kp G  &kp D           &kp F            &kp V        &kp Z            &kp L                      &kp U               &kp O    &long_hold 3 Y
   &kp N           &kp S  &kp T           &kp H            &kp M        &as APOS         &kp R                      &kp E               &kp A    &kp I
-  &ad_swap_p_b_d  &kp C  &ad_swap_w_p_h  &ad_swap_p_w_t   &kp K        &kp X            &kp J                      &ad_swap_j_comma_u  &as DOT  &as SLASH
+  &ad_swap_p_b_d  &kp C  &ad_swap_w_p_h  &ad_swap_p_w_t   &kp K        &ad_swap_r_x_l   &kp J                      &ad_swap_j_comma_u  &as DOT  &as SLASH
                          &kp LEFT_ALT    &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };

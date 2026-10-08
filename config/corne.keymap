@@ -364,6 +364,18 @@
             };
         };
 
+ad_swap_r_x_l: ad_swap_r_x_l {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp X>; //second letter
+            /* Swap behavior parameters */
+
+            repetition {
+                trigger-keys = <R>;  //first letter
+                bindings = <&kp L>;  //third letter
+            };
+        };
+
         magic: magic {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -470,13 +482,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <1000>;
             flavor = "tap-preferred";
-        };
-
-        ad_swap_r_x_l: ad_swap_r_x_l {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp X>;
-            label = "AD_SWAP_R_X_L";
         };
     };
 

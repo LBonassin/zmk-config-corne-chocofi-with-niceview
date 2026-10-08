@@ -362,6 +362,11 @@
                 trigger-keys = <P>;  //first letter
                 bindings = <&kp T>;  //third letter
             };
+
+repetition2 {
+                trigger-keys = <G>;  //first letter
+                bindings = <&kp S>;  //third letter
+            };
         };
 
 ad_swap_r_x_l: ad_swap_r_x_l {

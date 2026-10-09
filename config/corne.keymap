@@ -576,7 +576,7 @@
         finch {
             label = "finch";
             bindings = <
-  &kp Q  &kp L  &kp Y         &kp W            &kp V        &kp Z            &kp F    &kp O     &as COMMA  &kp BSPC
+  &kp Q  &kp L  &kp Y         &kp W            &kp V        &kp Z            &kp F    &kp O     &as COMMA  &none
   &kp C  &kp R  &kp S         &kp T            &kp M        &kp P            &kp N    &kp A     &kp I      &kp U
   &kp J  &kp X  &kp G         &kp D            &kp K        &kp B            &kp H    &as APOS  &as DOT    &as SLASH
                 &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &lt 5 E  &kp DEL

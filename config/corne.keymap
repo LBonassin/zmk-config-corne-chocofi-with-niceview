@@ -315,7 +315,7 @@
             };
         };
 
-        ad_swap_j_comma_u: ad_swap_j_comma_u {
+        ad_swap_j: ad_swap_j {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&as COMMA>;
@@ -329,7 +329,7 @@
             };
         };
 
-        ad_swap_w_p_h: ad_swap_w_p_h {
+        ad_swap_p: ad_swap_p {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp P>;
@@ -343,7 +343,7 @@
             };
         };
 
-        ad_swap_p_b_d: ad_swap_p_b_d {
+        ad_swap_b: ad_swap_b {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp B>;
@@ -357,7 +357,7 @@
             };
         };
 
-        ad_swap_p_w_t: ad_swap_p_w_t {
+        ad_swap_w: ad_swap_w {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp W>; //second letter
@@ -568,7 +568,7 @@
             bindings = <
   &kp Q           &kp G  &kp D           &kp F            &kp V        &kp Z            &kp L                      &kp U               &kp O    &long_hold 3 Y
   &kp N           &kp S  &kp T           &kp H            &kp M        &as APOS         &kp R                      &kp E               &kp A    &kp I
-  &ad_swap_p_b_d  &kp C  &ad_swap_w_p_h  &ad_swap_p_w_t   &kp K        &kp X            &kp J                      &ad_swap_j_comma_u  &as DOT  &as SLASH
+  &ad_swap_b  &kp C  &ad_swap_p  &ad_swap_w   &kp K        &kp X            &kp J                      &ad_swap_j  &as DOT  &as SLASH
                          &kp LEFT_ALT    &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };
@@ -576,9 +576,9 @@
         finch {
             label = "finch";
             bindings = <
-  &kp Q  &kp L  &kp Y         &kp W            &kp V        &kp Z            &kp F    &kp O     &as COMMA  &none
+  &kp Q  &kp L  &kp Y         &kp W            &kp V        &kp Z            &kp F    &kp O     &as DOT  &none
   &kp C  &kp R  &kp S         &kp T            &kp M        &kp P            &kp N    &kp A     &kp I      &kp U
-  &kp J  &kp X  &kp G         &kp D            &kp K        &kp B            &kp H    &as APOS  &as DOT    &as SLASH
+  &kp J  &kp X  &kp G         &kp D            &kp K        &kp B            &kp H    &as APOS  &as COMMA    &as SLASH
                 &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &lt 5 E  &kp DEL
             >;
         };

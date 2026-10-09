@@ -369,7 +369,7 @@
                 max-prior-idle-ms = <120>;
             };
 
-repetition2 {
+            repetition2 {
                 trigger-keys = <G>;  //first letter
                 bindings = <&kp S>;  //third letter
                 max-prior-idle-ms = <120>;
@@ -405,9 +405,7 @@ repetition2 {
                 trigger-keys = <R>;
                 bindings = <&macro_rl>;
             };
-        };     
-
-        
+        };
 
         hold_layer_tap_magic: hold_layer_tap_magic {
             compatible = "zmk,behavior-hold-tap";
@@ -570,7 +568,7 @@ repetition2 {
             bindings = <
   &kp Q           &kp G  &kp D           &kp F            &kp V        &kp Z            &kp L                      &kp U               &kp O    &long_hold 3 Y
   &kp N           &kp S  &kp T           &kp H            &kp M        &as APOS         &kp R                      &kp E               &kp A    &kp I
-  &ad_swap_p_b_d  &kp C  &ad_swap_w_p_h  &ad_swap_p_w_t   &kp K        &kp X   &kp J                      &ad_swap_j_comma_u  &as DOT  &as SLASH
+  &ad_swap_p_b_d  &kp C  &ad_swap_w_p_h  &ad_swap_p_w_t   &kp K        &kp X            &kp J                      &ad_swap_j_comma_u  &as DOT  &as SLASH
                          &kp LEFT_ALT    &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };
@@ -619,7 +617,7 @@ repetition2 {
         math {
             label = "math";
             bindings = <
-  &kp EXCLAMATION       &kp QUESTION           &kp SEMI          &kp COLON          &kp UNDERSCORE    &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &kp BACKSPACE
+  &kp EXCLAMATION       &kp QUESTION           &kp SEMI          &kp COLON          &kp UNDERSCORE    &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &none
   &kp ASTERISK          &kp SLASH              &kp PLUS          &kp MINUS          &as MINUS         &as EQUAL        &as NUMBER_4  &as NUMBER_5  &as NUMBER_6  &as BACKSLASH
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &as LEFT_BRACKET  &as RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &kp PERIOD
                                                &trans            &lt 6 BACKSPACE    &kp NUMBER_0      &trans           &trans        &kp NUMBER_0

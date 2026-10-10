@@ -329,20 +329,6 @@
             };
         };
 
-        ad_swap_p: ad_swap_p {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp P>;
-
-            /* Swap behavior parameters */
-
-            repetition {
-                trigger-keys = <W>;
-                bindings = <&kp H>;
-                max-prior-idle-ms = <120>;
-            };
-        };
-
         ad_swap_b: ad_swap_b {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -404,6 +390,11 @@
             r_l {
                 trigger-keys = <R>;
                 bindings = <&macro_rl>;
+            };
+
+            w_h {
+                trigger-keys = <W>;
+                bindings = <&macro_wh>;
             };
         };
 
@@ -527,8 +518,6 @@
             bindings = <&kp T &kp H &kp E &kp SPACE>;
         };
 
-        // for sunstone
-
         macro_ay: macro_ay {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -568,7 +557,7 @@
             bindings = <
   &kp Q           &kp G  &kp D           &kp F            &kp V        &kp Z            &kp L                      &kp U               &kp O    &long_hold 3 Y
   &kp N           &kp S  &kp T           &kp H            &kp M        &as APOS         &kp R                      &kp E               &kp A    &kp I
-  &ad_swap_b  &kp C  &ad_swap_p  &ad_swap_w   &kp K        &kp X            &kp J                      &ad_swap_j  &as DOT  &as SLASH
+  &ad_swap_b  &kp C  &kp W  &ad_swap_w   &kp K        &kp X            &kp J                      &ad_swap_j  &as DOT  &as SLASH
                          &kp LEFT_ALT    &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };

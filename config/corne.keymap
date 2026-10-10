@@ -565,9 +565,9 @@
         finch {
             label = "finch";
             bindings = <
-  &kp Q  &kp L  &kp Y         &kp W            &kp V        &kp Z            &kp F    &kp O     &as DOT  &none
+  &kp Q  &kp L  &kp Y         &kp W            &kp V        &kp Z            &kp F    &kp O     &as DOT    &none
   &kp C  &kp R  &kp S         &kp T            &kp M        &kp P            &kp N    &kp A     &kp I      &kp U
-  &kp J  &kp X  &kp G         &kp D            &kp K        &kp B            &kp H    &as APOS  &as COMMA    &as SLASH
+  &kp J  &kp X  &kp G         &kp D            &kp K        &kp B            &kp H    &as APOS  &as COMMA  &as SLASH
                 &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &lt 5 E  &kp DEL
             >;
         };
@@ -606,7 +606,7 @@
         math {
             label = "math";
             bindings = <
-  &kp EXCLAMATION       &kp QUESTION           &kp SEMI          &kp COLON          &kp UNDERSCORE    &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &none
+  &kp EXCLAMATION       &kp QUESTION           &kp SEMI          &kp COLON          &kp UNDERSCORE    &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &kp BACKSPACE
   &kp ASTERISK          &kp SLASH              &kp PLUS          &kp MINUS          &as MINUS         &as EQUAL        &as NUMBER_4  &as NUMBER_5  &as NUMBER_6  &as BACKSLASH
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &as LEFT_BRACKET  &as RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &kp PERIOD
                                                &trans            &lt 6 BACKSPACE    &kp NUMBER_0      &trans           &trans        &kp NUMBER_0

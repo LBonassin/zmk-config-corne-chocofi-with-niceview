@@ -410,11 +410,6 @@
                 trigger-keys = <W>;
                 bindings = <&macro_wh>;
             };
-
-            g_s {
-                trigger-keys = <G>;
-                bindings = <&macro_gs>;
-            };
         };
 
         hold_layer_tap_magic: hold_layer_tap_magic {
@@ -517,12 +512,6 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp H>;
-        };
-
-        macro_gs: macro_gs {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S>;
         };
 
         macro_yapos: macro_yapos {

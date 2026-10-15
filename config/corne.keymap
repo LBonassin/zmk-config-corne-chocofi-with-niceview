@@ -422,6 +422,7 @@
 
             y_apos {
                 trigger-keys = <Y>;
+                bindings = <&macro_yapos>;
             };
 
             i_apos {

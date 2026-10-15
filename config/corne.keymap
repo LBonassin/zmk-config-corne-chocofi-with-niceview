@@ -294,7 +294,7 @@
 
             /* Swap behavior parameters */
 
-            repetition {
+            the_swap {
                 trigger-keys = <U>;
                 bindings = <&kp O>;
                 max-prior-idle-ms = <120>;
@@ -308,7 +308,7 @@
 
             /* Swap behavior parameters */
 
-            repetition {
+            the_swap {
                 trigger-keys = <U>;
                 bindings = <&kp I>;
                 max-prior-idle-ms = <120>;
@@ -322,7 +322,7 @@
 
             /* Swap behavior parameters */
 
-            repetition {
+            the_swap {
                 trigger-keys = <J>;
                 bindings = <&kp U>;
                 max-prior-idle-ms = <120>;
@@ -336,7 +336,7 @@
 
             /* Swap behavior parameters */
 
-            repetition {
+            the_swap {
                 trigger-keys = <P>;
                 bindings = <&kp D>;
                 max-prior-idle-ms = <120>;
@@ -349,13 +349,13 @@
             bindings = <&kp W>; //second letter
             /* Swap behavior parameters */
 
-            repetition {
+            the_swap {
                 trigger-keys = <P>;  //first letter
                 bindings = <&kp T>;  //third letter
                 max-prior-idle-ms = <120>;
             };
 
-            repetition2 {
+            the_swap2 {
                 trigger-keys = <G>;  //first letter
                 bindings = <&kp S>;  //third letter
                 max-prior-idle-ms = <120>;
@@ -369,9 +369,37 @@
 
             /* Swap behavior parameters */
 
-            repetition {
+            the_swap {
                 trigger-keys = <W>;
                 bindings = <&kp H>;
+                max-prior-idle-ms = <120>;
+            };
+        };
+
+        ad_swap_slash: ad_swap_slash {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>;
+
+            /* Swap behavior parameters */
+
+            the_swap {
+                trigger-keys = <R>;
+                bindings = <&kp L>;
+                max-prior-idle-ms = <120>;
+            };
+        };
+
+        ad_swap_j: ad_swap_j {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp J>;
+
+            /* Swap behavior parameters */
+
+            the_swap {
+                trigger-keys = <Y>;
+                bindings = <&kp I>;
                 max-prior-idle-ms = <120>;
             };
         };
@@ -401,15 +429,6 @@
                 bindings = <&macro_ay>;
             };
 
-            r_l {
-                trigger-keys = <R>;
-                bindings = <&macro_rl>;
-            };
-
-            w_h {
-                trigger-keys = <W>;
-                bindings = <&macro_wh>;
-            };
         };
 
         hold_layer_tap_magic: hold_layer_tap_magic {
@@ -571,18 +590,18 @@
             bindings = <
   &kp Q           &kp G  &kp D           &kp F            &kp V        &kp Z            &kp L                      &kp U               &kp O    &long_hold 3 Y
   &kp N           &kp S  &kp T           &kp H            &kp M        &as APOS         &kp R                      &kp E               &kp A    &kp I
-  &ad_swap_b  &kp C  &ad_swap_p  &ad_swap_w   &kp K        &kp X            &kp J                      &ad_swap_j  &as DOT  &as SLASH
+  &ad_swap_b  &kp C  &ad_swap_p  &ad_swap_w   &kp K        &kp X            &ad_swap_j                      &ad_swap_j  &as DOT  &ad_swap_slash
                          &kp LEFT_ALT    &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };
 
-        finch {
-            label = "finch";
+        qq {
+            label = "qq";
             bindings = <
-  &kp Q  &kp L  &kp Y         &kp W            &kp V        &kp Z            &kp F    &kp O     &as DOT    &none
-  &kp C  &kp R  &kp S         &kp T            &kp M        &kp P            &kp N    &kp A     &kp I      &kp U
-  &kp J  &kp X  &kp G         &kp D            &kp K        &kp B            &kp H    &as APOS  &as COMMA  &as SLASH
-                &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &lt 5 E  &kp DEL
+  &kp Q  &kp W  &kp E         &kp R                      &kp T         &kp Y            &kp U            &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D         &kp F                      &kp G         &kp H            &kp J            &kp K      &kp L    &as SEMI
+  &kp Z  &kp X  &kp C         &kp V                      &kp B         &kp N            &kp M            &as COMMA  &as DOT  &as SLASH
+                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &mod_space    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
             >;
         };
 

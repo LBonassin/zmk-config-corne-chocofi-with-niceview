@@ -393,16 +393,6 @@
                 bindings = <&macro_uapos>;
             };
 
-            y_apos {
-                trigger-keys = <Y>;
-                bindings = <&macro_yapos>;
-            };
-
-            y_i {
-                trigger-keys = <Y>;
-                bindings = <&macro_yi>;
-            };
-
             i_apos {
                 trigger-keys = <I>;
                 bindings = <&macro_iapos>;
@@ -523,11 +513,6 @@
             bindings = <&kp APOS>;
         };
 
-        macro_yi: macro_yi {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I>;
-        };
 
         macro_iapos: macro_iapos {
             compatible = "zmk,behavior-macro";

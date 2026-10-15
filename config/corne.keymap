@@ -315,7 +315,7 @@
             };
         };
 
-        ad_swap_j: ad_swap_j {
+        ad_swap_comma: ad_swap_comma {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&as COMMA>;
@@ -358,6 +358,12 @@
             the_swap2 {
                 trigger-keys = <G>;  //first letter
                 bindings = <&kp S>;  //third letter
+                max-prior-idle-ms = <120>;
+            };
+
+            the_swap3 {
+                trigger-keys = <C>;  //first letter
+                bindings = <&kp H>;  //third letter
                 max-prior-idle-ms = <120>;
             };
         };
@@ -416,7 +422,6 @@
 
             y_apos {
                 trigger-keys = <Y>;
-                bindings = <&macro_yapos>;
             };
 
             i_apos {
@@ -590,7 +595,7 @@
             bindings = <
   &kp Q           &kp G  &kp D           &kp F            &kp V        &kp Z            &kp L                      &kp U               &kp O    &long_hold 3 Y
   &kp N           &kp S  &kp T           &kp H            &kp M        &as APOS         &kp R                      &kp E               &kp A    &kp I
-  &ad_swap_b  &kp C  &ad_swap_p  &ad_swap_w   &kp K        &kp X            &ad_swap_j                      &ad_swap_j  &as DOT  &ad_swap_slash
+  &ad_swap_b  &kp C  &ad_swap_p  &ad_swap_w   &kp K        &kp X            &ad_swap_j                      &ad_swap_comma  &as DOT  &ad_swap_slash
                          &kp LEFT_ALT    &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };

@@ -393,6 +393,11 @@
                 trigger-keys = <A>;
                 bindings = <&macro_ay>;
             };
+
+            y_apos {
+                trigger-keys = <Y>;
+                bindings = <&macro_yapos>;
+            };
         };
 
         hold_layer_tap_magic: hold_layer_tap_magic {

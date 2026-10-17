@@ -317,7 +317,6 @@
             the_swap {
                 trigger-keys = <R>;
                 bindings = <&kp L>;
-                max-prior-idle-ms = <120>;
             };
         };
 

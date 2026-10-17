@@ -398,6 +398,11 @@
                 trigger-keys = <Y>;
                 bindings = <&macro_yapos>;
             };
+
+            w_h {
+                trigger-keys = <W>;
+                bindings = <&macro_WH>;
+            };
         };
 
         hold_layer_tap_magic: hold_layer_tap_magic {

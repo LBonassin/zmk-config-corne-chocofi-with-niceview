@@ -401,7 +401,7 @@
 
             w_h {
                 trigger-keys = <W>;
-                bindings = <&macro_WH>;
+                bindings = <&macro_wh>;
             };
         };
 

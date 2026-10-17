@@ -201,13 +201,6 @@
             layers = <0 2 1>;
         };
 
-        q {
-            bindings = <&kp Q>;
-            key-positions = <22 23>;
-            layers = <0 1>;
-            timeout-ms = <25>;
-        };
-
         z {
             bindings = <&kp Z>;
             key-positions = <21 22>;
@@ -217,16 +210,9 @@
 
         qu {
             bindings = <&qu>;
-            key-positions = <21 23>;
+            key-positions = <23 22>;
             layers = <0 1>;
             timeout-ms = <30>;
-        };
-
-        qu2 {
-            bindings = <&qu>;
-            key-positions = <11 13>;
-            timeout-ms = <20>;
-            layers = <0>;
         };
 
         to_xcvz {
@@ -563,6 +549,13 @@
             #binding-cells = <0>;
             bindings = <&kp L>;
         };
+
+        rl: rl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp L>;
+            label = "RL";
+        };
     };
 
     keymap {
@@ -573,7 +566,7 @@
             bindings = <
   &kp Q       &kp G  &kp D         &kp F            &kp V        &kp Z            &kp L                      &kp U           &kp O    &long_hold 3 Y
   &kp N       &kp S  &kp T         &kp H            &kp M        &as APOS         &kp R                      &kp E           &kp A    &kp I
-  &ad_swap_b  &kp C  &ad_swap_p    &ad_swap_w       &kp K        &kp X            &ad_swap_j                      &ad_swap_comma  &as DOT  &as SLASH
+  &ad_swap_b  &kp C  &ad_swap_p    &ad_swap_w       &kp K        &kp X            &ad_swap_j                 &ad_swap_comma  &as DOT  &as SLASH
                      &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };

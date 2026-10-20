@@ -213,7 +213,6 @@
             key-positions = <10 31>;
             layers = <0 1>;
             timeout-ms = <50>;
-            require-prior-idle-ms = <500>;
         };
 
         to_mouse {
@@ -631,10 +630,10 @@
 
         xcvz {
             bindings = <
-  &trans  &trans     &kp LC(A)  &trans     &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &kp LC(X)  &kp LC(C)  &kp LC(Z)  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans     &trans     &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans
-                     &trans     &trans     &trans    &trans  &trans  &trans
+  &trans  &kp LG(LEFT)  &kp LG(RIGHT)  &trans     &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &kp LC(X)     &kp LC(C)      &kp LC(Z)  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans        &kp LC(A)      &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans
+                        &trans         &trans     &trans    &trans  &trans  &trans
             >;
 
             label = "xcvz";

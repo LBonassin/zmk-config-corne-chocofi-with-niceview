@@ -302,7 +302,7 @@
         ad_swap_j: ad_swap_j {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&as J>;
+            bindings = <&kp J>;
 
             /* Swap behavior parameters */
 

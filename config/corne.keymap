@@ -428,18 +428,8 @@
             bindings = <&tog>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <1000>;
             flavor = "tap-preferred";
-        };
-
-        layer_skShift: layer_skShift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_SKSHIFT";
-            bindings = <&mo>, <&sk>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "balanced";
         };
     };
 
@@ -570,10 +560,10 @@
         whirl {
             label = "whirl";
             bindings = <
-  &kp Q       &kp G  &kp D         &kp F            &kp V        &kp Z     &kp L                         &kp U           &kp O    &long_hold 3 Y
-  &kp N       &kp S  &kp T         &kp H            &kp M        &as APOS  &kp R                         &kp E           &kp A    &kp I
-  &ad_swap_b  &kp C  &ad_swap_p    &ad_swap_w       &kp K        &kp X     &ad_swap_j                    &ad_swap_comma  &as DOT  &as SLASH
-                     &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &magic    &layer_skShift 5 RIGHT_SHIFT  &kp DEL
+  &kp Q       &kp G  &kp D         &kp F            &kp V        &kp Z            &kp L                      &kp U           &kp O    &long_hold 3 Y
+  &kp N       &kp S  &kp T         &kp H            &kp M        &as APOS         &kp R                      &kp E           &kp A    &kp I
+  &ad_swap_b  &kp C  &ad_swap_p    &ad_swap_w       &kp K        &kp X            &ad_swap_j                 &ad_swap_comma  &as DOT  &as SLASH
+                     &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };
 

@@ -226,6 +226,13 @@
             key-positions = <27 28>;
             layers = <0 1 2>;
         };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 9>;
+            timeout-ms = <30>;
+            layers = <0 2 4 5 6 1>;
+        };
     };
 
     behaviors {
@@ -431,6 +438,16 @@
             tapping-term-ms = <1000>;
             flavor = "tap-preferred";
         };
+
+        shift_capsword_layer: shift_capsword_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_CAPSWORD_LAYER";
+            bindings = <&mo>, <&shift_capsword>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+        };
     };
 
     macros {
@@ -560,10 +577,10 @@
         whirl {
             label = "whirl";
             bindings = <
-  &kp Q       &kp G  &kp D         &kp F            &kp V        &kp Z            &kp L                      &kp U           &kp O    &long_hold 3 Y
-  &kp N       &kp S  &kp T         &kp H            &kp M        &as APOS         &kp R                      &kp E           &kp A    &kp I
-  &ad_swap_b  &kp C  &ad_swap_p    &ad_swap_w       &kp K        &kp X            &kp J                 &ad_swap_comma  &as DOT  &as SLASH
-                     &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
+  &kp Q       &kp G  &kp D         &kp F            &kp V        &kp Z     &kp L                      &kp U           &kp O    &kp Y
+  &kp N       &kp S  &kp T         &kp H            &kp M        &as APOS  &kp R                      &kp E           &kp A    &kp I
+  &ad_swap_b  &kp C  &ad_swap_p    &ad_swap_w       &kp K        &kp X     &kp J                      &ad_swap_comma  &as DOT  &as SLASH
+                     &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &magic    &shift_capsword_layer 5 0  &kp DEL
             >;
         };
 
@@ -611,7 +628,7 @@
         math {
             label = "math";
             bindings = <
-  &kp EXCLAMATION       &kp QUESTION           &kp SEMI          &kp COLON          &kp UNDERSCORE    &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &kp BACKSPACE
+  &kp EXCLAMATION       &kp QUESTION           &kp SEMI          &kp COLON          &kp UNDERSCORE    &none            &as NUMBER_7  &as NUMBER_8  &as NUMBER_9  &none
   &kp ASTERISK          &kp SLASH              &kp PLUS          &kp MINUS          &as MINUS         &as EQUAL        &as NUMBER_4  &as NUMBER_5  &as NUMBER_6  &as BACKSLASH
   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &as LEFT_BRACKET  &as RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &as NUMBER_1  &as NUMBER_2  &as NUMBER_3  &kp PERIOD
                                                &trans            &lt 6 BACKSPACE    &kp NUMBER_0      &trans           &trans        &kp NUMBER_0

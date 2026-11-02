@@ -219,8 +219,8 @@
             layers = <0 1 2>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
+        backspace_word {
+            bindings = <&kp LC(BACKSPACE)>;
             key-positions = <16 17 18>;
             timeout-ms = <30>;
             layers = <0 2 4 5 6 1>;

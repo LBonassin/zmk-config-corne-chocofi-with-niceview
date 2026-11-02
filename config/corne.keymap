@@ -102,14 +102,6 @@
             require-prior-idle-ms = <300>;
         };
 
-        r_win_ctrl2 {
-            bindings = <&sk LC(LEFT_WIN)>;
-            key-positions = <18 17 16>;
-            layers = <0 2 4 5 6 1>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <300>;
-        };
-
         // Shift+Win
 
         win_shift2 {
@@ -229,7 +221,7 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
+            key-positions = <16 17 18>;
             timeout-ms = <30>;
             layers = <0 2 4 5 6 1>;
         };

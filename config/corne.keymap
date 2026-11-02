@@ -202,7 +202,7 @@
 
         to_xcvz {
             bindings = <&sl 7>;
-            key-positions = <10 31>;
+            key-positions = <31 10>;
             layers = <0 1>;
             timeout-ms = <50>;
         };
@@ -224,6 +224,13 @@
             key-positions = <16 17 18>;
             timeout-ms = <30>;
             layers = <0 2 4 5 6 1>;
+        };
+
+        to_xcvz2 {
+            bindings = <&sl 7>;
+            key-positions = <31 20>;
+            timeout-ms = <50>;
+            layers = <0 1>;
         };
     };
 

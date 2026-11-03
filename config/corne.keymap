@@ -232,6 +232,20 @@
             timeout-ms = <50>;
             layers = <0 1>;
         };
+
+        sticky_lshift {
+            bindings = <&sk LEFT_SHIFT>;
+            key-positions = <11 13>;
+            layers = <0 2 4 5 6 1>;
+            timeout-ms = <30>;
+        };
+
+        sticky_rshift {
+            bindings = <&sk RIGHT_SHIFT>;
+            key-positions = <18 16>;
+            layers = <0 2 4 5 6 1>;
+            timeout-ms = <30>;
+        };
     };
 
     behaviors {
@@ -576,10 +590,10 @@
         whirl {
             label = "whirl";
             bindings = <
-  &kp Q       &kp G  &kp D         &kp F            &kp V        &kp Z            &kp L                      &kp U           &kp O    &kp Y
-  &kp N       &kp S  &kp T         &kp H            &kp M        &as APOS         &kp R                      &kp E           &kp A    &kp I
-  &ad_swap_b  &kp C  &ad_swap_p    &ad_swap_w       &kp K        &kp X            &kp J                      &ad_swap_comma  &as DOT  &as SLASH
-                     &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
+  &kp Q       &kp G  &kp D         &kp F            &kp V        &kp Z     &kp L                      &kp U           &kp O    &kp Y
+  &kp N       &kp S  &kp T         &kp H            &kp M        &as APOS  &kp R                      &kp E           &kp A    &kp I
+  &ad_swap_b  &kp C  &ad_swap_p    &ad_swap_w       &kp K        &kp X     &kp J                      &ad_swap_comma  &as DOT  &as SLASH
+                     &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &magic    &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };
 

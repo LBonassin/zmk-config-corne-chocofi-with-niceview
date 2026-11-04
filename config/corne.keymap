@@ -195,7 +195,7 @@
 
         q {
             bindings = <&kp Q>;
-            key-positions = <21 22>;
+            key-positions = <21 23>;
             layers = <0 1>;
             timeout-ms = <30>;
         };
@@ -367,6 +367,90 @@
             the_swap {
                 trigger-keys = <W>;
                 bindings = <&kp H>;
+                max-prior-idle-ms = <120>;
+            };
+        };
+
+        ad_swap_x: ad_swap_x {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp X>;
+
+            /* Swap behavior parameters */
+
+            the_swap {
+                trigger-keys = <G>;
+                bindings = <&kp S>;
+                max-prior-idle-ms = <120>;
+            };
+        };
+
+        ad_swap_d: ad_swap_d {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp D>;
+
+            /* Swap behavior parameters */
+
+            the_swap {
+                trigger-keys = <G>;
+                bindings = <&kp Y>;
+                max-prior-idle-ms = <120>;
+            };
+        };
+
+        ad_swap_r: ad_swap_r {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp R>;
+
+            /* Swap behavior parameters */
+
+            the_swap {
+                trigger-keys = <N>;
+                bindings = <&kp APOS>;
+                max-prior-idle-ms = <120>;
+            };
+        };
+
+        ad_swap_k: ad_swap_k {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp K>;
+
+            /* Swap behavior parameters */
+
+            the_swap {
+                trigger-keys = <P>;
+                bindings = <&kp H>;
+                max-prior-idle-ms = <120>;
+            };
+        };
+
+        ad_swap_h: ad_swap_h {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp H>;
+
+            /* Swap behavior parameters */
+
+            the_swap {
+                trigger-keys = <R>;
+                bindings = <&kp L>;
+                max-prior-idle-ms = <120>;
+            };
+        };
+
+        ad_swap_w: ad_swap_g {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp G>;
+
+            /* Swap behavior parameters */
+
+            the_swap {
+                trigger-keys = <T>;
+                bindings = <&kp W>;
                 max-prior-idle-ms = <120>;
             };
         };
@@ -586,9 +670,9 @@
         mine {
             label = "mine";
             bindings = <
-  &kp V  &kp L  &kp Y         &kp W                      &kp J         &kp SQT          &kp F                      &kp U      &kp O     &kp BSPC
-  &kp C  &kp R  &kp S         &kp T                      &kp M         &kp B            &kp N                      &kp E      &kp A     &kp I
-  &kp Z  &kp X  &kp G         &kp D                      &kp K         &kp P            &kp H                      &as COMMA  &as APOS  &as DOT
+  &kp V  &kp L  &kp Y         &kp W                      &kp J         &kp APOS         &kp F                      &kp U      &kp O     &kp BSPC
+  &kp C  &ad_swap_r  &kp S         &kp T                      &kp M         &kp B            &kp N                      &kp E      &kp A     &kp I
+  &kp Z  &ad_swap_x  &ad_swap_g        &ad_swap_d                      &ad_swap_k         &kp P            &ad_swap_h                      &as COMMA  &as DOT &as SLASH
                 &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &mod_space    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };

@@ -60,8 +60,8 @@
             bindings = <&sk RCTRL>;
             key-positions = <18 17>;
             layers = <0 2 4 5 6 1>;
-            timeout-ms = <18>;
-            require-prior-idle-ms = <400>;
+            timeout-ms = <17>;
+            require-prior-idle-ms = <300>;
         };
 
         // Win

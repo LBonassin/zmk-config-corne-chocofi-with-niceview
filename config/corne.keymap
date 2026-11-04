@@ -165,7 +165,7 @@
         record {
             bindings = <&kp LG(LA(G))>;
             key-positions = <22 23 24 32>;
-            layers = <0 2>;
+            layers = <0 2 1>;
         };
 
         winAltPrintscreen {
@@ -196,14 +196,14 @@
         q {
             bindings = <&kp Q>;
             key-positions = <21 23>;
-            layers = <0 1>;
+            layers = <0 1 2>;
             timeout-ms = <30>;
         };
 
         to_xcvz {
             bindings = <&sl 7>;
             key-positions = <31 10>;
-            layers = <0 1>;
+            layers = <0 1 2>;
             timeout-ms = <50>;
         };
 
@@ -230,7 +230,7 @@
             bindings = <&sl 7>;
             key-positions = <31 20>;
             timeout-ms = <50>;
-            layers = <0 1>;
+            layers = <0 1 2>;
         };
     };
 
@@ -677,13 +677,13 @@
             >;
         };
 
-        qwerty {
-            label = "qwerty";
+        finch {
+            label = "finch";
             bindings = <
-  &kp Q  &kp W  &kp E         &kp R                      &kp T         &kp Y            &kp U            &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D         &kp F                      &kp G         &kp H            &kp J            &kp K      &kp L    &as SEMI
-  &kp Z  &kp X  &kp C         &kp V                      &kp B         &kp N            &kp M            &as COMMA  &as DOT  &as SLASH
-                &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &mod_space    &shift_capsword  &lt 5 BACKSPACE  &kp DEL
+  &kp V  &kp L       &kp Y         &kp W                      &kp J         &kp P  &kp F                      &kp O     &as DOT    &kp BSPC
+  &kp C  &kp R       &kp S         &kp T                      &kp M         &kp B  &kp N                      &kp A     &kp I      &kp U
+  &kp Z  &ad_swap_x  &ad_swap_g    &ad_swap_d                 &ad_swap_k    &kp P  &ad_swap_h                 &as APOS  &as COMMA  &as FSLH
+                     &kp LEFT_ALT  &hold_layer_tap_magic 4 0  &mod_space    &kp E  &shift_capsword_layer 5 0  &kp DEL
             >;
         };
 

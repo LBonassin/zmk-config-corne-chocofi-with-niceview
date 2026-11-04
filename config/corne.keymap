@@ -441,7 +441,7 @@
             };
         };
 
-        ad_swap_w: ad_swap_g {
+        ad_swap_g: ad_swap_g {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp G>;

@@ -51,17 +51,13 @@
         ctrl2 {
             bindings = <&sk LCTRL>;
             key-positions = <11 12>;
-            layers = <0 2 4 5 6 1>;
-            timeout-ms = <18>;
-            require-prior-idle-ms = <500>;
+            layers = <4 5 6>;
         };
 
         r_ctrl2 {
             bindings = <&sk RCTRL>;
             key-positions = <18 17>;
-            layers = <0 2 4 5 6 1>;
-            timeout-ms = <17>;
-            require-prior-idle-ms = <300>;
+            layers = <4 5 6>;
         };
 
         // Win
@@ -69,9 +65,7 @@
         win2 {
             bindings = <&sk LEFT_WIN>;
             key-positions = <12 13>;
-            layers = <0 2 4 5 6 1>;
-            timeout-ms = <18>;
-            require-prior-idle-ms = <500>;
+            layers = <4 5 6>;
         };
 
         // Shift+Ctrl
@@ -79,17 +73,13 @@
         ls_ctrl2 {
             bindings = <&sk LC(LEFT_SHIFT)>;
             key-positions = <10 11 12>;
-            layers = <0 2 4 5 6 1>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <400>;
+            layers = <4 5 6>;
         };
 
         r_ctrl_shift2 {
             bindings = <&sk RC(RIGHT_SHIFT)>;
             key-positions = <19 18 17>;
-            layers = <0 2 4 5 6 1>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <300>;
+            layers = <4 5 6>;
         };
 
         // Ctrl+Win
@@ -97,9 +87,7 @@
         l_ctrl_win2 {
             bindings = <&sk LC(LEFT_WIN)>;
             key-positions = <11 12 13>;
-            layers = <0 2 4 5 6 1>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <400>;
+            layers = <4 5 6>;
         };
 
         // Shift+Win
@@ -107,9 +95,7 @@
         win_shift2 {
             bindings = <&sk LS(LEFT_WIN)>;
             key-positions = <10 13>;
-            layers = <0 2 4 5 6 1>;
-            timeout-ms = <20>;
-            require-prior-idle-ms = <400>;
+            layers = <4 5 6>;
         };
 
         // Ctrl (hold)
@@ -153,7 +139,7 @@
             key-positions = <32 12>;
             layers = <0 2 4 5 6 1>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
+            require-prior-idle-ms = <300>;
         };
 
         printscreen {

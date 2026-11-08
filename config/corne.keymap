@@ -53,7 +53,7 @@
             key-positions = <11 12>;
             layers = <0 2 4 5 6 1>;
             timeout-ms = <18>;
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <500>;
         };
 
         r_ctrl2 {
@@ -71,7 +71,7 @@
             key-positions = <12 13>;
             layers = <0 2 4 5 6 1>;
             timeout-ms = <18>;
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <500>;
         };
 
         // Shift+Ctrl
@@ -81,7 +81,7 @@
             key-positions = <10 11 12>;
             layers = <0 2 4 5 6 1>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <400>;
         };
 
         r_ctrl_shift2 {
@@ -99,7 +99,7 @@
             key-positions = <11 12 13>;
             layers = <0 2 4 5 6 1>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <300>;
+            require-prior-idle-ms = <400>;
         };
 
         // Shift+Win
@@ -109,7 +109,7 @@
             key-positions = <10 13>;
             layers = <0 2 4 5 6 1>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <400>;
         };
 
         // Ctrl (hold)

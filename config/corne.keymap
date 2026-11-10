@@ -663,13 +663,13 @@
             >;
         };
 
-        finch {
-            label = "finch";
+        mine2 {
+            label = "mine2";
             bindings = <
-  &kp V  &kp L       &kp Y         &kp W            &kp J         &kp P  &kp F                      &kp O     &as DOT    &kp BSPC
-  &kp C  &kp R       &kp S         &kp T            &kp M         &kp B  &kp N                      &kp A     &kp I      &kp U
-  &kp Z  &ad_swap_x  &ad_swap_g    &ad_swap_d       &ad_swap_k    &kp P  &ad_swap_h                 &as APOS  &as COMMA  &as FSLH
-                     &kp LEFT_ALT  &lt 4 BACKSPACE  &mod_space    &kp E  &shift_capsword_layer 5 0  &kp DEL
+  &kp V  &kp L       &kp Y       &kp W            &kp J         &as APOS         &kp F                      &kp U      &kp O    &kp BSPC
+  &kp C  &kp R       &kp S       &kp T            &kp M         &kp B            &kp N                      &kp E      &kp A    &kp I
+  &kp Z  &ad_swap_x  &ad_swap_g  &ad_swap_d       &ad_swap_k    &kp P            &ad_swap_h                 &as COMMA  &as DOT  &as FSLH
+                     &as E       &lt 4 BACKSPACE  &kp SPACE     &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };
 

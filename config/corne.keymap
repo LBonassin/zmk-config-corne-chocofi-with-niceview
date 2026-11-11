@@ -667,23 +667,23 @@
             >;
         };
 
-        mine {
-            label = "mine";
+        wh2 {
+            label = "wh2";
             bindings = <
-  &kp V  &kp L       &kp Y       &kp W            &kp J         &as APOS         &kp F                      &kp U      &kp O    &kp BSPC
-  &kp C  &kp R       &kp S       &kp T            &kp M         &kp B            &kp N                      &kp E      &kp A    &kp I
-  &kp Z  &ad_swap_x  &ad_swap_g  &ad_swap_d       &ad_swap_k    &kp P            &ad_swap_h                 &as COMMA  &as DOT  &as FSLH
-                     &as E       &lt 4 BACKSPACE  &kp SPACE     &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
+  &kp Q       &kp G  &kp D         &kp F            &kp V        &kp Z            &kp L                      &kp U           &kp O    &kp Y
+  &kp N       &kp S  &kp T         &kp H            &kp M        &as APOS         &kp R                      &kp E           &kp A    &kp I
+  &ad_swap_b  &kp C  &ad_swap_p    &ad_swap_w       &kp K        &kp X            &kp J                      &ad_swap_comma  &as DOT  &as SLASH
+                     &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };
 
         gaming {
             label = "gaming";
             bindings = <
-  &kp V  &kp L       &kp Y       &kp W            &kp J         &as APOS         &kp F                      &kp U      &kp O    &kp BSPC
-  &kp C  &kp R       &kp S       &kp T            &kp M         &kp B            &kp N                      &kp E      &kp A    &kp I
-  &kp Z  &ad_swap_x  &ad_swap_g  &ad_swap_d       &ad_swap_k    &kp P            &ad_swap_h                 &as COMMA  &as DOT  &as FSLH
-                     &as E       &lt 4 BACKSPACE  &kp SPACE     &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
+  &kp Q       &kp G  &kp D         &kp F            &kp V        &kp Z            &kp L                      &kp U           &kp O    &kp Y
+  &kp N       &kp S  &kp T         &kp H            &kp M        &as APOS         &kp R                      &kp E           &kp A    &kp I
+  &ad_swap_b  &kp C  &ad_swap_p    &ad_swap_w       &kp K        &kp X            &kp J                      &ad_swap_comma  &as DOT  &as SLASH
+                     &kp LEFT_ALT  &lt 4 BACKSPACE  &kp SPACE    &shift_capsword  &hold_layer_tap_magic 5 0  &kp DEL
             >;
         };
 
